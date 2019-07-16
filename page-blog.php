@@ -34,7 +34,7 @@
 <section id="blog-postagens">
     <div class="container">
         <div class="row">
-            <?php query_posts('cat=8'); ?>
+            <?php query_posts('cat=2'); ?>
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
             <div class="col-md-4 col-12">
                 <div class="post" data-aos="zoom-in-up">
