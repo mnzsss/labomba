@@ -106,7 +106,7 @@
                             <?php the_post_thumbnail('post-thumbnails', array('class' => 'img-fluid')); ?>
                         </a>
                         <h4><?php the_title(); ?></h4>
-                        <p><?php the_content(); ?></p>
+                        <p class="tags"><?php the_tags( '', ' + ', '' ); ?></p>
                     </div>
                 </div>
                 <?php endwhile; ?>
