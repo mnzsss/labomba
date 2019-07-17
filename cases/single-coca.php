@@ -303,7 +303,8 @@
     </section>
 </div>
 
+
 <?php endwhile; endif; ?>
 <?php wp_reset_query(); ?>
 
-<?php require('inc/footer-cases.php'); ?>
+<?php get_footer('cases'); ?>

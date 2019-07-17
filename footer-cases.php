@@ -1,3 +1,5 @@
+<?php wp_footer(); ?>
+
 <!-- Next Case -->
 <section id="next-post">
     <a href="<?php the_field('link-next'); ?>">
@@ -14,7 +16,6 @@
     </a>
 </section>
 
-<?php wp_footer(); ?>
 <!-- Scripts -->
 <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
