@@ -31,6 +31,9 @@
         <div class="col-12">
             <?php the_content(); ?>
         </div>
+        <div class="col-12 comentarios">
+            <?php disqus_embed('estudio-la-bomba'); ?>
+        </div>
     </div>
 </section>
 
