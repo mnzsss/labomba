@@ -60,19 +60,10 @@ function disqus_embed($disqus_shortname) {
     wp_enqueue_script('disqus_embed','http://'.$disqus_shortname.'.disqus.com/embed.js');
     
     echo '<div id="disqus_thread"></div>
-    <script>
-    var disqus_config = function () {
-    this.page.url = "<?php echo get_permalink(); ?>";
-this.page.identifier = "<?php echo get_permalink(); ?>";
-};
-
-(function() {
-var d = document, s = d.createElement("script");
-s.src = "https://$disqus_shortname.disqus.com/embed.js";
-s.setAttribute("data-timestamp", +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
-        Disqus.</a></noscript>';
-}
+       <script type="text/javascript">
+          var disqus_shortname = "'.$disqus_shortname.'";
+          var disqus_title = "'.$post->post_title.'";
+          var disqus_url = "'.get_permalink($post->ID).'";
+          var disqus_identifier = "'.$disqus_shortname.'-'.$post->ID.'";
+       </script>';
+    }
