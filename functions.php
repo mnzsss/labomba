@@ -57,6 +57,7 @@ function setPostViews($postID) {
 // Disqus
 function disqus_embed($disqus_shortname) {
     global $post;
+    
     wp_enqueue_script('disqus_embed','http://'.$disqus_shortname.'.disqus.com/embed.js');
     
     echo '<div id="disqus_thread"></div>
