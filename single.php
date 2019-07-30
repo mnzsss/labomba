@@ -19,7 +19,7 @@
             <a href="/blog">&larr; Voltar</a>
         </div>
         <div class="col-md-3 seta text-center flutuar">
-            <a href="#explicacao">
+            <a href="#blog-text">
                 <img src="<?php bloginfo('template_directory'); ?>/assets/img/seta.svg" alt="Viage!"
                     class="img-fluid" /></a>
         </div>
