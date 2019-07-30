@@ -1,4 +1,4 @@
-<?php 
+<?php
 /* Template Name: Embalagem */
 /* Template Post Type: page */
 ?>
@@ -96,7 +96,7 @@
                 </div>
 
                 <?php $query = new WP_Query(
-                        array( "post_type" => "any", 
+                        array( "post_type" => "any",
                                 "tag" => "embalagem"
                         )); ?>
                 <?php while ($query->have_posts()) : $query->the_post(); ?>

@@ -1,4 +1,4 @@
-	<?php 
+	<?php
 		/* Template Name: Ilustração */
 		/* Template Post Type: page */
 	 ?>
@@ -89,7 +89,7 @@
 	                </div>
 
 	                <?php $query = new WP_Query(
-                        array( "post_type" => "any", 
+                        array( "post_type" => "any",
                                 "tag" => "ilustracao"
                         )); ?>
 	                <?php while ($query->have_posts()) : $query->the_post(); ?>
