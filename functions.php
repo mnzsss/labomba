@@ -68,24 +68,3 @@ function disqus_embed($disqus_shortname) {
           var disqus_identifier = "'.$disqus_shortname.'-'.$post->ID.'";
        </script>';
 }
-
-
-// Breadcrumbs
-function the_breadcrumb() {
-    if (!is_home()) {
-        echo '<a href="';
-        echo get_option('home');
-        echo '">';
-        bloginfo('name');
-        echo "</a> Â» ";
-        if (is_category() || is_single()) {
-            the_category('title_li=');
-            if (is_single()) {
-                echo " Â» ";
-                the_title();
-            }
-        } elseif (is_page()) {
-            echo the_title();
-        }
-    }
-}

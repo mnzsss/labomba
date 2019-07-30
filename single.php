@@ -16,7 +16,7 @@
             <p class="pt-3">
                 <?php the_excerpt(); ?>
             </p>
-            <?php the_breadcrumb(); ?>
+            <a href="/blog">&larr; Voltar</a>
         </div>
         <div class="col-md-3 seta text-center flutuar">
             <a href="#explicacao">
