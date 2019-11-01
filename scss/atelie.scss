@@ -1,0 +1,279 @@
+// Font
+@font-face {
+  font-family: "Track Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Track Regular"), url("../fonts/Track.woff") format("woff");
+}
+
+//Functions
+@function rem($pixels) {
+  @return $pixels / 16 + rem;
+}
+
+// Variaveis
+$width: 540px;
+$paragrafo: 18;
+$vermelho: #ff3d03;
+
+p {
+  font-size: rem($paragrafo);
+  font-family: "Courier";
+}
+
+h2 {
+  font-family: "Track Regular";
+  font-size: rem(50);
+}
+
+h3 {
+  @extend h2;
+  font-size: rem(30);
+}
+
+.divider {
+  &::after {
+    position: relative;
+    top: 2em;
+    right: 8em;
+    content: url(../img/cases/atelie/divider.png);
+  }
+
+  &-red {
+    &::after {
+      position: relative;
+      top: 4em;
+      right: 8em;
+      content: url(../img/cases/atelie/divider-red.png);
+    }
+  }
+}
+
+.kraft {
+  background-image: url(../img/cases/atelie/kraft.jpg);
+  background-size: cover;
+}
+
+.detail {
+  padding: 3em 0;
+  text-align: center;
+
+  &-logo img {
+    max-width: $width;
+    margin: 3em 0;
+  }
+
+  &-info {
+    max-width: $width;
+    margin: 0 auto;
+    text-align: justify;
+  }
+}
+
+.seta {
+  text-align: center;
+  padding: 2em 0;
+
+  img {
+    max-width: rem(45);
+  }
+}
+
+#logo {
+  padding-bottom: 3em;
+
+  #construcao {
+    padding: 20em 0;
+  }
+
+  .grafismo {
+    img {
+      position: relative;
+      width: $width;
+      height: 100%;
+    }
+
+    &-left img {
+      right: 27em;
+    }
+  }
+
+  #identidade {
+    text-align: center;
+
+    .logo {
+      max-width: 300px;
+      margin: 0 auto;
+      padding-bottom: 1em;
+    }
+
+    h2 {
+      color: $vermelho;
+      padding: 0.8em 0;
+    }
+
+    p {
+      color: white;
+    }
+
+    span {
+      color: $vermelho;
+    }
+  }
+}
+
+#aplicacao {
+  background-color: $vermelho;
+  color: white;
+  padding: 2.5em 0;
+
+  span {
+    color: black;
+  }
+}
+
+#mockups {
+  background-color: black;
+  padding: 5em 0;
+  text-align: center;
+
+  #xicara {
+    margin-top: -15em;
+    max-width: 320px;
+    margin-left: -4em;
+  }
+
+  #bag,
+  #envelope {
+    margin-top: -16em;
+    max-width: 500px;
+  }
+
+  p {
+    color: white;
+
+    span {
+      color: $vermelho;
+    }
+  }
+
+  .col-md-4,
+  .col-md-8,
+  .col-sm-12 {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+#rodape {
+  padding: 4em 0;
+  color: white;
+
+  img {
+    max-width: 300px;
+    padding-bottom: 2em;
+  }
+
+  span {
+    color: $vermelho;
+  }
+}
+
+// Breakpoints
+// Mobile
+@media (max-width: 575.98px) {
+  .detail {
+    &-logo img {
+      max-width: auto;
+      width: 100%;
+    }
+
+    &-info {
+      max-width: auto;
+      width: 100%;
+    }
+  }
+
+  #logo {
+    padding-bottom: 3em;
+
+    #construcao {
+      padding: 10em 0;
+    }
+  }
+
+  #mockups {
+    #xicara {
+      margin-top: 1em;
+      max-width: auto;
+      width: auto;
+      margin-left: 0;
+      padding-right: 2em;
+    }
+
+    #bag,
+    #envelope {
+      max-width: 300px;
+      width: auto;
+    }
+
+    #envelope {
+      margin-top: 0;
+    }
+
+    #bag {
+      margin-top: -7em;
+    }
+  }
+}
+
+// Tablets
+@media (max-width: 768px) {
+  #mockups {
+    #xicara {
+      margin-top: 1em;
+      width: auto;
+      margin-left: -2.5em;
+    }
+
+    #bag,
+    #envelope,
+    #xicara {
+      max-width: 200px;
+      width: auto;
+    }
+
+    #envelope {
+      margin-top: 0;
+    }
+
+    #bag {
+      margin-top: -7em;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #mockups {
+    #xicara {
+      margin-top: 1em;
+      width: auto;
+      margin-left: -4em;
+    }
+
+    #bag,
+    #envelope,
+    #xicara {
+      max-width: 280px;
+      width: auto;
+    }
+
+    #envelope {
+      margin-top: 0;
+    }
+
+    #bag {
+      margin-top: -7em;
+    }
+  }
+}

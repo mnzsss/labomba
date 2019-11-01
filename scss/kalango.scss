@@ -1,0 +1,194 @@
+// Font
+@font-face {
+  font-family: "Nilland-SmallCaps";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Nilland-SmallCaps"),
+    url("../fonts.Nilland-SmallCaps.woff") format("woff");
+}
+
+@font-face {
+  font-family: "SignPainter";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/SignPainter.ttc") format("truetype");
+  font-weight: normal;
+}
+
+//Functions
+@function rem($pixels) {
+  @return $pixels / 16 + rem;
+}
+
+// Variaveis
+$paragrafo: 17;
+$vermelho: #da4626;
+$roxo: #3b2048;
+$verde: #bad431;
+
+p {
+  font-size: rem($paragrafo);
+  font-family: "Nilland-SmallCaps";
+  color: #666666;
+}
+
+h1 {
+  padding: 0.5em 0;
+  font-family: "Nilland-SmallCaps";
+  color: $vermelho;
+}
+
+h2 {
+  @extend h1;
+  font-size: rem(60);
+}
+
+h3 {
+  @extend h1;
+  padding-top: 1em;
+  padding-bottom: 0;
+  font-size: rem(25);
+}
+
+.pattern {
+  background-image: url(../img/cases/kalango/pattern_fundo.png);
+  background-size: cover;
+}
+
+#destaque {
+  text-align: center;
+  padding: 6em 0;
+
+  #logo {
+    width: 400px;
+  }
+
+  #info {
+    p {
+      margin: 0 auto;
+      text-align: justify;
+      max-width: 550px;
+    }
+  }
+}
+
+#versao-logo {
+  padding: 3em 2em;
+  text-align: center;
+
+  #icones {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+}
+
+#logo-completo {
+  background-image: url(../img/cases/kalango/fundo_logo.png);
+  background-size: cover;
+  text-align: center;
+  padding: 13em 0;
+
+  img {
+    max-width: 500px;
+  }
+}
+
+#mockups {
+  background-color: $roxo;
+
+  .carrinho {
+    img {
+      max-height: 464px;
+    }
+  }
+
+  p {
+    font-size: rem(15.5);
+    color: white;
+    padding: 1em;
+    background-color: black;
+    border-radius: 1em;
+  }
+}
+
+#ambientacao {
+  padding: 3em 0;
+  background-color: $roxo;
+  text-align: center;
+}
+
+#social {
+  background-color: $vermelho;
+  padding: 5em 0;
+
+  h2 {
+    color: $verde;
+    font-family: "SignPainter";
+    font-size: rem(150);
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    color: white;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+// Breakpoints
+// Mobile
+@media (max-width: 575.98px) {
+  #destaque {
+    padding: 4em 2em;
+
+    #logo {
+      width: 300px;
+    }
+  }
+
+  #mockups {
+    .carrinho {
+      text-align: center;
+
+      img {
+        max-height: 310px;
+        padding-top: 2em;
+      }
+    }
+
+    p {
+      margin: 3em 0;
+    }
+  }
+
+  #social {
+    h2 {
+      font-size: rem(150);
+      line-height: rem(90);
+    }
+
+    p {
+      padding-top: 2em;
+    }
+  }
+}
+
+// iPad
+@media (max-width: 1024px) {
+  #mockups {
+    .carrinho {
+      text-align: center;
+
+      img {
+        max-height: 260px;
+      }
+    }
+  }
+
+  #social {
+    h2 {
+      font-size: rem(100);
+    }
+  }
+}

@@ -1,14 +1,14 @@
 <?php /*
- * Template Name: Case Mr. Hops 
+ * Template Name: Case Mr. Hops
  * Template Post Type: post
- */ ?>
-<?php require('inc/header-mrhops.php'); ?>
+ */?>
+<?php require 'inc/header-mrhops.php';?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php if (have_posts()): while (have_posts()): the_post();?>
 
 <!-- Header -->
 <section id="destaque" class="text-center">
-    <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/mrhops_header.jpg" alt="Mr. Hops"
+    <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/mrhops_header.jpg" alt="Mr. Hops"
         class="img-fluid" />
 </section>
 
@@ -33,7 +33,7 @@
                 </p>
             </div>
             <div class="col-12 col-md-6 text-center">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/mrhops_personagem.svg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/mrhops_personagem.svg"
                     alt="Mr. Hops Personagem" class="img-fluid" width="400" />
             </div>
         </div>
@@ -42,7 +42,7 @@
 
 <!-- Lhamas -->
 <section class="text-center">
-    <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/mrhops_personagens.jpg"
+    <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/mrhops_personagens.jpg"
         alt="Lhamas Mr. Hops" class="img-fluid" />
 </section>
 
@@ -52,11 +52,11 @@
         <div class="row">
             <!-- Amarildo -->
             <div class="col-6 col-md-3 personagem">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/personagens/mrhops_lhama_amarildo.svg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/personagens/mrhops_lhama_amarildo.svg"
                     alt="Lhama Amarildo - Mr. Hops" class="img-fluid" />
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/mrhops_personagens_detail.svg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/mrhops_personagens_detail.svg"
                     alt="Mr. Hops" class="img-fluid py-3" />
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/personagens/mrhops_nome_amarildo.svg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/personagens/mrhops_nome_amarildo.svg"
                     alt="Lhama Amarildo - Mr. Hops" class="img-fluid" />
                 <p class="pt-3">
                     Amarildo é a lhama mais insana da fazenda e sabe o que ele curte
@@ -69,11 +69,11 @@
             </div>
             <!-- Iris -->
             <div class="col-6 col-md-3 personagem">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/personagens/mrhops_lhama_iris.svg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/personagens/mrhops_lhama_iris.svg"
                     alt="Lhama Iris - Mr. Hops" class="img-fluid" />
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/mrhops_personagens_detail.svg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/mrhops_personagens_detail.svg"
                     alt="Mr. Hops" class="img-fluid py-3" />
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/personagens/mrhops_nome_iris.svg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/personagens/mrhops_nome_iris.svg"
                     alt="Lhama Iris - Mr. Hops" class="img-fluid" />
                 <p class="pt-3">
                     Iris é a lhama paz e amor. Gosta mesmo é do aroma caramelizado
@@ -87,11 +87,11 @@
             </div>
             <!-- Wesley -->
             <div class="col-6 col-md-3 personagem">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/personagens/mrhops_lhama_wesley.svg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/personagens/mrhops_lhama_wesley.svg"
                     alt="Lhama Wesley - Mr. Hops" class="img-fluid" />
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/mrhops_personagens_detail.svg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/mrhops_personagens_detail.svg"
                     alt="Mr. Hops" class="img-fluid py-3" />
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/personagens/mrhops_nome_wesley.svg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/personagens/mrhops_nome_wesley.svg"
                     alt="Lhama Wesley - Mr. Hops" class="img-fluid" />
                 <p class="pt-3">
                     Wesley é a verdadeira lhama da galera com seu espírito jovem. Em
@@ -102,11 +102,11 @@
             </div>
             <!-- Elisabete -->
             <div class="col-6 col-md-3 personagem">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/personagens/mrhops_lhama_elisabete.svg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/personagens/mrhops_lhama_elisabete.svg"
                     alt="Lhama Elisabete - Mr. Hops" class="img-fluid" />
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/mrhops_personagens_detail.svg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/mrhops_personagens_detail.svg"
                     alt="Mr. Hops" class="img-fluid py-3" />
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/personagens/mrhops_nome_elisabete.svg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/personagens/mrhops_nome_elisabete.svg"
                     alt="Lhama Elisabete - Mr. Hops" class="img-fluid" />
                 <p class="pt-3">
                     Elisabete é uma lhama experiente. Adora andar pela fazenda atrás
@@ -125,17 +125,17 @@
 
 <!-- Logo -->
 <section class="text-center">
-    <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/mrhops.svg" alt="Mr. Hops"
+    <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/mrhops.svg" alt="Mr. Hops"
         class="img-fluid" width="300" />
 </section>
 
 <!-- Mockups -->
 <section id="mockup" class="text-center">
-    <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/mrhops_mockup_poster.jpg"
+    <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/mrhops_mockup_poster.jpg"
         alt="Mr. Hops Mockups Poster" class="img-fluid" />
-    <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/mrhops_mockup_case_cerveja.jpg"
+    <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/mrhops_mockup_case_cerveja.jpg"
         alt="Mr. Hops Mockups Case Cerveja" class="img-fluid" />
-    <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/mrhops_mockup_embalagem_cerveja.jpg"
+    <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/mrhops_mockup_embalagem_cerveja.jpg"
         alt="Mr. Hops Mockups Embalagem Cerveja" class="img-fluid" />
 </section>
 
@@ -149,25 +149,25 @@
 
             <!-- Amarildo -->
             <div class="col-12 col-md-6 pb-4">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/rotulos/amarildo.jpg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/rotulos/amarildo.jpg"
                     alt="Rótulo do Amarildo IPA" class="img-fluid" />
             </div>
 
             <!-- Elisabete -->
             <div class="col-12 col-md-6">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/rotulos/elisabete.jpg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/rotulos/elisabete.jpg"
                     alt="Rótulo do Elisabete ESB" class="img-fluid" />
             </div>
 
             <!-- Iris -->
             <div class="col-12 col-md-6 pt-4">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/rotulos/iris.jpg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/rotulos/iris.jpg"
                     alt="Rótulo do Iris Irish Red Ale" class="img-fluid" />
             </div>
 
             <!-- Wesley -->
             <div class="col-12 col-md-6 pt-4">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/rotulos/wesley.jpg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/rotulos/wesley.jpg"
                     alt="Rótulo do Wesley Weizen" class="img-fluid" />
             </div>
         </div>
@@ -184,7 +184,7 @@
             </div>
         </div>
         <div class="col-12">
-            <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/mrhops_cartela_cerveja.png"
+            <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/mrhops_cartela_cerveja.png"
                 alt="Cartela de Cervejas Mr. Hops" class="img-fluid" />
         </div>
     </div>
@@ -195,11 +195,11 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-6 text-center">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/mrhops_camiseta.png"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/mrhops_camiseta.png"
                     alt="Camiseta da Cervejaria Mr. Hops" class="img-fluid" />
             </div>
             <div class="col-12 col-md-6 text-center">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/mrhops_cartao_visita.jpg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/mrhops_cartao_visita.jpg"
                     alt="Cartão de Visita da Cervejaria Mr. Hops" class="img-fluid" width="370" />
             </div>
             <div class="divider"></div>
@@ -208,11 +208,11 @@
         <!-- Social Media -->
         <div class="row pt-5" id="social-media">
             <div class="col-12 col-md-6 post pb-5">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/mrhops_social_media_2.png"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/mrhops_social_media_2.png"
                     alt="Postagem para Rede Social da Cervejaria Mr. Hops" class="img-fluid" />
             </div>
             <div class="col-12 col-md-6 post pb-5">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mrhops/mrhops_social_media_1.png"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mrhops/mrhops_social_media_1.png"
                     alt="Postagem para Rede Social da Cervejaria Mr. Hops" class="img-fluid" />
             </div>
         </div>
@@ -220,8 +220,8 @@
 </section>
 
 
-<?php endwhile; endif; ?>
-<?php wp_reset_query(); ?>
+<?php endwhile;endif;?>
+<?php wp_reset_query();?>
 
 
-<?php get_footer('cases'); ?>
+<?php get_footer('cases');?>

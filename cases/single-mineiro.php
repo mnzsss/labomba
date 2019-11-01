@@ -1,13 +1,13 @@
 <?php /*
  * Template Name: Case Mineiro
  * Template Post Type: post
- */ ?>
-<?php require('inc/header-mineiro.php'); ?>
+ */?>
+<?php require 'inc/header-mineiro.php';?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php if (have_posts()): while (have_posts()): the_post();?>
 
 <main class="d-none d-md-block">
-    <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mineiro/embalagens_mineiro.png"
+    <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mineiro/embalagens_mineiro.png"
         alt="Embalagens de Pão de Queijo Mineiro" class="img-fluid" style="width: 100vw;" />
 </main>
 
@@ -16,7 +16,7 @@
     <div class="container">
         <div class="row ">
             <div class="col-md-4 col-sm-12 text-center">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mineiro/mineiro_pao_de_queijo_gourmet_cheese_rolls.png"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mineiro/mineiro_pao_de_queijo_gourmet_cheese_rolls.png"
                     alt="Embalagem de Pão de Queijo Mineiro" class="img-fluid " data-aos="fade-right" />
             </div>
             <div class="col-md-7 offset-md-1 col-sm-12">
@@ -34,23 +34,23 @@
         </div>
         <div class="row" id="pao-de-queijo">
             <div class="col-md-4 col-sm-12 text-center">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mineiro/mineiro_pao_de_queijo_gourmet_cheese_rolls.png"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mineiro/mineiro_pao_de_queijo_gourmet_cheese_rolls.png"
                     alt="Embalagem de Pão de Queijo Mineiro" class="img-fluid" data-aos="fade-up" />
             </div>
             <div class="col-md-4 col-sm-12 text-center">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mineiro/mineiro_pao_de_queijo_gourmet_cheese_rolls_2.png"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mineiro/mineiro_pao_de_queijo_gourmet_cheese_rolls_2.png"
                     alt="Embalagem de Pão de Queijo Mineiro" class="img-fluid" data-aos="fade-up" />
             </div>
             <div class="col-md-4 col-sm-12 text-center">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/mineiro/mineiro_pao_de_queijo_gourmet_cheese_rolls_3.png"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/mineiro/mineiro_pao_de_queijo_gourmet_cheese_rolls_3.png"
                     alt="Embalagem de Pão de Queijo Mineiro" class="img-fluid" data-aos="fade-up" />
             </div>
         </div>
     </div>
 </section>
 
-<?php endwhile; endif; ?>
-<?php wp_reset_query(); ?>
+<?php endwhile;endif;?>
+<?php wp_reset_query();?>
 
 
-<?php get_footer('cases'); ?>
+<?php get_footer('cases');?>

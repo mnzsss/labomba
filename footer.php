@@ -11,7 +11,7 @@
                </div>
                <div class="col-md-3 col-sm-12 text-center">
                    <a href="https://briefing.estudiolabomba.com/" target="blank">
-                       <img src="<?php bloginfo('template_directory'); ?>/assets/img/labomba_logo_bomba.svg"
+                       <img src="<?php bloginfo('template_directory');?>/assets/img/labomba_logo_bomba.svg"
                            class="img-fluid mb-4" alt="Estúdio LaBomba" />
                    </a>
                    <p>clique na bomba para um projeto</p>
@@ -68,7 +68,7 @@
        </div>
    </footer>
 
-   <?php wp_footer(); ?>
+   <?php wp_footer();?>
    <!-- Scripts -->
    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

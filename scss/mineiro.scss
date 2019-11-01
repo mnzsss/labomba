@@ -1,0 +1,102 @@
+// Font
+@font-face {
+  font-family: "Phosphate";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Phosphate.ttc") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Caption Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("PT Sans Caption Regular"),
+    url("../fonts/PT_Sans-Caption-Web-Regular.woff") format("woff");
+}
+
+//Functions
+@function rem($pixels) {
+  @return $pixels / 16 + rem;
+}
+
+// Variaveis
+$paragrafo: 17;
+$laranja: #f15a22;
+
+body {
+  background-color: $laranja;
+  color: white;
+  font-family: "Phosphate";
+}
+
+p {
+  font-size: rem($paragrafo);
+  font-family: "PT Sans Caption Regular";
+  text-align: justify;
+}
+
+h1 {
+  padding-top: 2em;
+  max-width: 400px;
+}
+
+#embalagens {
+  padding: 8em 0;
+  background-image: url(../img/cases/mineiro/fundo.png);
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: -7em 2em;
+
+  #pao-de-queijo {
+    padding-top: 8em;
+
+    img {
+      padding-right: 6em;
+    }
+  }
+}
+
+// Breakpoints
+// Mobile
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: rem(35);
+  }
+
+  #embalagens {
+    padding: 6em 0;
+    background-size: 38em;
+    background-position: -9em 2em;
+
+    #pao-de-queijo {
+      padding-top: 0;
+
+      img {
+        padding-right: 0;
+        padding-top: 3em;
+      }
+    }
+  }
+}
+
+// Tablets
+@media (max-width: 768px) {
+  h1 {
+    font-size: rem(40);
+    padding: 0;
+  }
+
+  #embalagens {
+    padding: 6em 0;
+
+    #pao-de-queijo {
+      padding-top: 0;
+
+      img {
+        padding-right: 0;
+        padding-top: 3em;
+      }
+    }
+  }
+}

@@ -1,17 +1,17 @@
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes();?>>
 
 <head>
     <!-- Required meta tags -->
-    <meta <?php bloginfo('charset'); ?>>
+    <meta <?php bloginfo('charset');?>>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/normalize.min.css" />
-    <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/css/labomba.min.css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/normalize.min.css" />
+    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/labomba.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
@@ -19,7 +19,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129826334-1"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
- 
+
     function gtag() {
         dataLayer.push(arguments);
     }
@@ -68,22 +68,22 @@
             src="https://www.facebook.com/tr?id=438763636979719&ev=PageView&noscript=1" /></noscript>
     <!-- End Facebook Pixel Code -->
 
-    <?php wp_head(); ?>
+    <?php wp_head();?>
 </head>
 
 <body class="labomba">
     <!-- Header -->
-    <header <?php 
-         if ( is_page('contato')  ) { 
-            echo "class='contato'";
-        } ?>>
+    <header <?php
+if (is_page('contato')) {
+    echo "class='contato'";
+}?>>
         <div class="container">
             <!-- Menu -->
             <div class="row">
                 <div class="col-md-12 col-lg-11">
                     <nav class="navbar navbar-dark bg-transparent navbar-expand-md menu">
 
-                        <?php the_custom_logo(); ?>
+                        <?php the_custom_logo();?>
 
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

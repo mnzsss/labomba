@@ -1,10 +1,10 @@
 <?php /*
- * Template Name: Case Ateliê 
+ * Template Name: Case Ateliê
  * Template Post Type: post
- */ ?>
-<?php require('inc/header-atelie.php'); ?>
+ */?>
+<?php require 'inc/header-atelie.php';?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php if (have_posts()): while (have_posts()): the_post();?>
 
 <!-- Destaque -->
 <section>
@@ -14,7 +14,7 @@
                 <div class="col-12">
                     <div class="detail">
                         <div class="detail-logo">
-                            <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/atelie/logo_detail.png"
+                            <img src="<?php bloginfo('template_directory');?>/assets/img/cases/atelie/logo_detail.png"
                                 alt="Ateliê Pretrópolis" class="img-fluid" data-aos="zoom-in" />
                         </div>
                         <div class="detail-info">
@@ -27,7 +27,7 @@
                             <div class="detail-scroll">
                                 <div class="seta">
                                     <a href="#construcao">
-                                        <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/atelie/seta.svg"
+                                        <img src="<?php bloginfo('template_directory');?>/assets/img/cases/atelie/seta.svg"
                                             alt="Seta" class="img-fluid" /></a>
                                 </div>
                             </div>
@@ -45,21 +45,21 @@
         <div class="row">
             <div class="col-lg-6 offset-lg-3 col-md-10 offset-md-1 col-sm-12">
                 <div id="construcao">
-                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/atelie/construcao.svg"
+                    <img src="<?php bloginfo('template_directory');?>/assets/img/cases/atelie/construcao.svg"
                         alt="Construção do Logo" class="img-fluid" data-aos="zoom-in" />
                 </div>
             </div>
             <div class="row">
                 <div class="col-2 d-none d-md-block">
                     <div class="grafismo grafismo-left">
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/atelie/grafismo.svg"
+                        <img src="<?php bloginfo('template_directory');?>/assets/img/cases/atelie/grafismo.svg"
                             alt="Grafismo" data-aos="fade-right" />
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-12">
                     <div id="identidade">
                         <div class="logo">
-                            <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/atelie/logo.svg"
+                            <img src="<?php bloginfo('template_directory');?>/assets/img/cases/atelie/logo.svg"
                                 alt="Ateliê Pretrópolis" class="img-fluid" />
                         </div>
                         <h1>Identidade</h1>
@@ -74,7 +74,7 @@
                 </div>
                 <div class="col-2 d-none d-md-block">
                     <div class="grafismo grafismo-right">
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/atelie/grafismo.svg"
+                        <img src="<?php bloginfo('template_directory');?>/assets/img/cases/atelie/grafismo.svg"
                             alt="Grafismo" data-aos="fade-left" />
                     </div>
                 </div>
@@ -84,7 +84,7 @@
             <div class="col-12">
                 <div class="seta">
                     <a href="#aplicacao">
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/atelie/seta.svg" alt="Seta"
+                        <img src="<?php bloginfo('template_directory');?>/assets/img/cases/atelie/seta.svg" alt="Seta"
                             class="img-fluid" />
                     </a>
                 </div>
@@ -109,8 +109,8 @@
                 </p>
             </div>
             <div class="col-12 pt-5 text-center">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/atelie/aplicacao.jpg"
-                    alt="Aplicação" class="img-fluid" />
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/atelie/aplicacao.jpg" alt="Aplicação"
+                    class="img-fluid" />
             </div>
         </div>
     </div>
@@ -121,15 +121,15 @@
     <div class="container-fluid">
         <div class="row align-items-end">
             <div class="col-md-5 col-sm-12">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/atelie/atelie_bag.png"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/atelie/atelie_bag.png"
                     alt="Aplicação Bag Ateliê Pretrópolis" class="img-fluid" id="bag" data-aos="fade-right" />
             </div>
             <div class="col-md-2 col-sm-12">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/atelie/atelie_xicara.png"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/atelie/atelie_xicara.png"
                     alt="Aplicação Xícara Ateliê Pretrópolis" class="img-fluid" id="xicara" data-aos="zoom-in-up" />
             </div>
             <div class="col-md-5 col-sm-12">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/atelie/atelie_envelope.png"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/atelie/atelie_envelope.png"
                     alt="Aplicação Envelope Ateliê Pretrópolis" class="img-fluid" id="envelope" data-aos="fade-left" />
             </div>
             <div class="col-12 text-center pt-5">
@@ -141,17 +141,17 @@
             <div class="col-12">
                 <div class="seta">
                     <a href="#rodape">
-                        <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/atelie/seta.svg" alt="Seta"
+                        <img src="<?php bloginfo('template_directory');?>/assets/img/cases/atelie/seta.svg" alt="Seta"
                             class="img-fluid" />
                     </a>
                 </div>
             </div>
             <div class="col-md-8 col-sm-12 pt-5 ">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/atelie/atelie_poster.jpg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/atelie/atelie_poster.jpg"
                     alt="Aplicação Poster Ateliê Pretrópolis" class="img-fluid" />
             </div>
             <div class="col-md-4 col-sm-12 pt-5 ">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/atelie/atelie_placa.jpg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/atelie/atelie_placa.jpg"
                     alt="Aplicação Placa Ateliê Pretrópolis" class="img-fluid" />
             </div>
         </div>
@@ -163,7 +163,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/atelie/logo_grafismo.svg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/atelie/logo_grafismo.svg"
                     alt="Ateliê Pretrópolis" class="img-fluid" data-aos="zoom-in-up" />
                 <h3>Faça um brinde</h3>
                 <h2>Ao <span>diferente</span>!</h2>
@@ -172,8 +172,8 @@
     </div>
 </section>
 
-<?php endwhile; endif; ?>
-<?php wp_reset_query(); ?>
+<?php endwhile;endif;?>
+<?php wp_reset_query();?>
 
 
-<?php get_footer('cases'); ?>
+<?php get_footer('cases');?>

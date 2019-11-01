@@ -1,0 +1,29 @@
+// Font
+@font-face {
+  font-family: "OCR A Std";
+  font-style: normal;
+  font-weight: normal;
+  src: local("OCR A Std"), url("../fonts/OCRAStd.woff") format("woff");
+}
+
+@function rem($pixels) {
+  @return $pixels / 16 + rem;
+}
+
+html {
+  scroll-behavior: smooth;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}

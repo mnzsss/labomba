@@ -1,17 +1,17 @@
 <?php /*
  * Template Name: Case MarteLab
  * Template Post Type: post
- */ ?>
-<?php require('inc/header-martelab.php'); ?>
+ */?>
+<?php require 'inc/header-martelab.php';?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<?php if (have_posts()): while (have_posts()): the_post();?>
 
 <!-- Destaque -->
 <main>
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-sm-12 pr-5">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/martelab/texto.svg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/martelab/texto.svg"
                     alt="Marte o quê ?" class="img-fluid" id="logo" />
             </div>
             <div class="col-md-6 col-sm-12">
@@ -37,7 +37,7 @@
 
 <!-- Seta -->
 <div id="seta" class="text-center" data-aos="fade-down">
-    <a href="#astronauta"><img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/martelab/seta.svg"
+    <a href="#astronauta"><img src="<?php bloginfo('template_directory');?>/assets/img/cases/martelab/seta.svg"
             alt="Navegue!" class="img-fluid" /></a>
 </div>
 
@@ -47,7 +47,7 @@
     <div class="container">
         <div class="row" id="logo">
             <div class="col-12 text-center">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/martelab/martelab_logo.svg"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/cases/martelab/martelab_logo.svg"
                     alt="MarteLab T.I" class="img-fluid" />
             </div>
         </div>
@@ -58,10 +58,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/martelab/astronauta.png"
+                    <img src="<?php bloginfo('template_directory');?>/assets/img/cases/martelab/astronauta.png"
                         alt="Astronauta MarteLab T.I" class="img-fluid" id="personagem" data-aos="zoom-in-up" />
                     <h2>tecnologia de outro planeta, para a sua empresa.</h2>
-                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/martelab/martelab_logo.svg"
+                    <img src="<?php bloginfo('template_directory');?>/assets/img/cases/martelab/martelab_logo.svg"
                         alt="MarteLab T.I" class="img-fluid" id="logo" />
                 </div>
             </div>
@@ -90,8 +90,8 @@
                 <div class="col-md-6 col-sm-12">
                     <div class="embed-responsive embed-responsive-16by9">
                         <video controls="true" class="embed-responsive-item"
-                            poster="<?php bloginfo('template_directory'); ?>/assets/img/cases/martelab/poster-video.png">
-                            <source src="<?php bloginfo('template_directory'); ?>/assets/videos/martelab.mp4"
+                            poster="<?php bloginfo('template_directory');?>/assets/img/cases/martelab/poster-video.png">
+                            <source src="<?php bloginfo('template_directory');?>/assets/videos/martelab.mp4"
                                 type="video/mp4" />
                         </video>
                     </div>
@@ -103,9 +103,9 @@
 
 <!-- Mockups -->
 <section id="mockups">
-    <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/martelab/mockups/martelab_copo1x.png"
+    <img src="<?php bloginfo('template_directory');?>/assets/img/cases/martelab/mockups/martelab_copo1x.png"
         alt="Copo MarteLab" class="img-fluid" id="copo" />
-    <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/martelab/mockups/caderno.png"
+    <img src="<?php bloginfo('template_directory');?>/assets/img/cases/martelab/mockups/caderno.png"
         alt="Caderno MarteLab" class="img-fluid" />
 
     <!-- Cartão -->
@@ -113,7 +113,7 @@
         <div class="container">
             <div class="row" data-aos="zoom-in-up">
                 <div class="col-md-8 col-sm-12 offset-md-2">
-                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/cases/martelab/cartao.svg"
+                    <img src="<?php bloginfo('template_directory');?>/assets/img/cases/martelab/cartao.svg"
                         alt="Cartão MarteLab" class="img-fluid" />
                 </div>
             </div>
@@ -121,8 +121,8 @@
     </div>
 </section>
 
-<?php endwhile; endif; ?>
-<?php wp_reset_query(); ?>
+<?php endwhile;endif;?>
+<?php wp_reset_query();?>
 
 
-<?php get_footer('cases'); ?>
+<?php get_footer('cases');?>

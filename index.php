@@ -1,8 +1,8 @@
-<?php get_header(); ?>
-<!-- Loader
+<?php get_header();?>
+<!-- Loader -->
 <div id="loader">
-    <img src="<?php bloginfo('template_directory'); ?>/assets/img/preloader.gif" width="30%" alt="Carregando..." />
-</div> -->
+    <img src="<?php bloginfo('template_directory');?>/assets/img/preloader.gif" width="30%" alt="Carregando..." />
+</div>
 
 <!-- Introdução -->
 <div class="container">
@@ -11,8 +11,8 @@
             <h2>solução</h2>
         </div>
         <div class="col-4 d-none d-md-block">
-            <img src="<?php bloginfo('template_directory'); ?>/assets/img/labomba_logo_detail.svg"
-                alt="Estúdio La.Bomba" class="img-fluid logo-detail" />
+            <img src="<?php bloginfo('template_directory');?>/assets/img/labomba_logo_detail.svg" alt="Estúdio La.Bomba"
+                class="img-fluid logo-detail" />
         </div>
         <div class="col-md-8 col-sm-12" id="info">
             <h1>Através do Design</h1>
@@ -34,7 +34,7 @@
         </div>
         <div class="col-md-3 seta text-center flutuar">
             <a href="#servicos">
-                <img src="<?php bloginfo('template_directory'); ?>/assets/img/seta.svg" alt="Viage!"
+                <img src="<?php bloginfo('template_directory');?>/assets/img/seta.svg" alt="Viage!"
                     class="img-fluid" /></a>
         </div>
     </div>
@@ -52,7 +52,7 @@
         <div class="row">
             <div class="offset-lg-1 col-lg-3 col-md-4">
                 <div class="servico">
-                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/servicos/branding_icon.svg"
+                    <img src="<?php bloginfo('template_directory');?>/assets/img/servicos/branding_icon.svg"
                         alt="Branding - Estúdio LaBomba" class="img-fluid" />
                     <p>
                         Gerir uma marca é um processo contínuo, e até mesmo complexo, em
@@ -63,7 +63,7 @@
             </div>
             <div class="offset-lg-1 col-lg-3 col-md-4">
                 <div class="servico">
-                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/servicos/ilustracao_icon.svg"
+                    <img src="<?php bloginfo('template_directory');?>/assets/img/servicos/ilustracao_icon.svg"
                         alt="Ilustração - Estúdio LaBomba" class="img-fluid" />
                     <p>
                         Sabe aquelas capas de filmes transformadas em ilustrações, que
@@ -74,7 +74,7 @@
             </div>
             <div class="offset-lg-1 col-lg-3 col-md-4">
                 <div class="servico">
-                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/servicos/embalagem_icon.svg"
+                    <img src="<?php bloginfo('template_directory');?>/assets/img/servicos/embalagem_icon.svg"
                         alt="Design de Embalagem - Estúdio LaBomba" class="img-fluid" />
                     <p>
                         Se as pessoas, em geral, julgam o livro pela capa, com as
@@ -107,23 +107,23 @@
                     </div>
                 </div>
 
-                <?php query_posts('cat=1'); ?>
-                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+                <?php query_posts('cat=1');?>
+                <?php if (have_posts()): while (have_posts()): the_post();?>
                 <div class="card">
                     <div class="case" data-aos="zoom-in-up">
-                        <a href="<?php the_permalink(); ?>">
-                            <?php the_post_thumbnail('post-thumbnails', array('class' => 'img-fluid')); ?>
+                        <a href="<?php the_permalink();?>">
+                            <?php the_post_thumbnail('post-thumbnails', array('class' => 'img-fluid'));?>
                         </a>
-                        <h4><?php the_title(); ?></h4>
-                        <p class="tags"><?php the_tags( '', ' + ', '' ); ?></p>
+                        <h4><?php the_title();?></h4>
+                        <p class="tags"><?php the_tags('', ' + ', '');?></p>
                     </div>
                 </div>
-                <?php endwhile; endif; ?>
-                <?php wp_reset_query(); ?>
+                <?php endwhile;endif;?>
+                <?php wp_reset_query();?>
 
                 <!-- Final -->
                 <div class="card" data-aos="zoom-in-up">
-                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/seta_portfolio.svg"
+                    <img src="<?php bloginfo('template_directory');?>/assets/img/seta_portfolio.svg"
                         class="img-fluid detail-seta" alt="Seta" />
                 </div>
             </div>
@@ -132,4 +132,4 @@
 </section>
 
 
-<?php get_footer(); ?>
+<?php get_footer();?>
