@@ -32,6 +32,10 @@
 </head>
 
 <body class="labomba">
+<!-- Facebook Comments -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v5.0&appId=754568914975996&autoLogAppEvents=1"></script>
+
     <!-- Header -->
     <header <?php if (is_page('contato')) {echo "class='contato'";}?>
         <?php if (is_page('blog')) {echo "class='blog'";}?>

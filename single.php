@@ -36,7 +36,7 @@
                 <div class="comentarios py-5 text-center">
                     <div class="fb-comments"
                         data-href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>"
-                        data-width="1000" data-numposts="5"></div>
+                        data-width="800" data-numposts="5"></div>
                 </div>
             </div>
             <div class="col-md-3 d-none d-md-block">
