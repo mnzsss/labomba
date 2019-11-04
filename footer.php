@@ -76,23 +76,23 @@
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
    <script>
-AOS.init();
+    AOS.init();
    </script>
 
-   <script>
-$(document).ready(function() {
-    $(document).on("click", ".cta", function() {
-        $(this).toggleClass("active");
+  <script>
+    $(document).ready(function() {
+        $(document).on("click", ".cta", function() {
+            $(this).toggleClass("active");
+        });
     });
-});
 
-var loader = document.getElementById("loader");
+    var loader = document.getElementById("loader");
 
-function load() {
-    loader.style.opacity = "0";
-    loader.style.visibility = "hidden";
-}
-setTimeout(load, 3050);
+    function load() {
+        loader.style.opacity = "0";
+        loader.style.visibility = "hidden";
+    }
+    setTimeout(load, 3050);
    </script>
    </body>
 

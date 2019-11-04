@@ -11,7 +11,7 @@
 
 //Functions
 @function rem($pixels) {
-  @return $pixels / 16 + rem;
+  @return $pixels / 16+rem;
 }
 
 // Variaveis
@@ -61,7 +61,7 @@ h4 {
   }
 }
 
-h2 {
+h1 {
   font-family: Made;
   text-transform: uppercase;
   background-color: $vermelho;
@@ -101,28 +101,31 @@ main {
 }
 
 // Breakpoints
-// Celular
-@media (max-width: 575.98px) {
-  main {
-    padding: 2em 0;
-  }
 
-  h3 {
-    font-size: rem(20);
-  }
-
-  h2 {
-    font-size: rem(30);
-  }
-
+// Desktop Big
+@media (min-width: 2000px) {
   #explicacao {
-    background-image: none;
-    padding-bottom: 0em;
+    padding-bottom: 5em;
     padding-top: 0em;
-    margin-top: 3em;
+  }
+}
+
+// iPad Pro
+@media (max-width: 1024px) {
+  #explicacao {
+    background-image: url(../img/cases/toodoo/explicacao.png);
+    background-size: cover;
+    padding-bottom: 2em;
+    margin-top: 4em;
 
     #info {
-      margin: 0;
+      margin: 0 2em;
+      padding-right: 2.5em;
+
+      p {
+        padding: 2em 0;
+        text-align: justify;
+      }
     }
   }
 }
@@ -148,22 +151,28 @@ main {
   }
 }
 
-// iPad Pro
-@media (max-width: 1024px) {
+// Celular
+@media (max-width: 575.98px) {
+  main {
+    padding: 2em 0;
+  }
+
+  h3 {
+    font-size: rem(20);
+  }
+
+  h2 {
+    font-size: rem(30);
+  }
+
   #explicacao {
-    background-image: url(../img/cases/toodoo/explicacao.png);
-    background-size: cover;
-    padding-bottom: 2em;
-    margin-top: 4em;
+    background-image: none;
+    padding-bottom: 0em;
+    padding-top: 0em;
+    margin-top: 3em;
 
     #info {
-      margin: 0 2em;
-      padding-right: 2.5em;
-
-      p {
-        padding: 2em 0;
-        text-align: justify;
-      }
+      margin: 0;
     }
   }
 }

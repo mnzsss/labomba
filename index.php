@@ -1,8 +1,8 @@
 <?php get_header();?>
-<!-- Loader -->
+<!-- Loader
 <div id="loader">
     <img src="<?php bloginfo('template_directory');?>/assets/img/preloader.gif" width="30%" alt="Carregando..." />
-</div>
+</div> -->
 
 <!-- Introdução -->
 <div class="container">
@@ -107,8 +107,11 @@
                     </div>
                 </div>
 
-                <?php query_posts('cat=1');?>
-                <?php if (have_posts()): while (have_posts()): the_post();?>
+                <?php
+$args = array('category_name' => 'case');
+$the_query = new WP_Query($args);
+?>
+                <?php if ($the_query->have_posts()): while ($the_query->have_posts()): $the_query->the_post();?>
                 <div class="card">
                     <div class="case" data-aos="zoom-in-up">
                         <a href="<?php the_permalink();?>">

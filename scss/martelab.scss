@@ -16,7 +16,7 @@
 
 //Functions
 @function rem($pixels) {
-  @return $pixels / 16 + rem;
+  @return $pixels / 16+rem;
 }
 
 // Variaveis
@@ -172,7 +172,7 @@ main {
 
   #mockups {
     #copo {
-      padding: 0 5em;
+      padding: 0 7em;
     }
 
     #cartao {

@@ -1,0 +1,14 @@
+{
+  "name": "labomba",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mnzsss/labomba.git",
+  "author": "Gabriel Menezes <gabrielsmenezes99@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "sass-labomba": "node-sass -w --include-path scss scss/bootstrap.scss assets/css/labomba.min.css --output-style compressed"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0"
+  }
+}

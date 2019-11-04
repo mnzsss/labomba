@@ -4,7 +4,7 @@
   font-style: normal;
   font-weight: normal;
   src: local("Nilland-SmallCaps"),
-    url("../fonts.Nilland-SmallCaps.woff") format("woff");
+    url("../fonts/Nilland-SmallCaps.woff") format("woff");
 }
 
 @font-face {
@@ -17,7 +17,7 @@
 
 //Functions
 @function rem($pixels) {
-  @return $pixels / 16 + rem;
+  @return $pixels / 16+rem;
 }
 
 // Variaveis
@@ -80,6 +80,10 @@ h3 {
     margin: 0 auto;
     max-width: 400px;
   }
+
+  .simplificada {
+    padding: 5em 0;
+  }
 }
 
 #logo-completo {
@@ -105,9 +109,10 @@ h3 {
   p {
     font-size: rem(15.5);
     color: white;
-    padding: 1em;
-    background-color: black;
-    border-radius: 1em;
+  }
+
+  #freezer {
+    padding-top: 2em;
   }
 }
 
@@ -188,7 +193,7 @@ h3 {
 
   #social {
     h2 {
-      font-size: rem(100);
+      font-size: rem(80);
     }
   }
 }

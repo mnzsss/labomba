@@ -1,0 +1,505 @@
+@media (min-width: 2560px) {
+  .labomba {
+    header {
+      &::after {
+        right: 30%;
+      }
+    }
+
+    #portfolio {
+      &::before {
+        right: 70%;
+      }
+    }
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .labomba {
+    h2 {
+      font-size: rem(150);
+      line-height: rem(190);
+      margin-top: 0em;
+
+      &::before {
+        font-size: rem(180);
+      }
+    }
+
+    // Header
+    header {
+      margin-bottom: 7em;
+
+      &::after {
+        right: 5%;
+      }
+
+      .logo-detail {
+        bottom: 10em;
+        left: 9em;
+      }
+    }
+
+    // Portfólio
+    #portfolio {
+      &::before {
+        left: -19em;
+      }
+    }
+
+    // Call to Action
+    #cta {
+      padding: 3em 0;
+
+      h2 {
+        font-size: rem(90);
+        letter-spacing: -20px;
+        line-height: rem(110);
+      }
+    }
+
+    // Rodapé
+    footer {
+      #informacoes-rodape {
+        &::after {
+          right: 1em;
+          bottom: 4em;
+        }
+      }
+    }
+
+    // Explicação
+    #explicacao {
+      padding-top: 2em;
+    }
+
+    // Branding
+    #branding {
+      padding-top: 3em;
+      padding-bottom: 0;
+
+      p {
+        font-size: rem(40);
+      }
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 1025px) {
+  .labomba {
+    h2 {
+      font-size: rem(120);
+      letter-spacing: -20px;
+      margin-top: 0em;
+
+      &::before {
+        font-size: rem(180);
+      }
+    }
+
+    // Header
+    header {
+      margin-bottom: 8em;
+      min-height: 565px;
+
+      &::before {
+        content: none;
+      }
+
+      &::after {
+        right: 0%;
+      }
+
+      .menu {
+        padding-top: 2em;
+      }
+
+      .logo-detail {
+        left: 16em;
+      }
+    }
+
+    // Portfólio
+    #portfolio {
+      padding-top: 3em;
+
+      &::before {
+        left: -20em;
+      }
+
+      .subir {
+        margin-top: -4em;
+      }
+    }
+
+    // Call to Action
+    #cta {
+      padding: 3em 0;
+
+      h2 {
+        font-size: rem(90);
+        letter-spacing: -20px;
+        line-height: rem(110);
+      }
+    }
+
+    // Rodapé
+    footer {
+      h4 {
+        padding-top: 1em;
+        padding-right: 0.5em;
+      }
+
+      #informacoes-rodape {
+        margin: 0 auto;
+        padding-top: 1em;
+
+        &::after {
+          right: 1em;
+          bottom: 6em;
+        }
+      }
+    }
+
+    // Explicação
+    #explicacao {
+      padding-top: 2em;
+    }
+
+    // Branding
+    #branding {
+      padding-top: 3em;
+      padding-bottom: 0;
+
+      p {
+        font-size: rem(30);
+      }
+    }
+  }
+
+  .labomba .contato {
+    &::after {
+      top: 35em;
+    }
+  }
+
+  // Header Blog
+  .labomba .blog {
+    min-height: 410px;
+    padding-bottom: 0;
+
+    h2 {
+      padding-top: 0;
+    }
+
+    .logo-detail {
+      bottom: 8em;
+      left: 9em;
+      max-width: 200px;
+    }
+  }
+
+  .blogPage {
+    margin-top: 9em;
+
+    .destaque {
+      display: flex;
+    }
+  }
+
+  // Header Blog
+  .labomba .category {
+    min-height: 360px;
+    padding-bottom: 0;
+    margin-bottom: 8em;
+
+    h2 {
+      padding-top: 0;
+      font-size: 4em;
+      line-height: normal;
+    }
+
+    p {
+      padding-top: 0;
+    }
+
+    .logo-detail {
+      bottom: 4em;
+      left: 9em;
+      max-width: 200px;
+    }
+  }
+
+  // Single
+  .labomba .single-post {
+    min-height: 490px;
+    margin-bottom: 4em;
+
+    .logo-detail {
+      bottom: 4em;
+      left: 9em;
+      max-width: 200px;
+    }
+
+    h2 {
+      font-size: rem(30);
+      line-height: rem(35);
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  // Single
+  .labomba .single-post {
+    min-height: 490px;
+    margin-bottom: 4em;
+
+    .logo-detail {
+      display: none;
+    }
+
+    h2 {
+      font-size: rem(30);
+      line-height: rem(35);
+      margin-bottom: 0.5em;
+      margin-top: 1em;
+    }
+  }
+
+  // Header Blog
+  .labomba .blog {
+    min-height: 350px;
+    padding-bottom: 0;
+
+    h2 {
+      padding-top: 0;
+    }
+
+    .logo-detail {
+      display: none;
+    }
+  }
+
+  .blogPage {
+    margin-top: 9em;
+
+    .destaque {
+      display: flex;
+    }
+  }
+
+  // Header Blog
+  .labomba .category {
+    min-height: 280px;
+    padding-bottom: 0;
+    margin-bottom: 8em;
+
+    h2 {
+      padding-top: 0;
+      font-size: 4em;
+      line-height: normal;
+    }
+
+    p {
+      padding-top: 3em;
+    }
+
+    .logo-detail {
+      display: none;
+    }
+  }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .blogPage {
+    .destaque {
+      display: none;
+    }
+  }
+
+  .labomba {
+    p {
+      text-indent: 0;
+    }
+
+    #explicacao {
+      p {
+        font-size: rem(16);
+      }
+    }
+
+    h2 {
+      font-size: rem(60);
+      letter-spacing: -10px;
+      line-height: rem(100);
+      padding: 0;
+
+      &::before {
+        font-size: rem(120);
+      }
+    }
+
+    .seta {
+      max-width: 80px;
+      margin: 0 auto;
+      padding: 3em 0;
+    }
+
+    // Header
+    header {
+      margin-bottom: 5em;
+
+      &::before,
+      &::after {
+        content: none;
+      }
+
+      #info {
+        margin-top: 0;
+        margin-left: 0.5em;
+      }
+
+      .menu {
+        text-align: center;
+
+        button {
+          border: none;
+          padding: 0;
+        }
+
+        .active .nav-link {
+          padding: 0.3em 0;
+          font-size: rem(30);
+        }
+      }
+    }
+
+    // Serviços
+    #servicos {
+      padding: 0;
+      text-align: center;
+
+      .servico {
+        padding-bottom: 5em;
+
+        p {
+          margin: 0.3em 0;
+        }
+      }
+    }
+
+    // Portfólio
+    #portfolio {
+      padding-top: 3em;
+
+      &::before {
+        content: none;
+      }
+
+      .subir {
+        margin-top: 0em;
+      }
+    }
+
+    // Branding
+    #branding {
+      padding: 2em 0;
+
+      p {
+        font-size: rem(25);
+      }
+    }
+
+    // Call to Action
+    #cta {
+      padding: 3em 0;
+
+      h2 {
+        font-size: rem(40);
+        letter-spacing: 0px;
+        line-height: rem(40);
+      }
+
+      img {
+        margin-top: 2em;
+        width: 135px;
+      }
+    }
+
+    // Rodapé
+    footer {
+      text-align: center;
+
+      h4 {
+        text-align: center;
+        padding-right: 0em;
+        margin: 0 auto;
+        padding-top: 1em;
+      }
+
+      #informacoes-rodape {
+        padding: 0;
+        margin: 0 auto;
+        padding-right: 2.5em;
+        padding-top: 1em;
+
+        &::after {
+          content: none;
+        }
+
+        li {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // Contato
+  .labomba .contato {
+    padding: 0;
+    max-height: 1300px;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+
+    .subir {
+      margin: 2em 0;
+    }
+  }
+
+  // Header Blog
+  .labomba .blog,
+  .labomba .category {
+    min-height: max-content;
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    h2 {
+      padding-top: 0;
+    }
+
+    .logo-detail {
+      bottom: -2em;
+      left: 1em;
+    }
+  }
+
+  // Single
+  .labomba .single-post {
+    min-height: 540px;
+    margin-bottom: 4em;
+
+    h2 {
+      font-size: rem(30);
+      line-height: rem(35);
+      margin-bottom: 0.5em;
+      margin-top: 1em;
+    }
+  }
+}

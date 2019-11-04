@@ -58,28 +58,6 @@ h1 {
 }
 
 // Breakpoints
-// Mobile
-@media (max-width: 575.98px) {
-  h1 {
-    font-size: rem(35);
-  }
-
-  #embalagens {
-    padding: 6em 0;
-    background-size: 38em;
-    background-position: -9em 2em;
-
-    #pao-de-queijo {
-      padding-top: 0;
-
-      img {
-        padding-right: 0;
-        padding-top: 3em;
-      }
-    }
-  }
-}
-
 // Tablets
 @media (max-width: 768px) {
   h1 {
@@ -96,6 +74,33 @@ h1 {
       img {
         padding-right: 0;
         padding-top: 3em;
+      }
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: rem(35);
+  }
+
+  #embalagens {
+    padding: 3em 0;
+    background-size: 38em;
+    background-position: -9em 2em;
+
+    img {
+      max-width: 250px;
+      padding-bottom: 2em;
+    }
+
+    #pao-de-queijo {
+      padding-top: 0;
+
+      img {
+        padding-right: 0;
+        padding-top: 2em;
       }
     }
   }

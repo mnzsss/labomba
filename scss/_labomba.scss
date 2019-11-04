@@ -10,6 +10,11 @@
   @return $pixels / 16 + rem;
 }
 
+// Variaveis
+$rosa: #e50051;
+$amarelo: #e7e000;
+$cinza: #9d9d9c;
+
 html {
   scroll-behavior: smooth;
   max-width: 100%;
@@ -17,13 +22,662 @@ html {
 }
 
 body {
+  font-family: "OCR A Std";
   max-width: 100%;
   overflow-x: hidden;
   font-size: 16px;
 }
 
+// Preloader
+#loader {
+  height: 100vh;
+  width: 100vw;
+  background-color: #000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  transition: all 0.6s;
+
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 a {
+  color: white;
+  transition: all 0.5s ease;
+
   &:hover {
     text-decoration: none;
+    color: $amarelo;
+  }
+}
+
+// Menu Mobile
+.cta {
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+
+.toggle-btn {
+  height: 3px;
+  width: 30px;
+  background-color: $amarelo;
+  position: relative;
+  top: 50%;
+  left: 0;
+  margin: auto;
+  transition: all 0.3s ease-in-out;
+
+  &:before {
+    content: "";
+    height: 3px;
+    width: 30px;
+    box-shadow: 0 -10px 0 0 $amarelo;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:after {
+    content: "";
+    height: 3px;
+    width: 30px;
+    box-shadow: 0 10px 0 0 $amarelo;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.type17 {
+  &:before {
+    width: 17px;
+  }
+
+  &:after {
+    width: 17px;
+    box-shadow: 13px 10px 0 0 $amarelo;
+  }
+}
+
+.active {
+  .toggle-btn {
+    background-color: transparent;
+    transition: all 0.2s ease-in-out;
+
+    &:before {
+      top: 0;
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:after {
+      top: 0;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .type17 {
+    transform: rotate(45deg);
+    background-color: $amarelo;
+    transition: all 0.3s ease-in-out;
+
+    &:before {
+      transform: translate(-4px, -6px) rotate(90deg);
+    }
+
+    &:after {
+      transform: translate(16px, -7px) rotate(90deg);
+    }
+  }
+}
+
+// Principal
+.labomba {
+  .active {
+    color: $amarelo;
+  }
+
+  .custom-logo {
+    max-width: 80%;
+    height: auto;
+
+    &-link {
+      max-width: 240px;
+    }
+  }
+
+  .link {
+    background-color: black;
+    color: $amarelo;
+    text-transform: capitalize;
+    padding: 0.3em 0.7em;
+    border: none;
+
+    &:hover {
+      color: $rosa;
+    }
+
+    &::after {
+      content: ",";
+    }
+  }
+
+  h2 {
+    color: $rosa;
+    text-transform: lowercase;
+    font-size: rem(140);
+    letter-spacing: -30px;
+    padding-top: 0.5em;
+  }
+
+  h1,
+  h3 {
+    color: $amarelo;
+    font-size: rem(23);
+  }
+
+  h4 {
+    font-size: rem(18);
+  }
+
+  p {
+    font-size: rem(14);
+  }
+
+  .seta {
+    transition: all 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  // Informações
+  #infos {
+    padding-top: 3em;
+    text-align: right;
+    display: inline-flex;
+
+    .social {
+      list-style: none;
+
+      a i {
+        color: $amarelo;
+        font-size: rem(30);
+        padding-bottom: 0.5em;
+        transition: all 0.5s ease;
+
+        &:hover {
+          color: $rosa;
+        }
+      }
+    }
+  }
+
+  // Header
+  header {
+    background-color: black;
+    color: white;
+    height: 100%;
+    margin-bottom: 14em;
+    padding-bottom: 2em;
+    min-height: 600px;
+
+    &::before {
+      content: "/";
+      position: absolute;
+      color: $amarelo;
+      left: -0.2em;
+      top: -0.35em;
+      font-size: rem(280);
+    }
+
+    &::after {
+      content: url(../img/detail_header.png);
+      position: absolute;
+      right: 10%;
+      z-index: -1;
+      margin-top: -7em;
+    }
+
+    .logo-detail {
+      position: absolute;
+      bottom: 5em;
+      left: 2em;
+    }
+
+    .detail {
+      height: 250px;
+      position: relative;
+      bottom: 3em;
+
+      &-header {
+        position: relative;
+        right: 6em;
+        top: -3.4em;
+      }
+    }
+
+    #info {
+      margin-top: -2em;
+      margin-left: 1em;
+    }
+
+    .menu {
+      padding-top: 6em;
+
+      .active {
+        .nav-link {
+          padding: 0 1em;
+
+          &:hover {
+            color: $rosa;
+          }
+        }
+      }
+    }
+  }
+
+  // Serviços
+  #servicos {
+    padding: 2em 0;
+
+    .servico {
+      img {
+        max-height: 120px;
+        margin: 1em 0;
+      }
+
+      p {
+        color: $cinza;
+        max-width: 330px;
+        min-height: 130px;
+        margin: 1em 0;
+      }
+    }
+  }
+
+  // Portfólio
+  #portfolio {
+    padding-top: 8em;
+
+    &::before {
+      content: url(../img/portfolio_detail.svg);
+      position: absolute;
+      right: 85%;
+    }
+
+    p {
+      text-indent: 0em;
+      color: $cinza;
+    }
+
+    .chamada {
+      font-size: rem(18);
+    }
+
+    span {
+      color: black;
+      background-color: $amarelo;
+      padding: 0.2em 0.5em;
+      text-transform: uppercase;
+    }
+
+    .case {
+      text-align: center;
+      padding: 1em 0;
+
+      img {
+        padding: 2em 1em;
+      }
+    }
+
+    .subir {
+      margin-top: -6em;
+    }
+
+    .detail-seta {
+      padding-top: 2.7em;
+      padding-left: 2em;
+    }
+
+    .tags {
+      a {
+        color: $cinza;
+      }
+    }
+  }
+
+  // Call to Action
+  #cta {
+    padding: 5em 0;
+    color: white;
+
+    h2 {
+      font-size: rem(130);
+      letter-spacing: -20px;
+      line-height: rem(125);
+      padding-top: 0;
+
+      &::before {
+        left: -0.85em;
+        top: 0em;
+      }
+    }
+
+    p {
+      text-indent: 0;
+      padding-top: 0.5em;
+      max-width: 750px;
+    }
+
+    img {
+      max-width: 160px;
+      padding-top: 0.8em;
+    }
+  }
+
+  // Footer
+  footer {
+    padding: 5em 0;
+
+    p {
+      color: $cinza;
+      text-indent: 0;
+      font-size: rem(15);
+    }
+
+    #informacoes-rodape {
+      list-style: none;
+      display: inline-flex;
+      text-align: left;
+
+      li {
+        height: 100%;
+
+        h4 {
+          font-size: rem(16);
+          margin-top: 0.35em;
+          padding-right: 0.3em;
+        }
+
+        i {
+          padding: 0 0.5em;
+          color: $amarelo;
+          font-size: rem(30);
+          transition: all 0.5s ease;
+
+          &:hover {
+            color: $rosa;
+          }
+        }
+      }
+    }
+  }
+
+  // Explicação
+  #explicacao {
+    color: $cinza;
+
+    p {
+      font-size: rem(17.8);
+    }
+
+    span {
+      font-size: rem(12);
+    }
+
+    #ilustracao {
+      display: inline-flex;
+    }
+  }
+
+  // Branding
+  #branding {
+    padding: 1em 0;
+
+    p {
+      color: $cinza;
+      font-size: rem(35);
+
+      span {
+        color: black;
+        background-color: $amarelo;
+      }
+    }
+  }
+}
+
+// Header Contato
+.labomba .contato {
+  max-height: 950px;
+
+  &::after {
+    content: url(../img/detail_header.png);
+    position: absolute;
+    right: 10em;
+    z-index: -1;
+    top: 63em;
+  }
+
+  p {
+    text-indent: 0;
+  }
+
+  span {
+    color: $rosa;
+  }
+
+  .subir {
+    margin-top: 5em;
+  }
+
+  form {
+    input,
+    textarea {
+      background-color: transparent;
+      border-radius: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 1px solid white;
+      margin-bottom: 1em;
+      color: white;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+}
+
+// Header Blog
+.labomba .blog {
+  min-height: 355px;
+  padding-bottom: 0;
+
+  h2 {
+    padding-top: 0;
+  }
+
+  .logo-detail {
+    bottom: -2em;
+    left: 1em;
+  }
+}
+
+// Header Category
+.labomba .category {
+  @extend .blog;
+  min-height: 350px;
+  margin-bottom: 8em;
+
+  p {
+    margin: 0;
+    padding-top: 3em;
+  }
+
+  h2 {
+    font-size: rem(40);
+    letter-spacing: normal;
+  }
+}
+
+// Blog
+.post {
+  margin-top: 3em;
+  h4 {
+    color: $rosa;
+    font-size: rem(16);
+    margin-top: 1em;
+  }
+
+  a {
+    &:hover {
+      opacity: 0.7;
+      color: $amarelo;
+    }
+  }
+}
+
+.blogPage {
+  .destaque {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 17px;
+    height: 400px;
+
+    .post {
+      display: flex;
+      align-items: end;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      margin-top: 0;
+
+      .info {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 2em 1em;
+
+        h4 {
+          color: $amarelo;
+          margin: 0;
+          padding-bottom: 1em;
+        }
+
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+// Single
+.labomba .single-post {
+  min-height: 540px;
+  margin-bottom: 9em;
+
+  h2 {
+    font-size: rem(40);
+    letter-spacing: normal;
+    margin-bottom: 1em;
+  }
+
+  #info {
+    margin-left: 0;
+  }
+}
+
+#blog-text {
+  a {
+    color: $cinza;
+
+    &:hover {
+      color: $rosa;
+      opacity: 0.7;
+    }
+  }
+
+  h3 {
+    color: $rosa;
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+
+  .conteudo {
+    margin-top: 3em;
+  }
+}
+
+// Sidebar
+aside {
+  margin-top: 3em;
+
+  .busca input[type="search"] {
+    background: url(https://static.tumblr.com/ftv85bp/MIXmud4tx/search-icon.png)
+      no-repeat 9px center;
+    border: none;
+    border-bottom: solid 2px $cinza;
+    padding: 9px 2em 9px 2.4em;
+    transition: all 0.5s;
+    text-transform: lowercase;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .sidebar {
+    margin-top: 2em;
+    width: 100%;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 1em;
+
+      li {
+        margin-bottom: 0.5em;
+
+        a {
+          color: $cinza;
+        }
+      }
+    }
+
+    h5 {
+      color: $rosa;
+      padding-bottom: 0.5em;
+      border-bottom: 2px solid $rosa;
+    }
+
+    iframe {
+      max-width: 100%;
+    }
+  }
+}
+
+// Menu interno
+.menu-fixo {
+  p {
+    color: white;
+    font-family: "OCR A Std";
+    padding-top: 0.7em;
+  }
+
+  a {
+    color: $amarelo;
+
+    &:hover {
+      color: $rosa;
+    }
   }
 }

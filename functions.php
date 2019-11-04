@@ -3,6 +3,8 @@
 // Chamar a tag Title e adicionar os formatos de posts
 function labomba_theme_support()
 {
+    // Definir as miniaturas dos posts
+    add_theme_support('post-thumbnails');
 
     // Chamar a tag Title
     add_theme_support('title-tag');
@@ -23,52 +25,27 @@ if (!function_exists('_wp_render_title_tag')) {
     add_action('wp_head', 'labomba_render_title');
 }
 
-// Definir as miniaturas dos posts
-add_theme_support('post-thumbnails');
-
 // Definir o tamanho o resumo
 add_filter('excerpt_length', function ($length) {
     return 25;
 });
 
-// Vizualizações do Post
-function getPostViews($postID)
-{
-    $count_key = '_post_views_count';
-    $count = get_post_meta($postID, $count_key, true);
-    if ($count == '') {
-        delete_post_meta($postID, $count_key);
-        add_post_meta($postID, $count_key, '0');
-        return "0";
-    }
-    return $count . '';
-}
-function setPostViews($postID)
-{
-    $count_key = '_post_views_count';
-    $count = get_post_meta($postID, $count_key, true);
-    if ($count == '') {
-        $count = 0;
-        delete_post_meta($postID, $count_key);
-        add_post_meta($postID, $count_key, '0');
-    } else {
-        $count++;
-        update_post_meta($postID, $count_key, $count);
-    }
-}
+// Formulário de Busca
+register_sidebar($args = array(
+    'name' => __('Busca', 'busca'),
+    'id' => 'busca',
+    'before_widget' => '<div class="busca">',
+    'after_widget' => '</div>',
+    'before_title' => '<h2>',
+    'after_title' => '</h2>',
+));
 
-// Disqus
-function disqus_embed($disqus_shortname)
-{
-    global $post;
-
-    wp_enqueue_script('disqus_embed', 'http://' . $disqus_shortname . '.disqus.com/embed.js');
-
-    echo '<div id="disqus_thread"></div>
-        <script type="text/javascript">
-            var disqus_shortname = "' . $disqus_shortname . '";
-            var disqus_title = "' . $post->post_title . '";
-            var disqus_url = "' . get_permalink($post->ID) . '";
-            var disqus_identifier = "' . $disqus_shortname . '-' . $post->ID . '";
-        </script>';
-}
+// Sidebar Widgets
+register_sidebar($args = array(
+    'name' => __('Sidebar', 'sidebar'),
+    'id' => 'sidebar',
+    'before_widget' => '<div class="sidebar">',
+    'after_widget' => '</div>',
+    'before_title' => '<h5>',
+    'after_title' => '</h5>',
+));

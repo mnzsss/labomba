@@ -4,13 +4,13 @@
 <head>
     <!-- Required meta tags -->
     <meta <?php bloginfo('charset');?>>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <meta name="theme-color" content="#ffffff" />
+    <meta name="theme-color" content="#000" />
+    <meta name="msapplication-TileColor" content="#000" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/normalize.min.css" />
     <link rel="stylesheet" href="<?php bloginfo('template_directory');?>/assets/css/labomba.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -28,55 +28,14 @@
     gtag("config", "UA-129826334-1");
     </script>
 
-    <!-- Facebook Pixel Code -->
-    <script>
-    !(function(f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function() {
-            n.callMethod ?
-                n.callMethod.apply(n, arguments) :
-                n.queue.push(arguments);
-        };
-
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-
-        s.parentNode.insertBefore(t, s);
-    })(
-        window,
-        document,
-        "script",
-
-        "https://connect.facebook.net/en_US/fbevents.js"
-    );
-
-    fbq("init", "438763636979719");
-
-    fbq("track", "PageView");
-    </script>
-
-    <noscript><img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=438763636979719&ev=PageView&noscript=1" /></noscript>
-    <!-- End Facebook Pixel Code -->
-
     <?php wp_head();?>
 </head>
 
 <body class="labomba">
     <!-- Header -->
-    <header <?php
-if (is_page('contato')) {
-    echo "class='contato'";
-}?>>
+    <header <?php if (is_page('contato')) {echo "class='contato'";}?>
+        <?php if (is_page('blog')) {echo "class='blog'";}?>
+        <?php if (is_single()) {echo "class='single-post'";}?><?php if (is_category() or is_search()) {echo "class='category'";}?>>
         <div class="container">
             <!-- Menu -->
             <div class="row">

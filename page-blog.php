@@ -16,48 +16,61 @@
             <img src="<?php bloginfo('template_directory');?>/assets/img/labomba_logo_detail.svg" alt="Estúdio La.Bomba"
                 class="img-fluid logo-detail" />
         </div>
-        <div class="col-md-8 col-sm-12" id="info">
-            <p class="pt-3">
-                <?php the_content();?>
-            </p>
-        </div>
-        <div class="col-md-3 seta text-center flutuar">
-            <a href="#blog-postagens">
-                <img src="<?php bloginfo('template_directory');?>/assets/img/seta.svg" alt="Viage!"
-                    class="img-fluid" /></a>
-        </div>
     </div>
 </div>
 </header>
 
-<!-- Postagens -->
-<section id="blog-postagens">
-    <div class="container">
-        <div class="row">
-            <?php query_posts('cat=2');?>
-            <?php if (have_posts()): while (have_posts()): the_post();?>
-            <div class="col-md-4 col-12">
-                <div class="post" data-aos="zoom-in-up">
-                    <a href="<?php the_permalink();?>">
-                        <?php the_post_thumbnail('post-thumbnails', array('class' => 'img-fluid'));?>
-                    </a>
-                    <a href="<?php the_permalink();?>">
-                        <h4><?php the_title();?></h4>
-                    </a>
-                    <p><?php the_excerpt();?></p>
-                    <span><i class="fas fa-eye"></i> <?php echo getPostViews(get_the_ID()); ?> </span> |
-                    <time datetime="<?php the_time('c');?>">
-                        <i class="far fa-calendar-alt"></i> <?php the_time('d/m/Y');?>
-                    </time>
-                </div>
-            </div>
-            <?php endwhile;endif;?>
-            <?php wp_reset_query();?>
-        </div>
-    </div>
-</section>
-
 <?php endwhile;endif;?>
 <?php wp_reset_query();?>
+
+<div class="blogPage">
+    <!-- Destaques -->
+    <section class="destaque">
+        <?php $args = array('category_name' => 'blog', 'showposts' => 3);
+$the_query = new WP_Query($args);?>
+        <?php if ($the_query->have_posts()): while ($the_query->have_posts()): $the_query->the_post();?>
+        <div class="post" style="background-image: url(<?php the_post_thumbnail_url()?>)">
+            <div class="info">
+                <h4><?php the_title();?></h4>
+                <a href="<?php the_permalink();?>"> leia mais</a>
+            </div>
+        </div>
+        <?php endwhile;endif;?>
+        <?php wp_reset_query();?>
+    </section>
+
+    <!-- Postagens -->
+    <section id="blog-postagens">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9 col-12">
+                    <div class="row">
+                        <?php $args = array('category_name' => 'blog');
+$the_query = new WP_Query($args);?>
+                        <?php if ($the_query->have_posts()): while ($the_query->have_posts()): $the_query->the_post();?>
+                        <div class="col-md-4 col-12">
+                            <div class="post">
+                                <a href="<?php the_permalink();?>">
+                                    <?php the_post_thumbnail('post-thumbnails', array('class' => 'img-fluid'));?>
+                                </a>
+                                <a href="<?php the_permalink();?>">
+                                    <h4><?php the_title();?></h4>
+                                </a>
+                                <p><?php the_excerpt();?></p>
+                            </div>
+                        </div>
+                        <?php endwhile;endif;?>
+                        <?php wp_reset_query();?>
+                    </div>
+                </div>
+                <div class="col-md-3 d-none d-md-block">
+                    <?php get_sidebar();?>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+
 
 <?php get_footer();?>

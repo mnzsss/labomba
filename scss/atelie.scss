@@ -21,7 +21,8 @@ p {
   font-family: "Courier";
 }
 
-h2 {
+h2,
+h1 {
   font-family: "Track Regular";
   font-size: rem(50);
 }
@@ -83,7 +84,7 @@ h3 {
   padding-bottom: 3em;
 
   #construcao {
-    padding: 20em 0;
+    padding: 10em 0;
   }
 
   .grafismo {
@@ -107,7 +108,8 @@ h3 {
       padding-bottom: 1em;
     }
 
-    h2 {
+    h2,
+    h1 {
       color: $vermelho;
       padding: 0.8em 0;
     }

@@ -6,11 +6,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 0; // See https://github.com/twbs/bootstrap/pull/22740#issuecomment-305868106
+  min-width: 0;
   word-wrap: break-word;
-  background-color: $card-bg;
   background-clip: border-box;
-  border: $card-border-width solid $card-border-color;
   @include border-radius($card-border-radius);
 
   > hr {
@@ -74,7 +72,9 @@
   border-bottom: $card-border-width solid $card-border-color;
 
   &:first-child {
-    @include border-radius($card-inner-border-radius $card-inner-border-radius 0 0);
+    @include border-radius(
+      $card-inner-border-radius $card-inner-border-radius 0 0
+    );
   }
 
   + .list-group {
@@ -90,10 +90,11 @@
   border-top: $card-border-width solid $card-border-color;
 
   &:last-child {
-    @include border-radius(0 0 $card-inner-border-radius $card-inner-border-radius);
+    @include border-radius(
+      0 0 $card-inner-border-radius $card-inner-border-radius
+    );
   }
 }
-
 
 //
 // Header navs
@@ -137,7 +138,6 @@
   @include border-bottom-radius($card-inner-border-radius);
 }
 
-
 // Card deck
 
 .card-deck {
@@ -164,7 +164,6 @@
     }
   }
 }
-
 
 //
 // Card groups
@@ -230,29 +229,24 @@
   }
 }
 
-
 //
 // Columns
 //
 
 .card-columns {
-  .card {
-    margin-bottom: $card-columns-margin;
-  }
-
   @include media-breakpoint-up(sm) {
     column-count: $card-columns-count;
     column-gap: $card-columns-gap;
+    padding: 0 7em;
     orphans: 1;
     widows: 1;
 
     .card {
-      display: inline-block; // Don't let them vertically span multiple columns
-      width: 100%; // Don't let their width change
+      display: inline-block;
+      width: 100%;
     }
   }
 }
-
 
 //
 // Accordion

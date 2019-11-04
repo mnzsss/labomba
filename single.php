@@ -19,21 +19,29 @@
             <a href="/blog">&larr; Voltar</a>
         </div>
         <div class="col-md-3 seta text-center flutuar">
-            <a href="#blog-text">
-                <img src="<?php bloginfo('template_directory');?>/assets/img/seta.svg" alt="Viage!"
-                    class="img-fluid" /></a>
+            <a href="#text">
+                <img src="<?php bloginfo('template_directory');?>/assets/img/seta.svg" alt="Viage!" class="img-fluid" />
+            </a>
         </div>
     </div>
 </div>
 </header>
 
 <section id="blog-text">
-    <div class="container">
-        <div class="col-12">
-            <?php the_content();?>
-        </div>
-        <div class="col-12 comentarios">
-            <?php disqus_embed('estudio-la-bomba');?>
+    <div class="container" id="text">
+        <div class="row">
+            <div class="col-md-9 col-12 conteudo">
+                <?php the_content();?>
+
+                <div class="comentarios py-5 text-center">
+                    <div class="fb-comments"
+                        data-href="<?php echo 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>"
+                        data-width="1000" data-numposts="5"></div>
+                </div>
+            </div>
+            <div class="col-md-3 d-none d-md-block">
+                <?php get_sidebar();?>
+            </div>
         </div>
     </div>
 </section>
