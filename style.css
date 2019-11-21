@@ -4,3 +4,11 @@ Theme URI: http://estudiolabomba.com
 Version: 1.0
 Text Domain: la-bomba
 Tags: labomba, estudio la bomba, branding, embalagem, ilustracao
+*/
+
+/* Comentários Facebook */
+.fb-comments,
+.fb-comments span,
+.fb-comments.fb_iframe_widget span iframe {
+  width: 100% !important;
+}

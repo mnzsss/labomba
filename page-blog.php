@@ -24,6 +24,12 @@
 <?php wp_reset_query();?>
 
 <div class="blogPage">
+
+    <div class="busca-mobile">
+        <!-- Busca -->
+        <?php dynamic_sidebar('busca');?>
+    </div>
+
     <!-- Destaques -->
     <section class="destaque">
         <?php $args = array('category_name' => 'blog', 'showposts' => 3);

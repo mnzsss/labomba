@@ -67,7 +67,7 @@ $the_query = new WP_Query($search_query);
 
 <div class="container">
     <div class="row">
-        <div class="col-md-9 col-12">
+        <div class="col-md-9 col-12 error-search">
             <h5>Não há resultados para essa busca.</h5>
         </div>
         <div class="col-md-3 d-none d-md-block">

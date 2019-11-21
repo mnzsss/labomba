@@ -31,7 +31,7 @@
                    <h4><i class="fas fa-map-marker-alt pr-2"></i>Santo André</h4>
                    <p>Avenida Itamarati, 878 - Santo André / SP</p>
                </div>
-               <div class="col-md-7 col-sm-12 text-right">
+               <div class="col-md-7 col-sm-12 infos">
                    <h4 class="d-block d-lg-none">+55 11 2896 5199</h4>
                    <ul id="informacoes-rodape">
                        <li class="d-none d-lg-block">
