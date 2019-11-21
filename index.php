@@ -1,8 +1,8 @@
 <?php get_header();?>
-<!-- Loader
+<!-- Loader -->
 <div id="loader">
     <img src="<?php bloginfo('template_directory');?>/assets/img/preloader.gif" width="30%" alt="Carregando..." />
-</div> -->
+</div>
 
 <!-- Introdução -->
 <div class="container">
