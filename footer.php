@@ -11,7 +11,7 @@
                </div>
                <div class="col-md-3 col-sm-12 text-center">
                    <a href="https://briefing.estudiolabomba.com/" target="blank">
-                       <img src="<?php bloginfo('template_directory');?>/assets/img/labomba_logo_bomba.svg"
+                       <img src="<?php bloginfo('template_directory'); ?>/assets/img/labomba_logo_bomba.svg"
                            class="img-fluid mb-4" alt="Estúdio LaBomba" />
                    </a>
                    <p>clique na bomba para um projeto</p>
@@ -68,7 +68,7 @@
        </div>
    </footer>
 
-   <?php wp_footer();?>
+   <?php wp_footer(); ?>
    <!-- Scripts -->
    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -76,23 +76,34 @@
    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
    <script>
-    AOS.init();
+AOS.init();
    </script>
 
-  <script>
-    $(document).ready(function() {
-        $(document).on("click", ".cta", function() {
-            $(this).toggleClass("active");
-        });
+   <script>
+$(document).ready(function() {
+    $(document).on("click", ".cta", function() {
+        $(this).toggleClass("active");
     });
+});
 
-    var loader = document.getElementById("loader");
+var loader = document.getElementById("loader");
 
-    function load() {
-        loader.style.opacity = "0";
-        loader.style.visibility = "hidden";
-    }
-    setTimeout(load, 3050);
+function load() {
+    loader.style.opacity = "0";
+    loader.style.visibility = "hidden";
+}
+setTimeout(load, 3050);
+   </script>
+
+   <script async>
+(function(w, d) {
+    w.CollectId = "5be458bd692c6d16f43c698f";
+    var h = d.head || d.getElementsByTagName("head")[0];
+    var s = d.createElement("script");
+    s.setAttribute("type", "text/javascript");
+    s.setAttribute("src", "https://collectcdn.com/launcher.js");
+    h.appendChild(s);
+})(window, document);
    </script>
    </body>
 
