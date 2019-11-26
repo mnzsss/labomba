@@ -1,8 +1,10 @@
 <?php get_header();?>
 <!-- Loader -->
+<?php if (!wp_is_mobile()) {?>
 <div id="loader">
     <img src="<?php bloginfo('template_directory');?>/assets/img/preloader.gif" width="30%" alt="Carregando..." />
 </div>
+<?php }?>
 
 <!-- Introdução -->
 <div class="container">
