@@ -6,18 +6,6 @@
 
 <?php if (have_posts()): while (have_posts()): the_post();?>
 
-<!-- Introdução -->
-<div class="container">
-    <div class="row">
-        <div class="col-7">
-            <h2><?php the_title();?></h2>
-        </div>
-        <div class="col-4 d-none d-md-block">
-            <img src="<?php bloginfo('template_directory');?>/assets/img/labomba_logo_detail.svg" alt="Estúdio La.Bomba"
-                class="img-fluid logo-detail" />
-        </div>
-    </div>
-</div>
 </header>
 
 <?php endwhile;endif;?>

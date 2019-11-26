@@ -187,9 +187,6 @@
 
   // Header Blog
   .labomba .blog {
-    min-height: 410px;
-    padding-bottom: 0;
-
     h2 {
       padding-top: 0;
     }
@@ -271,9 +268,6 @@
 
   // Header Blog
   .labomba .blog {
-    min-height: 350px;
-    padding-bottom: 0;
-
     h2 {
       padding-top: 0;
     }
@@ -503,7 +497,7 @@
   .labomba .blog,
   .labomba .category {
     min-height: max-content;
-    padding-bottom: 0;
+    padding-bottom: 1em;
     margin-bottom: 0;
 
     h2 {
