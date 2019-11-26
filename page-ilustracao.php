@@ -48,12 +48,22 @@
 	<div class="container" id="explicacao">
 	    <div class="row">
 	        <div class="col-12 py-5" id="ilustracao">
-	            <img src="<?php bloginfo('template_directory');?>/assets/img/ilustras/sketch.png" alt="Sketch"
-	                class="img-fluid" />
-	            <img src="<?php bloginfo('template_directory');?>/assets/img/ilustras/nankin.png" alt="Nankin"
-	                class="img-fluid" />
-	            <img src="<?php bloginfo('template_directory');?>/assets/img/ilustras/finalizado.png" alt="Finalizado"
-	                class="img-fluid" />
+	            <div class="row">
+	                <div class="col">
+	                    <img src="<?php bloginfo('template_directory');?>/assets/img/ilustras/sketch.png" alt="Sketch"
+	                        class="img-fluid" />
+	                </div>
+
+	                <div class="col">
+	                    <img src="<?php bloginfo('template_directory');?>/assets/img/ilustras/nankin.png" alt="Nankin"
+	                        class="img-fluid" />
+	                </div>
+
+	                <div class="col">
+	                    <img src="<?php bloginfo('template_directory');?>/assets/img/ilustras/finalizado.png"
+	                        alt="Finalizado" class="img-fluid" />
+	                </div>
+	            </div>
 	        </div>
 	        <div class="col-12">
 	            <p>
