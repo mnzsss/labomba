@@ -716,6 +716,12 @@ aside {
       li {
         margin-bottom: 0.5em;
 
+        &:before {
+          content: "\2022";
+          margin: 0 10px;
+          color: #e50051;
+        }
+
         a {
           color: $cinza;
 
