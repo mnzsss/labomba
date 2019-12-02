@@ -42,7 +42,7 @@
 </section>
 
 <!-- Explicação -->
-<section id="explicacao">
+<section id="explicacao" class="pb-5">
     <div class="container">
         <div class="row">
             <div class="col-12 py-5">
@@ -113,16 +113,16 @@
         "tag" => ["branding", "Identidade Visual"],
     ));?>
                 <?php while ($query->have_posts()): $query->the_post();?>
-	                <div class="card">
-	                    <div class="case" data-aos="zoom-in-up">
-	                        <a href="<?php the_permalink();?>">
-	                            <?php the_post_thumbnail('post-thumbnails', array('class' => 'img-fluid'));?>
-	                        </a>
-	                        <h4><?php the_title();?></h4>
-	                        <p class="tags"><?php the_tags('', ' + ', '');?></p>
-	                    </div>
-	                </div>
-	                <?php endwhile;?>
+		                <div class="card">
+		                    <div class="case" data-aos="zoom-in-up">
+		                        <a href="<?php the_permalink();?>">
+		                            <?php the_post_thumbnail('post-thumbnails', array('class' => 'img-fluid'));?>
+		                        </a>
+		                        <h4><?php the_title();?></h4>
+		                        <p class="tags"><?php the_tags('', ' + ', '');?></p>
+		                    </div>
+		                </div>
+		                <?php endwhile;?>
                 <?php wp_reset_query();?>
 
                 Final
