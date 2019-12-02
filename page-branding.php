@@ -90,7 +90,7 @@
 <?php wp_reset_query();?>
 
 <!-- Portfólio -->
-<section id="portfolio">
+<!-- <section id="portfolio">
     <div class="container">
         <div class="row">
             <div class="card-columns">
@@ -113,19 +113,19 @@
         "tag" => ["branding", "Identidade Visual"],
     ));?>
                 <?php while ($query->have_posts()): $query->the_post();?>
-                <div class="card">
-                    <div class="case" data-aos="zoom-in-up">
-                        <a href="<?php the_permalink();?>">
-                            <?php the_post_thumbnail('post-thumbnails', array('class' => 'img-fluid'));?>
-                        </a>
-                        <h4><?php the_title();?></h4>
-                        <p class="tags"><?php the_tags('', ' + ', '');?></p>
-                    </div>
-                </div>
-                <?php endwhile;?>
+	                <div class="card">
+	                    <div class="case" data-aos="zoom-in-up">
+	                        <a href="<?php the_permalink();?>">
+	                            <?php the_post_thumbnail('post-thumbnails', array('class' => 'img-fluid'));?>
+	                        </a>
+	                        <h4><?php the_title();?></h4>
+	                        <p class="tags"><?php the_tags('', ' + ', '');?></p>
+	                    </div>
+	                </div>
+	                <?php endwhile;?>
                 <?php wp_reset_query();?>
 
-                <!-- Final -->
+                Final
                 <div class="card" data-aos="zoom-in-up">
                     <img src="<?php bloginfo('template_directory');?>/assets/img/seta_portfolio.svg"
                         class="img-fluid detail-seta" alt="Seta" />
@@ -133,7 +133,7 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
 
 
