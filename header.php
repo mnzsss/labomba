@@ -28,6 +28,9 @@
     gtag("config", "UA-129826334-1");
     </script>
 
+    <!-- AdSense -->
+    <script data-ad-client="ca-pub-8577584183802367" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
     <?php wp_head();?>
 </head>
 
