@@ -2,20 +2,17 @@
    <section class="bg-dark" id="cta">
        <div class="container">
            <div class="row">
-               <div class="col-md-9 col-sm-12">
+               <div class="col-md-6 col-sm-12 text">
                    <h2>vamos bater um papo ?</h2>
+
+                   <?php the_custom_logo();?>
+
                    <p>
                        É muito fácil começar a criar um novo universo para sua marca, o
-                       primeiro passo é a gente se conhecer melhor. Vamos lá?
+                       primeiro passo é a gente se conhecer melhor.
                    </p>
-               </div>
-               <div class="col-md-3 col-sm-12 text-center">
-                   <a href="https://briefing.estudiolabomba.com/" target="blank">
-                       <img src="<?php bloginfo('template_directory'); ?>/assets/img/labomba_logo_bomba.svg"
-                           class="img-fluid mb-4" alt="Estúdio LaBomba" />
-                   </a>
-                   <p>clique na bomba para um projeto</p>
-                   <a href="https://briefing.estudiolabomba.com/" target="blank" class="link">Foda</a>
+
+                   <a href="https://briefing.estudiolabomba.com/" class="btn btn-rosa" target="blank">quero evoluir agora</a>
                </div>
            </div>
        </div>
@@ -27,15 +24,15 @@
        <div class="container">
            <div class="row align-items-end">
                <div class="col-md-5 col-sm-12">
-                   <h4>Onde nos encontrar ?</h4>
-                   <h4><i class="fas fa-map-marker-alt pr-2"></i>Santo André</h4>
+                   <p>Onde nos encontrar ?</p>
+                   <p><i class="fas fa-map-marker-alt pr-2"></i>Santo André</p>
                    <p>Avenida Itamarati, 878 - Santo André / SP</p>
                </div>
                <div class="col-md-7 col-sm-12 infos">
-                   <h4 class="d-block d-lg-none">+55 11 2896 5199</h4>
+                   <p class="d-block d-lg-none">+55 11 2896 5199</p>
                    <ul id="informacoes-rodape">
                        <li class="d-none d-lg-block">
-                           <h4>+55 11 2896 5199</h4>
+                           <p>+55 11 2896 5199</p>
                        </li>
                        <li>
                            <a href="https://www.instagram.com/estudio.labomba/" target="blank">
@@ -68,7 +65,7 @@
        </div>
    </footer>
 
-   <?php wp_footer(); ?>
+   <?php wp_footer();?>
    <!-- Scripts -->
    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
