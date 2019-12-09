@@ -1,14 +1,14 @@
 // Font
 @font-face {
-    font-family: 'Novecento Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Novecento Bold'), url('../fonts/NovecentoBold.otf');
+  font-family: "Novecento Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Novecento Bold"), url("../fonts/NovecentoBold.otf");
 }
 
 //Functions
 @function rem($pixels) {
-    @return $pixels / 16+rem;
+  @return $pixels / 16 + rem;
 }
 
 // Variaveis
@@ -16,208 +16,194 @@ $laranja: #df6718;
 $cinza: #4e4d4e;
 
 body {
-    color: $cinza;
+  color: $cinza;
 }
 
 h1 {
-    font-family: 'Novecento Bold';
+  font-family: "Novecento Bold";
 }
 
 p {
-    font-size: rem(14);
+  font-size: rem(14);
 }
 
 // Conceito
 #conceito {
-    background-image: url(../img/cases/gupy/gupy_header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-    padding: 4em 0;
+  background-image: url(../img/cases/gupy/gupy_header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 4em 0;
 
-    &::after {
-        content: url(../img/cases/gupy/gupy_header_detail.png);
-        position: relative;
-        bottom: -6em;
-        right: 5%;
+  &::after {
+    content: url(../img/cases/gupy/gupy_header_detail.png);
+    position: relative;
+    bottom: -6em;
+    right: 5%;
+  }
+
+  #text {
+    padding-left: 2.5em;
+
+    h1 {
+      color: #fff;
     }
-
-    #text {
-        padding-left: 2.5em;
-
-        &::after {
-            content: url(../img/cases/gupy/gupy_conceito_after.png);
-            position: absolute;
-            right: 9%;
-            bottom: 20%;
-        }
-
-        &::before {
-            content: url(../img/cases/gupy/gupy_conceito_before.png);
-            position: absolute;
-            right: 88%;
-            bottom: 24.5%;
-        }
-    }
+  }
 }
 
-// Explicação 
+// Explicação
 #explicacao {
-    padding: 5em 0;
-    text-align: center;
+  padding: 5em 0;
+  text-align: center;
 
-    p {
-        padding: 3em;
-    }
+  p {
+    padding: 3em;
+  }
 
-    #logo {
-        max-width: 350px;
-        margin-top: -7em;
-    }
+  #logo {
+    max-width: 350px;
+    margin-top: -7em;
+  }
 }
 
 // Mockup
 #mockup {
-    background-image: url(../img/cases/gupy/gupy_mockup_fundo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 35% 25%;
-    padding: 25em 0;
-    margin-top: -20em;
+  background-image: url(../img/cases/gupy/gupy_mockup_fundo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 35% 25%;
+  padding: 25em 0;
+  margin-top: -20em;
 }
 
 // Footer
 footer {
-    margin-top: -18em;
-    position: relative;
-    z-index: -1;
-    padding: 23em 0 10em 0;
-    background: rgb(134, 235, 192);
-    background: linear-gradient(130deg, rgba(134, 235, 192, 1) 0%, rgba(67, 112, 250, 1) 100%);
+  margin-top: -18em;
+  position: relative;
+  z-index: -1;
+  padding: 23em 0 10em 0;
+  background: rgb(134, 235, 192);
+  background: linear-gradient(
+    130deg,
+    rgba(134, 235, 192, 1) 0%,
+    rgba(67, 112, 250, 1) 100%
+  );
 }
 
 // Breakpoints
 // Mobile
 @media (max-width: 600px) {
+  // Conceito
+  #conceito {
+    #text {
+      margin: 0 0.5em;
+      padding: 0;
 
-    // Conceito
-    #conceito {
-        #text {
-            margin: 0 .5em;
-            padding: 0;
+      &::after,
+      &::before {
+        content: none;
+      }
+    }
+  }
 
-            &::after,
-            &::before {
-                content: none;
-            }
-        }
+  // Explicação
+  #explicacao {
+    p {
+      padding: 2em;
     }
 
-    // Explicação 
-    #explicacao {
-        p {
-            padding: 2em;
-        }
-
-        #logo {
-            max-width: 200px;
-            margin-top: -3em;
-            margin-right: 1em;
-        }
+    #logo {
+      max-width: 200px;
+      margin-top: -3em;
+      margin-right: 1em;
     }
+  }
 
-    // Mockup
-    #mockup {
-        padding: 0;
-        margin-top: 0;
-    }
-
+  // Mockup
+  #mockup {
+    padding: 0;
+    margin-top: 0;
+  }
 }
 
 // iPad
-@media(max-width: 835px) {
-
-    // Conceito
-    #conceito {
-        #text {
-
-            &::after,
-            &::before {
-                content: none;
-            }
-        }
+@media (max-width: 835px) {
+  // Conceito
+  #conceito {
+    #text {
+      &::after,
+      &::before {
+        content: none;
+      }
     }
+  }
 
-    // Explicação 
-    #explicacao {
-        #logo {
-            max-width: 300px;
-        }
+  // Explicação
+  #explicacao {
+    #logo {
+      max-width: 300px;
     }
+  }
 
-    // Mockup
-    #mockup {
-        padding: 12em 0;
-        margin-top: -4em;
-    }
+  // Mockup
+  #mockup {
+    padding: 12em 0;
+    margin-top: -4em;
+  }
 }
 
 // iPad Pro
 @media (max-width: 1024px) {
+  // Conceito
+  #conceito {
+    #text {
+      padding-left: 2.5em;
 
-    // Conceito
-    #conceito {
-        #text {
-            padding-left: 2.5em;
+      &::after {
+        content: none;
+      }
 
-            &::after {
-                content: none;
-            }
-
-            &::before {
-                content: url(../img/cases/gupy/gupy_conceito_before.png);
-                position: absolute;
-                right: 94.5%;
-                bottom: 54%;
-            }
-        }
+      &::before {
+        content: url(../img/cases/gupy/gupy_conceito_before.png);
+        position: absolute;
+        right: 94.5%;
+        bottom: 54%;
+      }
     }
+  }
 
-    // Mockup
-    #mockup {
-        padding: 12em 0;
-        margin-top: -4em;
-    }
+  // Mockup
+  #mockup {
+    padding: 12em 0;
+    margin-top: -4em;
+  }
 }
 
 //Desktop Big
 @media (min-width: 1800px) {
+  // Conceito
+  #conceito {
+    #text {
+      &::after {
+        content: url(../img/cases/gupy/gupy_conceito_after.png);
+        position: absolute;
+        right: 29%;
+        bottom: 0;
+        top: 64%;
+      }
 
-    // Conceito
-    #conceito {
-        #text {
-
-            &::after {
-                content: url(../img/cases/gupy/gupy_conceito_after.png);
-                position: absolute;
-                right: 29%;
-                bottom: 0;
-                top: 64%;
-            }
-
-            &::before {
-                content: url(../img/cases/gupy/gupy_conceito_before.png);
-                position: absolute;
-                right: 71.5%;
-                bottom: 0;
-                top: 64%;
-
-            }
-        }
+      &::before {
+        content: url(../img/cases/gupy/gupy_conceito_before.png);
+        position: absolute;
+        right: 71.5%;
+        bottom: 0;
+        top: 64%;
+      }
     }
+  }
 
-    // Mockup
-    #mockup {
-        background-position: 50% 25%;
-    }
+  // Mockup
+  #mockup {
+    background-position: 50% 25%;
+  }
 }

@@ -1,21 +1,22 @@
 // Font
 @font-face {
-    font-family: 'Myriad Pro Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+  font-family: "Myriad Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Regular"),
+    url("../fonts/MYRIADPRO-REGULAR.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'Insignia';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Insignia'), url('../fonts/Insignia.woff') format('woff');
+  font-family: "Insignia";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Insignia"), url("../fonts/Insignia.woff") format("woff");
 }
 
 //Functions
 @function rem($pixels) {
-    @return $pixels / 16+rem;
+  @return $pixels / 16 + rem;
 }
 
 // Variaveis
@@ -23,88 +24,89 @@ $verde: #89e400;
 $rosa: #e01375;
 
 body {
-    background-color: #000;
-    color: white;
-    font-family: 'Insignia';
+  background-color: #000;
+  color: white;
+  font-family: "Insignia";
 }
 
 h1 {
-    font-size: rem(50);
-    color: $verde;
+  font-size: rem(50);
+  color: $verde;
+  font-family: "Insignia";
 }
 
 h2 {
-    color: $rosa;
+  color: $rosa;
+  font-family: "Insignia";
 }
 
 p {
-    font-family: 'Myriad Pro Regular';
+  font-family: "Myriad Pro Regular";
 }
 
 section {
-    padding: 3em 0;
+  padding: 3em 0;
 }
 
 // Mockup
 #mockup {
-    &::after {
-        content: url(../img/cases/mrhops/mrhops_header_detail.png);
-        position: relative;
-        bottom: 0.75em;
-    }
+  &::after {
+    content: url(../img/cases/mrhops/mrhops_header_detail.png);
+    position: relative;
+    bottom: 0.75em;
+  }
 }
 
 // Destaque e Mockup
 #destaque {
-    @extend #mockup;
-    padding: 0;
+  @extend #mockup;
+  padding: 0;
 }
-
 
 // Personagens
 .personagem {
-    padding: 0 2em;
+  padding: 0 2em;
 }
 
 // Rótulos
 #rotulos {
-    margin-top: -4.5em;
-    background-color: $verde;
+  margin-top: -4.5em;
+  background-color: $verde;
 }
 
 // Cartela
 #cartela {
-    background-color: $verde;
-    color: #000;
+  background-color: $verde;
+  color: #000;
 
-    p {
-        font-family: 'Insignia';
-    }
+  p {
+    font-family: "Insignia";
+  }
 }
 
 // Camiseta e Cartão de Visita
 #camiseta-cartao {
-    background-color: $rosa;
-    padding-top: 5em;
+  background-color: $rosa;
+  padding-top: 5em;
 
-    .divider {
-        margin-top: 5em;
-        height: 2px;
-        width: 100%;
-        background-color: white;
-    }
+  .divider {
+    margin-top: 5em;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+  }
 }
 
 // Social Media
 #social-media {
-    margin-bottom: 4em;
+  margin-bottom: 4em;
 
-    .post {
-        padding: 0 3em;
-    }
+  .post {
+    padding: 0 3em;
+  }
 }
 
 // Next
 #next-post {
-    padding: 0;
+  padding: 0;
 }

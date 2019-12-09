@@ -63,7 +63,7 @@
         <div class="row">
             <div class="col-12">
                 <img src="<?php bloginfo('template_directory');?>/assets/img/cases/kalango/elkalango_logo.svg"
-                    alt="El Kalango" class="img-fluid" data-aos="flip-up" />
+                    alt="El Kalango" class="img-fluid" />
             </div>
         </div>
     </div>
