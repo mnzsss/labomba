@@ -6,9 +6,13 @@
   "author": "Gabriel Menezes <gabrielsmenezes99@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "sass-labomba": "node-sass -w --include-path scss scss/bootstrap.scss assets/css/labomba.min.css --output-style compressed"
+    "sass-labomba": "node-sass -w --include-path scss scss/bootstrap.scss assets/css/labomba.min.css --output-style compressed",
+    "commit": "npx git-cz"
   },
   "devDependencies": {
     "node-sass": "^4.13.0"
+  },
+  "dependencies": {
+    "git-cz": "^3.3.0"
   }
 }
