@@ -23,18 +23,20 @@
         <?php $args = array('category_name' => 'blog', 'showposts' => 3);
 $the_query = new WP_Query($args);?>
         <?php if ($the_query->have_posts()): while ($the_query->have_posts()): $the_query->the_post();?>
+
         <div class="post" style="background-image: url(<?php the_post_thumbnail_url()?>)">
             <div class="info">
                 <h4><?php the_title();?></h4>
                 <a href="<?php the_permalink();?>"> leia mais</a>
             </div>
         </div>
+
         <?php endwhile;endif;?>
         <?php wp_reset_query();?>
     </section>
 
     <!-- Postagens -->
-    <section id="blog-postagens">
+    <section id="blog-postagens" class="pb-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-9 col-12">
