@@ -1,16 +1,16 @@
 <?php get_header();?>
 <!-- Loader -->
-<?php if (!wp_is_mobile()) {?>
+<!-- <?php if (!wp_is_mobile()) {?>
 <div id="loader">
     <img src="<?php bloginfo('template_directory');?>/assets/img/preloader.gif" width="30%" alt="Carregando..." />
 </div>
-<?php }?>
+<?php }?> -->
 
 <!-- Introdução -->
 <div class="container">
     <div class="row">
         <div class="col-7">
-            <h2>solução</h2>
+            <h2>Solução</h2>
         </div>
         <div class="col-4 d-none d-md-block">
             <img src="<?php bloginfo('template_directory');?>/assets/img/labomba_logo_detail.svg" alt="Estúdio La.Bomba"
@@ -27,8 +27,6 @@
             <p>
                 Se o contexto da sua comunicação é um transtorno de personalidade,
                 isso com certeza não vai atrair os clientes certos.
-            </p>
-            <p>
                 Então, chega mais. Somos pirados no que fazemos, temos mentes
                 diferentes que explodem em cada projeto trazendo um resultado
                 foda!
@@ -45,12 +43,7 @@
 
 <!-- Serviços -->
 <section id="servicos">
-    <div class="container" data-aos="zoom-in-down">
-        <div class="row">
-            <div class="offset-lg-1 col-lg-11">
-                <h4>serviços</h4>
-            </div>
-        </div>
+    <div class="container">
         <div class="row">
             <div class="offset-lg-1 col-lg-3 col-md-4">
                 <div class="servico">
@@ -82,8 +75,7 @@
                         Se as pessoas, em geral, julgam o livro pela capa, com as
                         embalagens não seria diferente.
                     </p>
-                    <a href="embalagem" class="link">Design de <br />
-                        Embalagem</a>
+                    <a href="embalagem" class="link">Embalagem</a>
                 </div>
             </div>
         </div>
@@ -94,12 +86,10 @@
 <section id="portfolio">
     <div class="container">
         <div class="row">
-            <div class="card-columns">
-                <div class="card">
+
+            <div class="card head">
+                <div class="container">
                     <div class="row">
-                        <div class="col-lg-5 col-sm-12">
-                            <h4>portfólio</h4>
-                        </div>
                         <div class="col-lg-7 col-sm-12">
                             <p class="chamada">
                                 A gente <span>acredita</span> no que te faz
@@ -108,21 +98,23 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <div class="card-columns">
                 <?php
 $args = array('category_name' => 'case');
 $the_query = new WP_Query($args);
 ?>
                 <?php if ($the_query->have_posts()): while ($the_query->have_posts()): $the_query->the_post();?>
-                <div class="card">
-                    <div class="case" data-aos="zoom-in-up">
-                        <a href="<?php the_permalink();?>">
-                            <?php the_post_thumbnail('post-thumbnails', array('class' => 'img-fluid'));?>
-                        </a>
-                        <h4><?php the_title();?></h4>
-                        <p class="tags"><?php the_tags('', ' + ', '');?></p>
-                    </div>
+
+                <div class="case" data-aos="zoom-in-up">
+                    <a href="<?php the_permalink();?>">
+                        <?php the_post_thumbnail('post-thumbnails', array('class' => 'img-fluid'));?>
+                    </a>
+                    <h4><?php the_title();?></h4>
+                    <p class="tags"><?php the_tags('', ' + ', '');?></p>
                 </div>
+
                 <?php endwhile;endif;?>
                 <?php wp_reset_query();?>
 
@@ -131,6 +123,7 @@ $the_query = new WP_Query($args);
                     <img src="<?php bloginfo('template_directory');?>/assets/img/seta_portfolio.svg"
                         class="img-fluid detail-seta" alt="Seta" />
                 </div>
+
             </div>
         </div>
     </div>

@@ -34,56 +34,66 @@
 <section id="branding">
     <div class="container text-center">
         <div class="row">
-            <div class="offset-lg-2 col-lg-8">
+            <div class="offset-lg-2 col-lg-8 explain">
                 <p>brand = <span>marca</span> / ing = <span>ação</span></p>
             </div>
         </div>
     </div>
-</section>
 
-<!-- Explicação -->
-<section id="explicacao" class="pb-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 py-5">
-                <p>
-                    Vamos lá, as marcas existem porque as pessoas seguem e defendem os
-                    mesmos ideais, tem os mesmos costumes, falam a mesma língua.
-                </p>
-                <p>
-                    Uma marca, cria um círculo social, onde ela fala, se veste e se
-                    apresenta de uma certa maneira. E nunca se esquecendo de se
-                    reinventar.
-                </p>
-            </div>
-            <div class="col-md-6 col-12">
-                <img src="<?php bloginfo('template_directory');?>/assets/img/servicos/branding_1.jpg"
-                    alt="Ateliê Petrópolis" class="img-fluid" />
-                <img src="<?php bloginfo('template_directory');?>/assets/img/servicos/branding_2.png" alt="El Kalango"
-                    class="img-fluid" />
-            </div>
-            <div class="col-md-6 col-12">
-                <p>
-                    “As melhores marcas representam algo importante: uma grande ideia,
-                    um posicionamento estratégico, um conjunto de valores bem
-                    definido, uma voz que se destaca.”
-                </p>
-                <span>do livro Design de Identidade da Marca, de
-                    <a href="https://www.saraiva.com.br/design-de-identidade-da-marca-3-ed-4025308.html" target="blank"
-                        class="link">Alina Wheeler</a></span>
 
-                <p class="pt-5">
-                    “Muito mais do que um nome e uma logo, uma marca é a promessa de
-                    uma organização a um cliente para oferecer o que a marca
-                    representa não apenas em termos de benefícios funcionais, mas
-                    também benefícios emocionais, auto-expressivos e sociais.”
-                </p>
-                <span>do livro on Branding, de
-                    <a href="https://www.livrariacultura.com.br/p/livros/administracao/marketing/on-branding-5173415"
-                        target="blank" class="link">David Aaker</a></span>
+    <!-- Explicação -->
+    <section id="explicacao" class="pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 py-5">
+                    <p>
+                        Vamos lá, as marcas existem porque as pessoas seguem e defendem os
+                        mesmos ideais, tem os mesmos costumes, falam a mesma língua.
+                        <br>
+                        Uma marca, cria um círculo social, onde ela fala, se veste e se
+                        apresenta de uma certa maneira. E nunca se esquecendo de se
+                        reinventar.
+                    </p>
+                </div>
+                <div class="col-12 citacao">
+                    <a href="<?php site_url()?>/atelie-petropolis" target="blank">
+                        <img src="<?php bloginfo('template_directory');?>/assets/img/servicos/branding_1.jpg"
+                            alt="Ateliê Petrópolis" class="img-fluid" />
+                    </a>
+                    <div class="text">
+                        <p>
+                            “As melhores marcas representam algo importante: uma grande ideia,
+                            um posicionamento estratégico, um conjunto de valores bem
+                            definido, uma voz que se destaca.”
+                        </p>
+                        <span>do livro Design de Identidade da Marca, de
+                            <a href="https://www.saraiva.com.br/design-de-identidade-da-marca-3-ed-4025308.html"
+                                target="blank" class="link">Alina Wheeler</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 citacao">
+                    <div class="text">
+                        <p class="pt-5">
+                            “Muito mais do que um nome e uma logo, uma marca é a promessa de
+                            uma organização a um cliente para oferecer o que a marca
+                            representa não apenas em termos de benefícios funcionais, mas
+                            também benefícios emocionais, auto-expressivos e sociais.”
+                        </p>
+                        <span>do livro on Branding, de
+                            <a href="https://www.livrariacultura.com.br/p/livros/administracao/marketing/on-branding-5173415"
+                                target="blank" class="link">David Aaker</a>
+                        </span>
+                    </div>
+
+                    <a href="<?php site_url()?>/el-kalango" target="blank">
+                        <img src="<?php bloginfo('template_directory');?>/assets/img/servicos/branding_2.png"
+                            alt="El Kalango" class="img-fluid" />
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </section>
 
 <?php endwhile;endif;?>
@@ -113,16 +123,16 @@
         "tag" => ["branding", "Identidade Visual"],
     ));?>
                 <?php while ($query->have_posts()): $query->the_post();?>
-		                <div class="card">
-		                    <div class="case" data-aos="zoom-in-up">
-		                        <a href="<?php the_permalink();?>">
-		                            <?php the_post_thumbnail('post-thumbnails', array('class' => 'img-fluid'));?>
-		                        </a>
-		                        <h4><?php the_title();?></h4>
-		                        <p class="tags"><?php the_tags('', ' + ', '');?></p>
-		                    </div>
-		                </div>
-		                <?php endwhile;?>
+																										                <div class="card">
+																										                    <div class="case" data-aos="zoom-in-up">
+																										                        <a href="<?php the_permalink();?>">
+																										                            <?php the_post_thumbnail('post-thumbnails', array('class' => 'img-fluid'));?>
+																										                        </a>
+																										                        <h4><?php the_title();?></h4>
+																										                        <p class="tags"><?php the_tags('', ' + ', '');?></p>
+																										                    </div>
+																										                </div>
+																										                <?php endwhile;?>
                 <?php wp_reset_query();?>
 
                 Final
