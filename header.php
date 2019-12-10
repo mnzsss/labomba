@@ -29,19 +29,23 @@
     </script>
 
     <!-- AdSense -->
-    <script data-ad-client="ca-pub-8577584183802367" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script data-ad-client="ca-pub-8577584183802367" async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
     <?php wp_head();?>
 </head>
 
 <body class="labomba">
-<!-- Facebook Comments -->
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v5.0&appId=754568914975996&autoLogAppEvents=1"></script>
+    <!-- Facebook Comments -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v5.0&appId=754568914975996&autoLogAppEvents=1">
+    </script>
 
     <!-- Header -->
     <header <?php if (is_page('contato')) {echo "class='contato'";}?>
         <?php if (is_page('blog')) {echo "class='blog'";}?>
+        <?php if (is_page('embalagem') || is_page('ilustracao') || is_page('branding')) {echo "class='services-page'";}?>
         <?php if (is_single()) {echo "class='single-post'";}?><?php if (is_category() or is_search()) {echo "class='category'";}?>>
         <div class="container">
             <!-- Menu -->
