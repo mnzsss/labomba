@@ -1,10 +1,10 @@
 <?php get_header();?>
 <!-- Loader -->
-<!-- <?php if (!wp_is_mobile()) {?>
+<?php if (!wp_is_mobile()) {?>
 <div id="loader">
     <img src="<?php bloginfo('template_directory');?>/assets/img/preloader.gif" width="30%" alt="Carregando..." />
 </div>
-<?php }?> -->
+<?php }?>
 
 <!-- Introdução -->
 <div class="container">
@@ -12,7 +12,7 @@
         <div class="col-7">
             <h2>Solução</h2>
         </div>
-        <div class="col-4 d-none d-md-block">
+        <div class="col-4 d-none d-xl-block">
             <img src="<?php bloginfo('template_directory');?>/assets/img/labomba_logo_detail.svg" alt="Estúdio La.Bomba"
                 class="img-fluid logo-detail" />
         </div>
@@ -83,7 +83,7 @@
 </section>
 
 <!-- Portfólio -->
-<section id="portfolio">
+<section id="portfolio" class="pb-5">
     <div class="container">
         <div class="row">
 
@@ -119,10 +119,10 @@ $the_query = new WP_Query($args);
                 <?php wp_reset_query();?>
 
                 <!-- Final -->
-                <div class="card" data-aos="zoom-in-up">
+                <!-- <div class="card" data-aos="zoom-in-up">
                     <img src="<?php bloginfo('template_directory');?>/assets/img/seta_portfolio.svg"
                         class="img-fluid detail-seta" alt="Seta" />
-                </div>
+                </div> -->
 
             </div>
         </div>

@@ -39,7 +39,7 @@ $the_query = new WP_Query($args);?>
     <section id="blog-postagens" class="pb-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-9 col-12">
+                <div class="col-lg-9 col-12">
                     <div class="row">
                         <?php $args = array('category_name' => 'blog');
 $the_query = new WP_Query($args);?>
@@ -59,7 +59,7 @@ $the_query = new WP_Query($args);?>
                         <?php wp_reset_query();?>
                     </div>
                 </div>
-                <div class="col-md-3 d-none d-md-block">
+                <div class="col-lg-3 d-none d-lg-block">
                     <?php get_sidebar();?>
                 </div>
             </div>

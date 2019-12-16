@@ -3,6 +3,9 @@
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
 
+// LaBomba Variables
+$destaque-post-image-height: 425px;
+
 // Color system
 
 $white: #fff !default;
@@ -74,6 +77,11 @@ $warning: $yellow !default;
 $danger: $red !default;
 $light: $gray-100 !default;
 $dark: $black !default;
+
+// Variaveis
+$rosa: #e50051;
+$amarelo: #e7e000;
+$cinza: #9d9d9c;
 
 $theme-colors: () !default;
 // stylelint-disable-next-line scss/dollar-variable-default
@@ -261,15 +269,39 @@ $embed-responsive-aspect-ratios: join(
 );
 
 // Typography
+@font-face {
+  font-family: "bree-serif";
+  src: url("https://use.typekit.net/af/a3b6f1/0000000000000000000148d1/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3")
+      format("woff2"),
+    url("https://use.typekit.net/af/a3b6f1/0000000000000000000148d1/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3")
+      format("woff"),
+    url("https://use.typekit.net/af/a3b6f1/0000000000000000000148d1/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i6&v=3")
+      format("opentype");
+}
+
+@font-face {
+  font-family: "OCR A Std";
+  font-style: normal;
+  font-weight: normal;
+  src: local("OCR A Std"), url("../fonts/OCRAStd.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Trebuchet MS"), url("../fonts/trebuc.woff") format("woff");
+}
 
 // stylelint-disable value-keyword-case
-$font-family-sans-serif: "OCR A Std", "Courier", -apple-system,
+$font-family-sans-serif: "Trebuchet MS", "Courier", -apple-system,
   BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
   sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
   "Noto Color Emoji" !default;
 $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
   "Liberation Mono", "Courier New", monospace !default;
 $font-family-base: $font-family-sans-serif !default;
+
 // stylelint-enable value-keyword-case
 
 $font-size-base: 1rem !default;
@@ -293,10 +325,10 @@ $h5-font-size: $font-size-base * 1.25 !default;
 $h6-font-size: $font-size-base !default;
 
 $headings-margin-bottom: $spacer / 2 !default;
-$headings-font-family: null !default;
+$headings-font-family: "OCR A Std", serif !default;
 $headings-font-weight: 500 !default;
 $headings-line-height: 1.2 !default;
-$headings-color: null !default;
+$headings-color: $rosa !default;
 
 $display1-size: 6rem !default;
 $display2-size: 5.5rem !default;

@@ -18,7 +18,7 @@
                 </div>
             </div>
 
-            <div class="col-md-9 col-12 conteudo">
+            <div class="col-lg-9 col-12 conteudo">
                 <?php the_content();?>
 
                 <div class="comentarios py-5 text-center">
@@ -27,7 +27,7 @@
                         data-width="800" data-numposts="5"></div>
                 </div>
             </div>
-            <div class="col-md-3 d-none d-md-block">
+            <div class="col-lg-3 d-none d-lg-block">
                 <?php get_sidebar();?>
             </div>
         </div>

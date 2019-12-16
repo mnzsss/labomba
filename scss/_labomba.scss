@@ -1,19 +1,6 @@
-// Font
-@font-face {
-  font-family: "OCR A Std";
-  font-style: normal;
-  font-weight: normal;
-  src: local("OCR A Std"), url("../fonts/OCRAStd.woff") format("woff");
-}
-
 @function rem($pixels) {
   @return $pixels / 16 + rem;
 }
-
-// Variaveis
-$rosa: #e50051;
-$amarelo: #e7e000;
-$cinza: #9d9d9c;
 
 html {
   scroll-behavior: smooth;
@@ -22,7 +9,6 @@ html {
 }
 
 body {
-  font-family: "OCR A Std";
   max-width: 100%;
   overflow-x: hidden;
   font-size: 16px;
@@ -161,28 +147,24 @@ a {
     text-transform: capitalize;
     padding: 0.3em 0.7em;
     border: none;
+    font-family: "OCR A Std";
+    font-size: rem(22);
 
     &:hover {
       color: $rosa;
     }
-
-    &::after {
-      content: ",";
-    }
   }
 
   h2 {
-    color: $rosa;
-    text-transform: lowercase;
-    font-size: rem(140);
-    letter-spacing: -30px;
-    padding-top: 0.5em;
+    font-size: rem(120);
+    letter-spacing: -20px;
   }
 
   h1,
   h3 {
     color: $amarelo;
     font-size: rem(23);
+    margin-top: 2em;
   }
 
   h4 {
@@ -190,7 +172,8 @@ a {
   }
 
   p {
-    font-size: rem(14);
+    font-size: rem(16);
+    line-height: 25px;
   }
 
   .seta {
@@ -228,7 +211,7 @@ a {
     background-color: black;
     color: white;
     height: 100%;
-    margin-bottom: 14em;
+    margin-bottom: 8em;
     padding-bottom: 2em;
     min-height: 600px;
 
@@ -237,7 +220,7 @@ a {
       position: absolute;
       color: $amarelo;
       left: -0.2em;
-      top: -0.35em;
+      top: -0.45em;
       font-size: rem(280);
     }
 
@@ -251,8 +234,8 @@ a {
 
     .logo-detail {
       position: absolute;
-      bottom: 5em;
-      left: 2em;
+      bottom: 4em;
+      left: 3em;
     }
 
     .detail {
@@ -267,20 +250,18 @@ a {
       }
     }
 
-    #info {
-      margin-top: -2em;
-      margin-left: 1em;
-    }
-
     .menu {
-      padding-top: 6em;
+      padding-top: 4.5em;
 
       .active {
         .nav-link {
           padding: 0 1em;
+          font-size: 1.2em;
+          letter-spacing: 2px;
 
           &:hover {
             color: $rosa;
+            opacity: 0.7;
           }
         }
       }
@@ -321,8 +302,13 @@ a {
       color: $cinza;
     }
 
+    .head {
+      margin-left: 6em;
+    }
+
     .chamada {
-      font-size: rem(18);
+      font-size: rem(20);
+      line-height: rem(40);
     }
 
     span {
@@ -341,10 +327,6 @@ a {
       }
     }
 
-    .subir {
-      margin-top: -6em;
-    }
-
     .detail-seta {
       padding-top: 2.7em;
       padding-left: 2em;
@@ -361,12 +343,16 @@ a {
   #cta {
     padding: 5em 0;
     color: white;
+    background-image: url(../img/background_call_action.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 
     h2 {
-      font-size: rem(130);
-      letter-spacing: -20px;
-      line-height: rem(125);
+      font-size: rem(90);
+      line-height: rem(100);
       padding-top: 0;
+      color: #fff;
 
       &::before {
         left: -0.85em;
@@ -376,13 +362,28 @@ a {
 
     p {
       text-indent: 0;
-      padding-top: 0.5em;
+      padding-top: 4em;
       max-width: 750px;
     }
 
     img {
       max-width: 160px;
       padding-top: 0.8em;
+    }
+
+    .btn {
+      border-radius: 0;
+      padding: 0.575rem 1.75rem;
+
+      &-rosa {
+        background-color: $rosa;
+        color: $amarelo;
+        transition: all ease 0.4s;
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
     }
   }
 
@@ -394,6 +395,7 @@ a {
       color: $cinza;
       text-indent: 0;
       font-size: rem(15);
+      margin: 0;
     }
 
     #informacoes-rodape {
@@ -404,8 +406,7 @@ a {
       li {
         height: 100%;
 
-        h4 {
-          font-size: rem(16);
+        p {
           margin-top: 0.35em;
           padding-right: 0.3em;
         }
@@ -432,6 +433,11 @@ a {
   #explicacao {
     color: $cinza;
 
+    .link {
+      font-size: rem(16);
+      padding: 0.2em 0.5em;
+    }
+
     p {
       font-size: rem(17.8);
     }
@@ -449,13 +455,43 @@ a {
   #branding {
     padding: 1em 0;
 
-    p {
-      color: $cinza;
-      font-size: rem(35);
+    .explain {
+      p {
+        color: $cinza;
+        font-size: rem(35);
 
-      span {
-        color: black;
-        background-color: $amarelo;
+        span {
+          color: black;
+          background-color: $amarelo;
+        }
+      }
+    }
+
+    #explicacao {
+      text-align: center;
+
+      .citacao {
+        display: grid;
+        text-align: left;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+          img {
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.1);
+          }
+
+          &:hover {
+            opacity: 0.7;
+          }
+        }
+
+        &-2 {
+          margin-top: 2em;
+          flex-direction: column-reverse;
+        }
       }
     }
   }
@@ -464,13 +500,14 @@ a {
 // Header Contato
 .labomba .contato {
   max-height: 950px;
+  margin-bottom: 11em;
 
   &::after {
     content: url(../img/detail_header.png);
     position: absolute;
     right: 10em;
     z-index: -1;
-    top: 63em;
+    top: 65em;
   }
 
   p {
@@ -483,24 +520,6 @@ a {
 
   .subir {
     margin-top: 5em;
-  }
-
-  form {
-    input,
-    textarea {
-      background-color: transparent;
-      border-radius: none;
-      border-top: none;
-      border-left: none;
-      border-right: none;
-      border-bottom: 1px solid white;
-      margin-bottom: 1em;
-      color: white;
-
-      &::placeholder {
-        color: white;
-      }
-    }
   }
 }
 
@@ -538,6 +557,19 @@ a {
   h2 {
     font-size: rem(40);
     letter-spacing: normal;
+  }
+
+  &::after {
+    margin-top: -6em;
+  }
+}
+
+// Página dos Serviços
+.labomba .services-page {
+  margin-bottom: 12em;
+
+  &::after {
+    margin-top: -2em;
   }
 }
 
@@ -580,6 +612,7 @@ a {
       .info {
         background-color: rgba(0, 0, 0, 0.7);
         padding: 2em 1em;
+        width: 100%;
 
         h4 {
           color: $amarelo;
@@ -597,22 +630,72 @@ a {
 
 // Single
 .labomba .single-post {
-  min-height: 540px;
-  margin-bottom: 9em;
+  min-height: 100%;
+  margin-bottom: 7em;
 
-  h2 {
-    font-size: rem(40);
-    letter-spacing: normal;
-    margin-bottom: 1em;
+  #blog-post {
+    margin-top: 3em;
+
+    h2 {
+      font-size: rem(40);
+      letter-spacing: normal;
+      margin-bottom: 1em;
+    }
+
+    #info {
+      margin-left: 0;
+    }
   }
 
-  #info {
-    margin-left: 0;
+  &::after {
+    margin-top: -9em;
   }
 }
 
 // Conteúdo da Postagem
 #blog-text {
+  .destaque-post {
+    min-height: $destaque-post-image-height;
+    display: flex;
+    align-items: flex-end;
+
+    &-image {
+      width: 100%;
+      min-height: $destaque-post-image-height;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      filter: brightness(0.3);
+      position: absolute;
+      z-index: -1;
+    }
+
+    &-info {
+      margin-top: 0em;
+      margin-bottom: 4em;
+      margin-left: 3em;
+      max-width: 80%;
+      width: 100%;
+
+      a {
+        color: $amarelo;
+        text-transform: lowercase;
+
+        &:hover {
+          opacity: 0.5;
+          color: $rosa;
+        }
+      }
+
+      h1 {
+        font-size: rem(35);
+        color: #fff;
+        margin: 0;
+        word-break: normal;
+      }
+    }
+  }
+
   .conteudo {
     margin-top: 3em;
 
@@ -749,7 +832,6 @@ aside {
 .menu-fixo {
   p {
     color: white;
-    font-family: "OCR A Std";
     padding-top: 0.7em;
   }
 

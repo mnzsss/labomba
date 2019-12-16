@@ -15,11 +15,10 @@
 }
 
 // Large devices (desktops, less than 1200px)
-@media (max-width: 1199.98px) {
+@media (max-width: 1200px) {
   .labomba {
     h2 {
       font-size: rem(150);
-      line-height: rem(190);
       margin-top: 0em;
 
       &::before {
@@ -36,8 +35,8 @@
       }
 
       .logo-detail {
-        bottom: 10em;
-        left: 9em;
+        bottom: 7em;
+        left: 4em;
       }
     }
 
@@ -52,10 +51,12 @@
     #cta {
       padding: 3em 0;
 
-      h2 {
-        font-size: rem(90);
-        letter-spacing: -20px;
-        line-height: rem(110);
+      .text {
+        margin-left: 4em;
+
+        p {
+          max-width: 500px;
+        }
       }
     }
 
@@ -78,10 +79,12 @@
     #branding {
       padding-top: 3em;
       padding-bottom: 0;
+    }
+  }
 
-      p {
-        font-size: rem(40);
-      }
+  .labomba .services-page {
+    &::after {
+      margin-top: -3em;
     }
   }
 }
@@ -91,11 +94,19 @@
   .labomba {
     h2 {
       font-size: rem(120);
-      letter-spacing: -20px;
       margin-top: 0em;
 
       &::before {
         font-size: rem(180);
+      }
+    }
+
+    #infos {
+      text-align: left;
+
+      .social {
+        margin: 0;
+        padding: 0;
       }
     }
 
@@ -117,7 +128,7 @@
       }
 
       .logo-detail {
-        left: 16em;
+        display: none;
       }
     }
 
@@ -126,7 +137,7 @@
       padding-top: 3em;
 
       &::before {
-        left: -20em;
+        left: -19em;
       }
 
       .subir {
@@ -138,10 +149,17 @@
     #cta {
       padding: 3em 0;
 
-      h2 {
-        font-size: rem(90);
-        letter-spacing: -20px;
-        line-height: rem(110);
+      .text {
+        margin-left: 4em;
+
+        h2 {
+          font-size: 4.5em;
+          line-height: 1em;
+        }
+
+        p {
+          max-width: 500px;
+        }
       }
     }
 
@@ -172,10 +190,6 @@
     #branding {
       padding-top: 3em;
       padding-bottom: 0;
-
-      p {
-        font-size: rem(30);
-      }
     }
   }
 
@@ -195,6 +209,13 @@
       bottom: 8em;
       left: 9em;
       max-width: 200px;
+    }
+  }
+
+  // Services Page
+  .labomba .services-page {
+    &::after {
+      margin-top: -6em;
     }
   }
 
@@ -231,8 +252,7 @@
 
   // Single
   .labomba .single-post {
-    min-height: 490px;
-    margin-bottom: 4em;
+    margin-bottom: 8em;
 
     .logo-detail {
       bottom: 4em;
@@ -251,9 +271,6 @@
 @media (max-width: 768px) {
   // Single
   .labomba .single-post {
-    min-height: 490px;
-    margin-bottom: 4em;
-
     .logo-detail {
       display: none;
     }
@@ -318,6 +335,13 @@
       }
     }
   }
+
+  // Services Page
+  .labomba .services-page {
+    &::after {
+      margin-top: -4em;
+    }
+  }
 }
 
 // Extra small devices (portrait phones, less than 576px)
@@ -351,7 +375,7 @@
     }
 
     h2 {
-      font-size: rem(60);
+      font-size: rem(70);
       letter-spacing: -10px;
       line-height: rem(100);
       padding: 0;
@@ -406,6 +430,9 @@
 
         p {
           margin: 0.3em 0;
+          padding-bottom: 1em;
+          max-width: 100%;
+          min-height: 100%;
         }
       }
     }
@@ -426,25 +453,28 @@
     // Branding
     #branding {
       padding: 2em 0;
-
-      p {
-        font-size: rem(25);
-      }
     }
 
     // Call to Action
     #cta {
       padding: 3em 0;
+      background-image: none;
 
-      h2 {
-        font-size: rem(40);
-        letter-spacing: 0px;
-        line-height: rem(40);
-      }
+      .text {
+        margin-left: 3em;
+        h2 {
+          font-size: rem(80);
+          letter-spacing: normal;
+          line-height: rem(80);
+        }
 
-      img {
-        margin-top: 2em;
-        width: 135px;
+        p {
+          max-width: 400px;
+        }
+        img {
+          margin-top: 2em;
+          width: 135px;
+        }
       }
     }
 
@@ -476,6 +506,11 @@
         }
       }
     }
+  }
+
+  // Services Page
+  .labomba .services-page {
+    margin-bottom: 5em;
   }
 
   // Contato
@@ -512,8 +547,7 @@
 
   // Single
   .labomba .single-post {
-    min-height: 540px;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
 
     h2 {
       font-size: rem(30);

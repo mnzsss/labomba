@@ -33,7 +33,7 @@ $the_query = new WP_Query($search_query);
 
 <div class="container">
     <div class="row">
-        <div class="col-md-9 col-12">
+        <div class="col-lg-9 col-12">
             <div class="row">
                 <!-- the loop -->
                 <?php while ($the_query->have_posts()): $the_query->the_post();?>
@@ -54,7 +54,7 @@ $the_query = new WP_Query($search_query);
                 <!-- end of the loop -->
             </div>
         </div>
-        <div class="col-md-3 d-none d-md-block">
+        <div class="col-lg-3 d-none d-lg-block">
             <?php get_sidebar();?>
         </div>
     </div>
@@ -67,10 +67,10 @@ $the_query = new WP_Query($search_query);
 
 <div class="container">
     <div class="row">
-        <div class="col-md-9 col-12 error-search">
+        <div class="col-lg-9 col-12 error-search">
             <h5>Não há resultados para essa busca.</h5>
         </div>
-        <div class="col-md-3 d-none d-md-block">
+        <div class="col-lg-3 d-none d-lg-block">
             <?php get_sidebar();?>
         </div>
     </div>
