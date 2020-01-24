@@ -11,6 +11,7 @@ body {
   color: $body-color-text;
   font-family: $font-family-sans-serif;
   -webkit-font-smoothing: antialiased;
+  overflow: hidden;
 }
 
 h1,

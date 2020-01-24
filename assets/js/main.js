@@ -4,3 +4,5 @@ $(document).ready(
     $(".nav_menu").toggleClass("open");
   })
 );
+
+const tilt = $(".js-tilt").tilt();
