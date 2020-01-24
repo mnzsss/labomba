@@ -31,6 +31,32 @@ header {
       line-height: em(20);
     }
 
+    &_calls {
+      right: 0;
+      top: 50%;
+      position: fixed;
+      transform: rotate(-90deg);
+
+      &-items {
+        display: flex;
+        list-style: none;
+
+        li:nth-child(1) {
+          margin-right: em(50);
+        }
+
+        &-links {
+          color: #fff;
+          transition: all ease 0.3s;
+
+          &:hover {
+            text-decoration: underline;
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
     &_footer {
       display: flex;
       justify-content: space-between;

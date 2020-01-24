@@ -1,8 +1,6 @@
-$(document).ready(
-  $(".nav_icon").click(function() {
-    $(this).toggleClass("open");
-    $(".nav_menu").toggleClass("open");
-  })
-);
+$(".nav_icon").click(function() {
+  $(this).toggleClass("open");
+  $(".nav_menu").toggleClass("open");
+});
 
-const tilt = $(".js-tilt").tilt();
+$(".js-tilt").tilt();
