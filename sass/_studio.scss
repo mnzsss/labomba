@@ -3,11 +3,26 @@
     &_content {
       display: flex;
       align-items: center;
-      position: absolute;
-      top: 160%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      margin: 0 auto;
       width: 60%;
+
+      &-title {
+        font-size: em(60);
+        width: 100%;
+      }
+
+      &-paragraph {
+        font-size: em(16);
+        line-height: 22px;
+        width: 100%;
+      }
+    }
+  }
+
+  .universe {
+    &_content {
+      padding: 0 5em;
+      margin: 0 auto;
 
       &-title {
         font-size: em(60);
@@ -26,13 +41,10 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    position: relative;
-    z-index: -2;
+    position: fixed;
+    top: 0;
     opacity: 0;
-
-    &.show {
-      opacity: 0.4;
-    }
+    z-index: -9999;
   }
 
   &_lamp {

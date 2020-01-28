@@ -10,10 +10,10 @@ header {
     }
 
     &_detail_magenta {
-      position: fixed;
       z-index: -1;
+      position: fixed;
       top: -14%;
-      right: -9em;
+      left: 90%;
     }
 
     &_detail_amarelo {
