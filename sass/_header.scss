@@ -12,15 +12,15 @@ header {
     &_detail_magenta {
       position: fixed;
       z-index: -1;
-      top: -14%;
-      right: -9em;
+      top: 0%;
+      right: -10%;
     }
 
     &_detail_amarelo {
       position: fixed;
       z-index: -1;
-      bottom: 8em;
-      left: -11em;
+      bottom: 10%;
+      left: -12%;
     }
   }
 
@@ -31,127 +31,6 @@ header {
       max-width: 625px;
       font-size: em(60);
       line-height: em(20);
-    }
-
-    &_calls {
-      right: 0;
-      top: 50%;
-      position: fixed;
-      transform: rotate(-90deg);
-
-      &-items {
-        display: flex;
-        list-style: none;
-
-        li:nth-child(1) {
-          margin-right: em(50);
-        }
-
-        &-links {
-          color: #fff;
-          transition: all ease 0.3s;
-
-          &:hover {
-            text-decoration: underline;
-            opacity: 0.8;
-          }
-        }
-      }
-    }
-
-    &_footer {
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      top: 75vh;
-
-      &-scroll {
-        span {
-          display: block;
-          width: 5px;
-          height: 5px;
-          transform: rotate(45deg);
-          border-right: 2px solid #fff;
-          border-bottom: 2px solid #fff;
-          margin: 0 0 3px 5px;
-        }
-
-        .mouse {
-          height: 21px;
-          width: 14px;
-          border-radius: 10px;
-          transform: none;
-          border: 2px solid #ffffff;
-          top: 170px;
-        }
-
-        .down-arrow-1,
-        .down-arrow-2,
-        .down-arrow-3 {
-          animation: mouse-scroll 1s infinite;
-          animation-direction: alternate;
-        }
-
-        .down-arrow-1 {
-          margin-top: 6px;
-          animation-delay: 0.1s;
-        }
-
-        .down-arrow-2 {
-          animation-delay: 0.2s;
-        }
-
-        .down-arrow-3 {
-          animation-delay: 0.3s;
-        }
-
-        .mouse-in {
-          height: 5px;
-          width: 2px;
-          display: block;
-          margin: 5px auto;
-          background: #ffffff;
-          position: relative;
-          animation: animated-mouse 1.2s ease infinite;
-        }
-
-        @keyframes mouse-scroll {
-          0% {
-            opacity: 0;
-          }
-          50% {
-            opacity: 0.5;
-          }
-          100% {
-            opacity: 1;
-          }
-        }
-      }
-
-      &-social {
-        list-style: none;
-        display: flex;
-        z-index: 2;
-
-        li {
-          margin-right: 3em;
-
-          a {
-            color: #fff;
-            text-decoration: none;
-            transition: all ease 0.3s;
-
-            &:hover {
-              text-decoration: underline;
-              opacity: 0.8;
-            }
-          }
-        }
-      }
-
-      &-adress {
-        z-index: 2;
-      }
     }
   }
 }
