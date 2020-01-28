@@ -1,0 +1,48 @@
+nav {
+  z-index: 2;
+  position: relative;
+
+  .nav_content {
+    margin-top: em(65);
+    display: flex;
+    justify-content: space-between;
+
+    &-logo a svg {
+      fill: #fff;
+    }
+
+    &-menu {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin-right: 2em;
+      }
+
+      &-briefing {
+        font-size: em(20);
+        font-weight: bold;
+        color: #fff;
+        animation: colorChange 2s infinite ease-in-out;
+        transition: all ease 0.3s;
+
+        &:hover {
+          text-decoration: underline;
+          opacity: 0.8;
+        }
+
+        @keyframes colorChange {
+          0% {
+            color: #fff;
+          }
+          50% {
+            color: $amarelo;
+          }
+          100% {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
