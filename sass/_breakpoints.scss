@@ -1,0 +1,73 @@
+@media (max-width: 992px) {
+  header {
+    .background {
+      &_eye {
+        left: 0%;
+      }
+
+      &_detail_magenta {
+        top: -15%;
+        right: -20%;
+      }
+
+      &_detail_amarelo {
+        left: -18%;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    .background {
+      &_detail_magenta,
+      &_detail_amarelo {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  header {
+    .header {
+      &_heading {
+        bottom: 20%;
+        max-width: 400px;
+        font-size: em(50);
+      }
+    }
+  }
+}
+
+@media (max-width: 414px) {
+  .labomba_container {
+    padding: 0 3em;
+  }
+
+  header {
+    .header {
+      &_heading {
+        bottom: 20%;
+        max-width: 300px;
+        font-size: em(35);
+      }
+    }
+  }
+
+  nav {
+    .nav_content {
+      &-menu {
+        display: block;
+
+        p {
+          display: none;
+        }
+
+        &-briefing {
+          font-size: em(20);
+        }
+      }
+    }
+  }
+}
