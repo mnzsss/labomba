@@ -26,6 +26,12 @@ $browser-context: 16;
   @return #{$pixels/$context}em;
 }
 
+// Responsive Type
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 12px;
+$max_font: 16px;
+
 // Body
 $body-background-color: #000;
 $body-color-text: #fff;

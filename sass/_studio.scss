@@ -1,0 +1,43 @@
+.studio {
+  .about {
+    &_content {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 160%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60%;
+
+      &-title {
+        font-size: em(60);
+        width: 100%;
+      }
+
+      &-paragraph {
+        font-size: em(16);
+        line-height: 22px;
+        width: 100%;
+      }
+    }
+  }
+
+  &_video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -2;
+    opacity: 0;
+
+    &.show {
+      opacity: 0.4;
+    }
+  }
+
+  &_lamp {
+    position: fixed;
+    top: 80%;
+    left: 85%;
+  }
+}

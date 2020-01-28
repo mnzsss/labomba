@@ -1,5 +1,14 @@
+// Variables
 @import "variables";
+
+// Mixins
+@import "./mixins/type";
+
+// Default
 @import "global";
-@import "header";
-@import "menu";
 @import "containers";
+
+// Theme
+@import "menu";
+@import "header";
+@import "studio";
