@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    [
+      "minify",
+      {
+        "mangle": {
+          "exclude": ["MyCustomError"]
+        },
+        "keepFnName": true
+      }
+    ]
+  ]
+}
