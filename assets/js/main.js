@@ -9,7 +9,6 @@ $(document).ready(() => {
   });
 
   // Init ScrollMagic
-
   const controller = new ScrollMagic.Controller();
 
   // Scenes
@@ -87,6 +86,22 @@ $(document).ready(() => {
     .setPin(".universe_content-design")
     .setClassToggle(".universe_content-design", "fade-in")
     .addTo(controller);
+
+  // Carousel Proejcts
+  const carousel = $(".projects_content-carousel").flickity({
+    cellAlign: "left",
+    prevNextButtons: false,
+    pageDots: false
+  });
+
+  // Dots
+  $(".projects_content-dots-prev").on("click", () => {
+    carousel.flickity("previous");
+  });
+
+  $(".projects_content-dots-next").on("click", () => {
+    carousel.flickity("next");
+  });
 });
 
 // Studio
@@ -110,21 +125,4 @@ $(window).on("scroll", () => {
       "Nós aumentamos o potencial competitivo e resultados de nossos clientes, gerando ligação emocional entre consumidores e a marca através da ousadia, estratégia, arte e design"
     );
   }
-});
-
-// Carousel Proejcts
-
-const carousel = $(".projects_content-carousel").flickity({
-  cellAlign: "left",
-  prevNextButtons: false,
-  pageDots: false
-});
-
-// previous
-$(".projects_content-dots-prev").on("click", () => {
-  carousel.flickity("previous");
-});
-
-$(".projects_content-dots-next").on("click", () => {
-  carousel.flickity("next");
 });
