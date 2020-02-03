@@ -20,11 +20,24 @@ nav {
         font-size: em(20);
         margin-right: 2em;
         color: #fff;
+        animation: colorChange 2s infinite ease-in-out;
         transition: all ease 0.3s;
 
         &:hover {
           text-decoration: underline;
           opacity: 0.8;
+        }
+
+        @keyframes colorChange {
+          0% {
+            color: #fff;
+          }
+          50% {
+            color: $amarelo;
+          }
+          100% {
+            color: #fff;
+          }
         }
       }
 
@@ -84,7 +97,7 @@ nav {
 .nav_menu {
   padding: 0 5em;
   display: none;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   top: 0;
   height: 100vh;

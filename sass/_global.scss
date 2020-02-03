@@ -17,6 +17,14 @@ body {
   font-family: $font-family-sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+
+  &.hidden {
+    overflow: hidden;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 h1,
@@ -32,4 +40,38 @@ h6 {
 *::selection {
   background: transparent;
   user-select: none;
+}
+
+.header_footer.fixed {
+  position: fixed;
+  z-index: 99;
+  top: 90%;
+
+  .header_footer-scroll {
+    display: none;
+  }
+}
+
+.nav_content-logo.fixed {
+  position: fixed;
+  z-index: 99;
+}
+
+.flickity-viewport {
+  height: 400px !important;
+}
+
+.button {
+  color: $amarelo;
+  text-decoration: none;
+  padding: 0.7em 3em;
+  border: 2px solid $amarelo;
+  width: fit-content;
+  transition: all ease 0.4s;
+
+  &:hover {
+    color: #fff;
+    border-color: #fff;
+    opacity: 0.7;
+  }
 }

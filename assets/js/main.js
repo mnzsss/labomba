@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(() => {
   // Mega Menu Icon
   $(".nav_icon").click(function() {
     $(this).toggleClass("open");
@@ -9,18 +9,19 @@ $(document).ready(function() {
   });
 
   // Init ScrollMagic
-  var controller = new ScrollMagic.Controller();
+
+  const controller = new ScrollMagic.Controller();
 
   // Scenes
-  var aboutScene = new ScrollMagic.Scene({
-    triggerElement: ".studio",
+  const aboutScene = new ScrollMagic.Scene({
+    triggerElement: ".about_content",
     duration: "200%"
   })
     .setPin(".about_content")
     .setClassToggle(".about_content", "fade-in")
     .addTo(controller);
 
-  var magentaScene = new ScrollMagic.Scene({
+  const magentaScene = new ScrollMagic.Scene({
     triggerElement: "body",
     duration: "300%",
     triggerHook: 0.1
@@ -28,12 +29,63 @@ $(document).ready(function() {
     .setPin(".background_detail_magenta")
     .addTo(controller);
 
-  var lampScene = new ScrollMagic.Scene({
+  const lampScene = new ScrollMagic.Scene({
     triggerElement: ".studio",
+    duration: "1000%",
     triggerHook: 1
   })
     .setPin(".studio_lamp")
     .setClassToggle(".studio_lamp", "fade-in")
+    .addTo(controller);
+
+  const amareloScene = new ScrollMagic.Scene({
+    triggerElement: ".universe_content",
+    triggerHook: 0.1
+  })
+    .setClassToggle(".background_detail_amarelo", "transform")
+    .addTo(controller);
+
+  const lampMoveScene = new ScrollMagic.Scene({
+    triggerElement: ".universe_content",
+    triggerHook: 0.1
+  })
+    .setClassToggle(".studio_lamp", "transform")
+    .addTo(controller);
+
+  const universeScene = new ScrollMagic.Scene({
+    triggerElement: ".universe_content",
+    duration: "678%",
+    triggerHook: 0
+  })
+    .setPin(".universe_content_infos")
+    .setClassToggle(".universe_content_infos", "fade-in")
+    .addTo(controller);
+
+  const detachShowScene = new ScrollMagic.Scene({
+    triggerElement: ".universe_content-detach",
+    duration: "100%",
+    triggerHook: 0
+  })
+    .setPin(".universe_content-detach")
+    .setClassToggle(".universe_content-detach", "fade-in")
+    .addTo(controller);
+
+  const brandingShowScene = new ScrollMagic.Scene({
+    triggerElement: ".universe_content-branding",
+    duration: "100%",
+    triggerHook: 0
+  })
+    .setPin(".universe_content-branding")
+    .setClassToggle(".universe_content-branding", "fade-in")
+    .addTo(controller);
+
+  const designShowScene = new ScrollMagic.Scene({
+    triggerElement: ".universe_content-design",
+    duration: "100%",
+    triggerHook: 0
+  })
+    .setPin(".universe_content-design")
+    .setClassToggle(".universe_content-design", "fade-in")
     .addTo(controller);
 });
 
@@ -42,7 +94,7 @@ $(window).on("scroll", () => {
   const windowHeight = $(window).height();
 
   // Show video
-  if ($(this).scrollTop() > windowHeight / 1.7) {
+  if ($(this).scrollTop() >= windowHeight / 1.7) {
     $(".studio_video").css({ opacity: 0.4 });
   } else {
     $(".studio_video").css({ opacity: 0 });
@@ -58,4 +110,21 @@ $(window).on("scroll", () => {
       "Nós aumentamos o potencial competitivo e resultados de nossos clientes, gerando ligação emocional entre consumidores e a marca através da ousadia, estratégia, arte e design"
     );
   }
+});
+
+// Carousel Proejcts
+
+const carousel = $(".projects_content-carousel").flickity({
+  cellAlign: "left",
+  prevNextButtons: false,
+  pageDots: false
+});
+
+// previous
+$(".projects_content-dots-prev").on("click", () => {
+  carousel.flickity("previous");
+});
+
+$(".projects_content-dots-next").on("click", () => {
+  carousel.flickity("next");
 });

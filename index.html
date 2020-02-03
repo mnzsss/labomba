@@ -14,6 +14,10 @@
     <title>Branding e Design - Estúdio La.Bomba</title>
 
     <link rel="stylesheet" href="./assets/css/labomba.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
 
     <!-- Analytics -->
     <script
@@ -177,7 +181,7 @@
 
         <!-- Heading -->
         <div class="labomba_container">
-          <h1 class="header_heading ">
+          <h1 class="header_heading">
             Transformamos Essência e Propósito em valor para marcas.
           </h1>
 
@@ -257,38 +261,160 @@
     <!-- Quem Somos -->
     <div class="studio">
       <div class="studio_container">
-        <div class="about_content container">
+        <div class="about_content">
           <h2 class="about_content-title">Quem Somos</h2>
-          <p class="about_content-paragraph"></p>
+          <p class="about_content-paragraph">
+            Somos percepção e caminho, criamos conceitos, estratégias,
+            acreditamos que a marca se comunica com o seu propósito, esse é o
+            verdadeiro sentido.
+          </p>
         </div>
 
+        <!-- Universe -->
         <div class="universe_content container">
-          <h2 class="universe_content-title">Nosso Universo</h2>
+          <div class="universe_content_infos">
+            <img
+              src="./assets/img/universe_icon_a_circle.svg"
+              class="universe_content-icon"
+            />
 
-          <img
-            src="./assets/img/universe_icon_a_circle.svg"
-            class="universe_content-icon"
-          />
+            <h2 class="universe_content-title">Nosso Universo</h2>
 
-          <p class="universe_content-paragraph">
-            Criamos caminhos estratégicos que fazem as marcas se desenvolverem,
-            utilizando Branding e Design para transformar a Comunicação, criar
-            proximidade com a Marca e gerar impacto positivo ao Negócio.
+            <p class="universe_content-paragraph">
+              Criamos caminhos estratégicos que fazem as marcas se
+              desenvolverem, utilizando Branding e Design para transformar a
+              Comunicação, criar proximidade com a Marca e gerar impacto
+              positivo ao Negócio.
+            </p>
+          </div>
+        </div>
+
+        <div class="universe_content-detach">
+          <h4><span>Brand</span> = marca / <span>ing</span> = ação</h4>
+
+          <h4><span>Design</span> = projetar; designa</h4>
+        </div>
+
+        <div class="universe_content-branding">
+          <h4>Branding</h4>
+          <p>
+            A Marca é um organismo vivo, pulsante que se relaciona e comunica,
+            dessa forma jamais poderia ficar estática, imóvel e parar no tempo.
           </p>
+        </div>
 
-          <h4 class="universe_content-detach">
-            <span>Brand</span> = marca / <span>ing</span> = ação
-          </h4>
+        <div class="universe_content-design">
+          <h4>Design</h4>
+          <p>
+            Toda ação é movimento, movimento é vida, nós fazemos com que as
+            Marcas continuem evoluindo e entregando seus propósitos,
+            consequentemente - vivendo!
+          </p>
+        </div>
 
-          <h4 class="universe_content-detach">
-            <span>Design</span> = projetar; designa
-          </h4>
+        <div class="universe_content-services">
+          <ul class="universe_content-services-list">
+            <li>Direção de Arte</li>
+            <li>Identidade Visual</li>
+            <li>Campanhas</li>
+          </ul>
+          <ul class="universe_content-services-list">
+            <li>Design Gráfico</li>
+            <li>Embalagens</li>
+            <li>Tipográfia</li>
+          </ul>
+          <ul class="universe_content-services-list">
+            <li>UX/UI Design</li>
+            <li>Website/App Design</li>
+            <li>Produção AudioVisual</li>
+          </ul>
+        </div>
+
+        <!-- Projects -->
+
+        <div class="projects_content">
+          <div class="projects_content-dots">
+            <div class="projects_content-dots-prev">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 35 35"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill="none" fill-rule="evenodd">
+                  <path
+                    d="M16.887 33.273C7.835 33.273.5 25.937.5 16.886.5 7.836 7.835.5 16.887.5c9.05 0 16.386 7.336 16.386 16.386 0 9.05-7.337 16.387-16.387 16.387z"
+                  ></path>
+                  <path d="M12.034 16.886h10.438"></path>
+                  <path d="M16.04 13.162l-4.006 3.725 4.005 3.722"></path>
+                </g>
+              </svg>
+            </div>
+
+            <div class="projects_content-dots-next">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 35 35"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g fill-rule="evenodd">
+                  <path
+                    d="M.5 16.886C.5 7.836 7.836.5 16.887.5c9.049 0 16.384 7.336 16.384 16.386 0 9.05-7.335 16.387-16.384 16.387C7.836 33.273.5 25.937.5 16.886z"
+                  ></path>
+                  <path
+                    d="M21.738 16.886H11.3m6.433 3.724l4.005-3.725-4.005-3.722"
+                  ></path>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div class="projects_content-carousel">
+            <div class="projects_content-carousel-item">
+              <a href="#!" target="blank">
+                <img
+                  src="./assets/img/projects/atelie_petropolis_identidade_visual.png"
+                  alt="Ateliê Petrópolis - Identidade Visual"
+                />
+                <h4>Projeto A</h4>
+                <small>corporate / editorial / digital / event</small>
+              </a>
+            </div>
+            <div class="projects_content-carousel-item">
+              <a href="#!" target="blank">
+                <img
+                  src="./assets/img/projects/baralho_campeoes_cocacola_graal_ilustracao.png"
+                  alt="Baralho dos Campeões, Coca Cola e Graal - Identidade Visual"
+                />
+                <h4>Projeto A</h4>
+                <small>corporate / editorial / digital / event</small>
+              </a>
+            </div>
+            <div class="projects_content-carousel-item">
+              <a href="#!" target="blank">
+                <img
+                  src="./assets/img/projects/martelab_identidade_visual_ilustracao.png"
+                  alt="MarteLab TI - Identidade Visual e Ilustração"
+                />
+                <h4>Projeto A</h4>
+                <small>corporate / editorial / digital / event</small>
+              </a>
+            </div>
+          </div>
+          <div></div>
+          <a
+            class="button"
+            href="https://www.behance.net/estudiolabomba"
+            target="blank"
+            >todos projetos</a
+          >
         </div>
 
         <img src="./assets/img/lampada.svg" class="studio_lamp" />
 
         <video
           autoplay
+          loop
           class="studio_video"
           src="./assets/videos/quem_somos.mp4"
         ></video>
@@ -296,10 +422,13 @@
     </div>
 
     <!-- Scripts -->
-    <script
-      src="https://code.jquery.com/jquery-latest.min.js"
-      type="text/javascript"
-    ></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

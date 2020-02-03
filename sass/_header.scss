@@ -11,7 +11,7 @@ header {
 
     &_detail_magenta {
       z-index: -1;
-      position: fixed;
+      position: absolute;
       top: -14%;
       left: 90%;
     }
@@ -21,6 +21,11 @@ header {
       z-index: -1;
       bottom: 8em;
       left: -11em;
+      transition: bottom 0.5s ease-out;
+
+      &.transform {
+        bottom: 80%;
+      }
     }
   }
 
