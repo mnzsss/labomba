@@ -87,6 +87,14 @@ $(document).ready(() => {
     .setClassToggle(".universe_content-design", "fade-in")
     .addTo(controller);
 
+  // Metodology
+  const fisiologyEffectMoveScene = new ScrollMagic.Scene({
+    triggerElement: ".effect-description",
+    triggerHook: 0.8
+  })
+    .setClassToggle(".fisiology-effect", "transform")
+    .addTo(controller);
+
   // Carousel Proejcts
   const carousel = $(".projects_content-carousel").flickity({
     cellAlign: "left",
