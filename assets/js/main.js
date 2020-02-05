@@ -1,3 +1,14 @@
+// Loader
+$(window).load(() => {
+  setTimeout(() => {
+    $("#loading").css({ opacity: 0 });
+
+    setTimeout(() => {
+      $("#loading").hide();
+    }, 1000);
+  }, 500);
+});
+
 $(document).ready(() => {
   // Mega Menu Icon
   $(".nav_icon").click(function() {
@@ -87,12 +98,28 @@ $(document).ready(() => {
     .setClassToggle(".universe_content-design", "fade-in")
     .addTo(controller);
 
-  // Metodology
+  // Fisiology Move
   const fisiologyEffectMoveScene = new ScrollMagic.Scene({
-    triggerElement: ".effect-description",
-    triggerHook: 0.8
+    triggerElement: ".effect-description-fisiology",
+    triggerHook: 0.4
   })
-    .setClassToggle(".fisiology-effect", "transform")
+    .setClassToggle(".effect-fisiology", "transform")
+    .addTo(controller);
+
+  // Termic Move
+  const termicEffectMoveScene = new ScrollMagic.Scene({
+    triggerElement: ".effect-description-termic",
+    triggerHook: 0.4
+  })
+    .setClassToggle(".effect-termic", "transform")
+    .addTo(controller);
+
+  // Mecanic Move
+  const mecanicEffectMoveScene = new ScrollMagic.Scene({
+    triggerElement: ".effect-description-mecanic",
+    triggerHook: 0.4
+  })
+    .setClassToggle(".effect-mecanic", "transform")
     .addTo(controller);
 
   // Carousel Proejcts
