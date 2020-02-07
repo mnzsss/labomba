@@ -2,6 +2,7 @@
   .about {
     &_content {
       display: flex;
+      align-items: center;
       width: 60%;
       height: 100%;
       margin: 0 auto;
@@ -16,6 +17,7 @@
       &-title {
         font-size: em(60);
         width: 100%;
+        margin-bottom: 3%;
       }
 
       &-paragraph {
@@ -133,6 +135,7 @@
     top: 0;
     opacity: 0;
     z-index: -9999;
+    transition: all ease 0.4s;
   }
 
   &_lamp {

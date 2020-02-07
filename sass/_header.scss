@@ -1,38 +1,8 @@
 header {
-  .background {
-    &_eye {
-      position: absolute;
-      z-index: -1;
-      bottom: 15%;
-      left: -12%;
-      width: 100%;
-      height: 100%;
-    }
-
-    &_detail_magenta {
-      z-index: -1;
-      position: absolute;
-      top: -14%;
-      left: 90%;
-    }
-
-    &_detail_amarelo {
-      position: fixed;
-      z-index: -1;
-      bottom: 8em;
-      left: -11em;
-      transition: bottom 0.5s ease-out;
-
-      &.transform {
-        bottom: 80%;
-      }
-    }
-  }
-
   .header {
     &_heading {
       position: absolute;
-      bottom: 30%;
+      top: 3%;
       max-width: 625px;
       font-size: em(60);
       line-height: em(20);
@@ -67,6 +37,7 @@ header {
     &_footer {
       display: flex;
       justify-content: space-between;
+      align-items: center;
       position: relative;
       top: 75vh;
 
@@ -156,6 +127,39 @@ header {
 
       &-adress {
         z-index: 2;
+      }
+    }
+  }
+
+  .background {
+    &_eye {
+      position: absolute;
+      z-index: -1;
+      top: -2%;
+      left: 0%;
+      width: 78%;
+    }
+
+    &_detail_magenta {
+      z-index: -1;
+      position: absolute;
+      top: -2%;
+      left: 90%;
+    }
+
+    &_detail_amarelo {
+      position: fixed;
+      z-index: -1;
+      bottom: 8em;
+      left: -11em;
+      transition: all 0.5s ease-out;
+
+      &.transform {
+        bottom: 80%;
+      }
+
+      &.hide {
+        opacity: 0;
       }
     }
   }

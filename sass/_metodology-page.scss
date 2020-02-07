@@ -2,9 +2,12 @@
   header {
     .header {
       &_footer {
-        position: fixed;
-        top: 89vh;
+        top: 12vh;
         width: 90%;
+
+        &.fixed {
+          position: relative;
+        }
       }
     }
   }
@@ -16,7 +19,7 @@
   &-header {
     max-width: 625px;
     height: 100%;
-    margin-top: 5%;
+    margin-top: 5em;
 
     h1 {
       font-size: em(50);
@@ -33,155 +36,88 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
-    position: absolute;
+    position: fixed;
     top: 0;
-    opacity: 0.4;
-    z-index: -9999;
+    opacity: 0.3;
+    z-index: -9;
+  }
+
+  .contact {
+    margin-top: 5em;
+  }
+
+  footer {
+    padding: 3em 0;
+    margin: 0;
   }
 }
 
 // Effects
 .effect {
-  padding-right: 15em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  height: 50vh;
+  opacity: 0;
+  transition: opacity ease 0.5s;
+  transition-delay: 200ms;
+
+  &.fade-in {
+    opacity: 1;
+  }
 
   &-details {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     p {
       font-size: em(60);
       font-weight: bold;
       font-style: italic;
       position: relative;
-      right: 12%;
-      top: 4%;
-      transition: all ease-in 0.3s;
+      top: 10%;
+      left: -20%;
     }
 
     h2 {
-      z-index: -1;
-      position: absolute;
-      top: 140%;
-      left: 35%;
-      font-size: em(110);
+      font-size: em(80);
       line-height: em(16);
       font-weight: bold;
       text-transform: uppercase;
       transform: rotate(-90deg);
       color: $magenta;
-      transition: all ease-in 0.3s;
+      position: absolute;
+      left: 21%;
     }
 
     &-image {
-      position: relative;
-      z-index: -2;
-      top: -7%;
-      left: 0;
-      width: 25%;
+      width: 40%;
       height: auto;
-      transition: all ease-in 0.3s;
-    }
-  }
-
-  &-fisiology {
-    &.transform {
-      p {
-        font-size: em(70);
-        right: 30%;
-        top: 105%;
-      }
-
-      h2 {
-        top: 250%;
-        left: 5%;
-        font-size: em(70);
-        line-height: em(18);
-      }
-
-      .effect-details-image {
-        position: relative;
-        top: 95%;
-        left: -15%;
-      }
     }
   }
 
   &-termic {
-    h2 {
-      top: 340%;
-      font-size: em(150);
-      line-height: em(15);
+    p {
+      top: 0%;
+      left: -20%;
     }
 
-    &.transform {
-      p {
-        font-size: em(70);
-        right: 30%;
-        top: 105%;
-      }
-
-      h2 {
-        top: 450%;
-        left: 5%;
-        font-size: em(120);
-        z-index: -1;
-      }
-
-      .effect-details-image {
-        position: relative;
-        z-index: -2;
-        top: 95%;
-        left: -15%;
-      }
+    h2 {
+      left: 24%;
+      top: 15%;
     }
   }
 
   &-mecanic {
     h2 {
-      top: 540%;
-      left: 25%;
-      font-size: em(140);
-      line-height: em(15);
-    }
-
-    p {
-      right: 15%;
-      top: 10%;
-    }
-
-    .effect-details-image {
-      left: 10%;
-    }
-
-    &.transform {
-      p {
-        font-size: em(40);
-        right: 20%;
-        top: 100%;
-      }
-
-      h2 {
-        top: 650%;
-        left: 15%;
-        font-size: em(90);
-        z-index: -1;
-      }
-
-      .effect-details-image {
-        width: 20%;
-        top: 95%;
-        left: -8%;
-      }
+      top: 30%;
+      left: 27%;
     }
   }
 
   &-description {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
     &-paragraph {
       max-width: 500px;
       font-size: em(20);

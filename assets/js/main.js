@@ -98,28 +98,38 @@ $(document).ready(() => {
     .setClassToggle(".universe_content-design", "fade-in")
     .addTo(controller);
 
-  // Fisiology Move
-  const fisiologyEffectMoveScene = new ScrollMagic.Scene({
-    triggerElement: ".effect-description-fisiology",
-    triggerHook: 0.4
+  const amareloHideScene = new ScrollMagic.Scene({
+    triggerElement: ".universe_content-services",
+    triggerHook: 0.1
   })
-    .setClassToggle(".effect-fisiology", "transform")
+    .setClassToggle(".background_detail_amarelo", "hide")
     .addTo(controller);
 
-  // Termic Move
-  const termicEffectMoveScene = new ScrollMagic.Scene({
-    triggerElement: ".effect-description-termic",
-    triggerHook: 0.4
+  const fisiologyEffectScene = new ScrollMagic.Scene({
+    triggerElement: ".effect-fisiology",
+    duration: "100%",
+    triggerHook: 0.3
   })
-    .setClassToggle(".effect-termic", "transform")
+    .setPin(".effect-fisiology")
+    .setClassToggle(".effect-fisiology", "fade-in")
     .addTo(controller);
 
-  // Mecanic Move
-  const mecanicEffectMoveScene = new ScrollMagic.Scene({
-    triggerElement: ".effect-description-mecanic",
-    triggerHook: 0.4
+  const termicEffectScene = new ScrollMagic.Scene({
+    triggerElement: ".effect-termic",
+    duration: "100%",
+    triggerHook: 0.3
   })
-    .setClassToggle(".effect-mecanic", "transform")
+    .setPin(".effect-termic")
+    .setClassToggle(".effect-termic", "fade-in")
+    .addTo(controller);
+
+  const mecanicEffectScene = new ScrollMagic.Scene({
+    triggerElement: ".effect-mecanic",
+    duration: "100%",
+    triggerHook: 0.3
+  })
+    .setPin(".effect-mecanic")
+    .setClassToggle(".effect-mecanic", "fade-in")
     .addTo(controller);
 
   // Carousel Proejcts
