@@ -1,0 +1,23 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5em;
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+
+    li a {
+      color: #fff;
+      text-decoration: none;
+      transition: all ease 0.4s;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
