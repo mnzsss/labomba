@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-// Mega Menu Icon
-$(".nav_icon").click(function() {
-  $(this).toggleClass("open");
-  $(".nav_menu").toggleClass("open");
-});
-=======
 // Loader
 $(window).load(() => {
   setTimeout(() => {
@@ -178,4 +171,3 @@ $(window).on("scroll", () => {
     );
   }
 });
->>>>>>> origin/version/2.0
