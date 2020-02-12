@@ -11,8 +11,8 @@ $(window).load(() => {
 
 $(document).ready(() => {
   // Mega Menu Icon
-  $(".nav_icon").click(() => {
-    $(".nav_icon").toggleClass("open");
+  $(".nav_icon").click(function() {
+    $(this).toggleClass("open");
     $(".nav_menu").toggleClass("open");
     $(".header_footer").toggleClass("fixed");
     $(".nav_content-logo").toggleClass("fixed");
@@ -154,14 +154,14 @@ $(window).on("scroll", () => {
   const windowHeight = $(window).height();
 
   // Show video
-  if ($(window).scrollTop() >= windowHeight / 1.7) {
+  if ($(this).scrollTop() >= windowHeight / 1.7) {
     $(".studio_video").css({ opacity: 0.4 });
   } else {
     $(".studio_video").css({ opacity: 0 });
   }
 
   // Change text about with scroll
-  if ($(window).scrollTop() > windowHeight * 1.3) {
+  if ($(this).scrollTop() > windowHeight * 1.3) {
     $(".about_content-paragraph").html(
       "Somos percepção e caminho, criamos conceitos, estratégias, acreditamos que a marca se comunica com o seu propósito, esse é o verdadeiro sentido."
     );

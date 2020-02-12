@@ -1,6 +1,9 @@
 // Variables
 @import "variables";
 
+// Mixins
+@import "./mixins/type";
+
 // Default
 @import "global";
 @import "containers";
@@ -8,8 +11,6 @@
 // Theme
 @import "menu";
 @import "header";
-<<<<<<< HEAD
-=======
 @import "studio";
 @import "projects";
 @import "clients";
@@ -19,5 +20,4 @@
 @import "contact";
 
 // Breakpoints
->>>>>>> origin/version/2.0
 @import "breakpoints";

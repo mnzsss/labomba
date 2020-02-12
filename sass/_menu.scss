@@ -13,15 +13,12 @@ nav {
 
     &-menu {
       display: flex;
-      align-items: center;
-
-      p {
-        margin-right: 2em;
-      }
 
       &-briefing {
+        position: fixed;
+        right: 8%;
         font-size: em(20);
-        font-weight: bold;
+        margin-right: 2em;
         color: #fff;
         animation: colorChange 2s infinite ease-in-out;
         transition: all ease 0.3s;
@@ -30,8 +27,6 @@ nav {
           text-decoration: underline;
           opacity: 0.8;
         }
-<<<<<<< HEAD
-=======
 
         @keyframes colorChange {
           0% {
@@ -45,25 +40,59 @@ nav {
           }
         }
       }
->>>>>>> origin/version/2.0
 
-        @keyframes colorChange {
-          0% {
-            color: #fff;
+      .nav_icon {
+        width: 40px;
+        height: 30px;
+        position: fixed;
+        right: 5.5%;
+        transform: rotate(0deg);
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+
+        span {
+          display: block;
+          position: absolute;
+          height: 4px;
+          width: 40px;
+          background: #fff;
+          opacity: 1;
+          transform: rotate(0deg);
+          transition: 0.35s ease-in-out;
+
+          &:nth-child(1) {
+            top: 0px;
+            transform-origin: left center;
           }
-          50% {
-            color: $amarelo;
+
+          &:nth-child(2) {
+            top: 12px;
+            left: 12px;
+            width: 70%;
+            transform-origin: left center;
           }
-          100% {
-            color: #fff;
+        }
+
+        &.open span {
+          background: $magenta;
+
+          &:nth-child(1) {
+            transform: rotate(45deg);
+            top: -3px;
+            left: 8px;
+          }
+
+          &:nth-child(2) {
+            transform: rotate(-45deg);
+            top: 25px;
+            left: 8px;
+            width: 100%;
           }
         }
       }
     }
   }
 }
-<<<<<<< HEAD
-=======
 
 .nav_menu {
   padding: 0 5em;
@@ -132,4 +161,3 @@ nav {
     display: grid;
   }
 }
->>>>>>> origin/version/2.0
