@@ -167,7 +167,7 @@ $(window).on("scroll", () => {
     );
   } else {
     $(".about_content-paragraph").html(
-      "Nós aumentamos o potencial competitivo e resultados de nossos clientes, gerando ligação emocional entre consumidores e a marca através da ousadia, estratégia, arte e design"
+      "Nós aumentamos o potencial competitivo e resultados de nossos clientes, gerando ligação emocional entre consumidores e a marca através da ousadia, estratégia, arte e design."
     );
   }
 });
