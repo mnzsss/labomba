@@ -1,7 +1,14 @@
 {
   "name": "Estúdio La.Bomba",
-  "icons": [
-    {
+  "short_name": "La.Bomba",
+  "description": "O Estúdio La.Bomba é um escritório de design focado em marcas, o estúdio busca trazer resultados para seus clientes através do design estratégico e branding, acrescentando o toque artístico que está presente em sua essência, colaborando para que as marcas atinjam seus objetivos.",
+  "lang": "pt-br",
+  "start_url": "/",
+  "theme_color": "#e1e31c",
+  "background_color": "#000",
+  "orientation": "any",
+  "display": "standalone",
+  "icons": [{
       "src": "/assets/img/fav/android-icon-36x36.png",
       "sizes": "36x36",
       "type": "image/png",
