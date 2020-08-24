@@ -7,7 +7,6 @@
       }
     }
   }
-
   .studio {
     .about {
       &_content {
@@ -16,7 +15,6 @@
         }
       }
     }
-
     .universe {
       &_content {
         &-detach,
@@ -28,7 +26,6 @@
       }
     }
   }
-
   // Effects
   .effect {
     &-description {
@@ -49,7 +46,6 @@
         }
       }
     }
-
     .universe {
       &_content {
         &-detach,
@@ -61,7 +57,6 @@
       }
     }
   }
-
   .metodology {
     header {
       .header {
@@ -71,36 +66,30 @@
       }
     }
   }
-
   .effect {
     gap: 0px;
-
     &-details {
       p {
         font-size: em(40);
       }
-
       h2 {
         font-size: em(60);
         top: 2.5em;
         left: 18%;
       }
     }
-
     &-termic {
       h2 {
         left: 25%;
         top: 40%;
       }
     }
-
     &-mecanic {
       h2 {
         top: 40%;
         left: 25%;
       }
     }
-
     &-description {
       &-paragraph {
         max-width: 400px;
@@ -108,10 +97,8 @@
       }
     }
   }
-
   .contact {
     gap: 40px;
-
     &-content {
       h3 {
         font-size: em(30);
@@ -125,13 +112,11 @@
     .about {
       &_content {
         align-items: center;
-
         &-title {
           font-size: em(45);
         }
       }
     }
-
     .universe {
       &_content {
         &-detach,
@@ -149,7 +134,6 @@
   nav .nav_content-menu-briefing {
     margin-right: 4em;
   }
-
   header {
     .header {
       &_heading {
@@ -158,21 +142,18 @@
         font-size: em(40);
       }
     }
-
     .background {
       &_eye {
         bottom: 15%;
         left: -3%;
         width: 90%;
       }
-
       &_detail_amarelo {
         bottom: 10em;
         left: -13em;
       }
     }
   }
-
   .studio {
     .about {
       &_content {
@@ -180,19 +161,16 @@
         display: block;
       }
     }
-
     .universe {
       &_content {
         &_infos {
           width: 80%;
         }
-
         &-detach,
         &-branding,
         &-design,
         &-services {
           padding: 9em 7em;
-
           &.fade-in {
             width: 85% !important;
           }
@@ -200,46 +178,38 @@
       }
     }
   }
-
   .clients_content {
     &-title {
       font-size: em(25);
     }
-
     &-logos {
       img {
         max-width: 135px;
       }
     }
   }
-
   .effect {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     transition-delay: 0ms;
-
     &-details {
       display: flex;
       flex-direction: column;
       align-items: center;
-
       p {
         font-size: em(60);
         left: -60%;
       }
-
       h2 {
         font-size: em(70);
         left: 45%;
       }
-
       &-image {
         width: 100%;
       }
     }
-
     &-fisiology {
       h2 {
         font-size: em(70);
@@ -247,7 +217,6 @@
         left: 40%;
       }
     }
-
     &-description {
       &-paragraph {
         max-width: 450px;
@@ -257,29 +226,24 @@
       }
     }
   }
-
   .metodology {
     &-header {
       max-width: 590px;
       margin-top: 8em;
     }
   }
-
   .contact-page {
     .contact {
       display: flex;
       margin-top: 15%;
-
       &-content {
         h3 {
           font-size: em(45);
         }
-
         .link-socials {
           max-width: 80%;
         }
       }
-
       &-image {
         display: none;
       }
@@ -297,7 +261,6 @@
       }
     }
   }
-
   .nav_menu {
     &_article {
       &-title {
@@ -305,18 +268,15 @@
       }
     }
   }
-
   header {
     .header {
       &_heading {
         max-width: 365px;
         top: 4%;
       }
-
       &_calls {
         display: none;
       }
-
       &_footer {
         &-social {
           li {
@@ -325,24 +285,20 @@
         }
       }
     }
-
     .background {
       &_eye {
         top: 0.3%;
         left: -11%;
         width: 90%;
       }
-
       &_detail_amarelo {
         left: -17em;
       }
-
       &_detail_magenta {
         left: 80%;
       }
     }
   }
-
   .studio {
     .about {
       &_content {
@@ -352,19 +308,16 @@
         }
       }
     }
-
     .universe {
       &_content {
         &_infos {
           width: 100%;
         }
-
         &-paragraph {
           font-size: em(22);
           line-height: em(25);
           width: 100%;
         }
-
         &-detach,
         &-branding,
         &-design,
@@ -372,12 +325,10 @@
           font-size: em(20);
           line-height: em(25);
           padding: 5em;
-
           &.fade-in {
             width: 100% !important;
           }
         }
-
         &-services {
           font-size: em(14);
           line-height: em(18);
@@ -386,11 +337,9 @@
       }
     }
   }
-
   .projects_content {
     gap: 10px;
   }
-
   .contact {
     &-content {
       &-links {
@@ -398,18 +347,15 @@
       }
     }
   }
-
   .contact-page {
     .contact {
       &-content {
         h3 {
           font-size: em(35);
         }
-
         .link-socials {
           max-width: 80%;
         }
-
         p,
         a {
           font-size: em(20);
@@ -420,79 +366,72 @@
 }
 
 @media (max-width: 414px) {
+  .container {
+    height: 90vh;
+  }
+  nav .nav_content-menu-briefing {
+    font-size: em(0);
+  }
   .labomba_container {
     padding: 0 3em;
   }
-
   .nav_menu {
     grid-template-columns: 1fr;
-
     &_article {
       display: none;
     }
   }
-
   header {
     .header {
       &_heading {
         max-width: 325px;
         font-size: em(40);
       }
-
       &_footer {
         &-scroll {
           display: none;
         }
-
         &-social {
           list-style: none;
           display: flex;
           z-index: 2;
-
           li {
             margin-right: 1em;
           }
         }
       }
     }
-
     .background {
       &_eye {
         top: 1.2%;
         left: -18%;
       }
-
       &_detail_magenta {
+        top: -2.8%;
         left: 70%;
       }
     }
   }
-
   .studio {
     .universe {
       &_content {
         padding: 0 3em;
-
         &-icon {
           width: 30%;
         }
-
         &-title {
           font-size: em(40);
         }
-
         &-paragraph {
           font-size: em(16);
           line-height: 22px;
         }
-
         &-detach,
         &-branding,
         &-design,
         &-services {
           padding: 3.5em;
         }
-
         &-services {
           &-list {
             margin-right: 2em;
@@ -500,7 +439,6 @@
         }
       }
     }
-
     &_lamp {
       &.transform {
         top: 15% !important;
@@ -509,25 +447,39 @@
       }
     }
   }
-
+  .projects_content {
+    grid-template-columns: 1fr 8fr;
+    padding-left: 3em;
+    &-carousel {
+      >div {
+        height: 17em !important;
+      }
+      &-item {
+        width: 200px;
+        img {
+          width: 90%;
+        }
+      }
+    }
+  }
   .clients_content {
     padding: 0 3em;
-
+    justify-content: flex-start;
+    &.container {
+      height: 100%;
+    }
     &-title {
       font-size: em(35);
       text-align: center;
     }
-
     &-logos {
       grid-template-columns: 1fr 1fr;
     }
   }
-
   .metodology_content {
     padding: 0 3em;
     text-align: center;
   }
-
   .contact {
     &-content {
       h3 {
@@ -535,42 +487,35 @@
       }
     }
   }
-
   footer {
     ul {
       width: 60%;
     }
   }
-
   nav .nav_content-logo a svg {
     width: 65%;
   }
-
   .effect {
     &-mecanic {
       h2 {
         top: 30%;
       }
     }
-
     &-description {
       &-paragraph {
         margin-top: 30%;
       }
     }
   }
-
   .metodology-header {
     h1 {
       font-size: em(30);
     }
-
     p {
       font-size: em(18);
       line-height: em(22);
     }
   }
-
   .metodology header .header_footer {
     width: 100%;
   }
@@ -582,13 +527,11 @@
       &_eye {
         top: 0.9%;
       }
-
       &_detail_amarelo {
         bottom: 2em;
       }
     }
   }
-
   .contact-page {
     .contact {
       &-content {
@@ -608,24 +551,20 @@
         line-height: em(20);
       }
     }
-
     .background {
       &_eye {
         width: 90%;
         top: 0.9%;
       }
-
       &_detail_magenta {
         top: -2%;
         left: 80%;
       }
-
       &_detail_amarelo {
-        bottom: 2em;
+        bottom: -2em;
       }
     }
   }
-
   .studio {
     .universe {
       &_content {
