@@ -4,25 +4,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   &-title {
     margin-bottom: 2em;
     color: $magenta;
     font-size: em(35);
   }
-
   &-logos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 50px;
     justify-content: center;
     align-items: center;
-
     img {
       max-width: 200px;
       height: auto;
       transition: all ease 0.4s;
-
       &:hover {
         opacity: 0.7;
       }

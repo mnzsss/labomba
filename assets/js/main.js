@@ -1,22 +1,22 @@
 // Loader
 $(window).load(() => {
   setTimeout(() => {
-    $("#loading").css({ opacity: 0 });
+    $('#loading').css({ opacity: 0 });
 
     setTimeout(() => {
-      $("#loading").hide();
+      $('#loading').hide();
     }, 1000);
   }, 500);
 });
 
 $(document).ready(() => {
   // Mega Menu Icon
-  $(".nav_icon").click(function() {
-    $(this).toggleClass("open");
-    $(".nav_menu").toggleClass("open");
-    $(".header_footer").toggleClass("fixed");
-    $(".nav_content-logo").toggleClass("fixed");
-    $("body").toggleClass("hidden");
+  $('.nav_icon').click(function () {
+    $(this).toggleClass('open');
+    $('.nav_menu').toggleClass('open');
+    $('.header_footer').toggleClass('fixed');
+    $('.nav_content-logo').toggleClass('fixed');
+    $('body').toggleClass('hidden');
   });
 
   // Init ScrollMagic
@@ -24,150 +24,150 @@ $(document).ready(() => {
 
   // Scenes
   const aboutScene = new ScrollMagic.Scene({
-    triggerElement: ".about_content",
-    duration: "200%"
+    triggerElement: '.about_content',
+    duration: '200%',
   })
-    .setPin(".about_content")
-    .setClassToggle(".about_content", "fade-in")
+    .setPin('.about_content')
+    .setClassToggle('.about_content', 'fade-in')
     .addTo(controller);
 
   const magentaScene = new ScrollMagic.Scene({
-    triggerElement: "body",
-    duration: "300%",
-    triggerHook: 0.1
+    triggerElement: 'body',
+    duration: '300%',
+    triggerHook: 0.1,
   })
-    .setPin(".background_detail_magenta")
+    .setPin('.background_detail_magenta')
     .addTo(controller);
 
   const lampScene = new ScrollMagic.Scene({
-    triggerElement: ".studio",
-    duration: "1000%",
-    triggerHook: 1
+    triggerElement: '.studio',
+    duration: '1000%',
+    triggerHook: 1,
   })
-    .setPin(".studio_lamp")
-    .setClassToggle(".studio_lamp", "fade-in")
+    .setPin('.studio_lamp')
+    .setClassToggle('.studio_lamp', 'fade-in')
     .addTo(controller);
 
   const amareloScene = new ScrollMagic.Scene({
-    triggerElement: ".universe_content",
-    triggerHook: 0.1
+    triggerElement: '.universe_content',
+    triggerHook: 0.1,
   })
-    .setClassToggle(".background_detail_amarelo", "transform")
+    .setClassToggle('.background_detail_amarelo', 'transform')
     .addTo(controller);
 
   const lampMoveScene = new ScrollMagic.Scene({
-    triggerElement: ".universe_content",
-    triggerHook: 0.1
+    triggerElement: '.universe_content',
+    triggerHook: 0.1,
   })
-    .setClassToggle(".studio_lamp", "transform")
+    .setClassToggle('.studio_lamp', 'transform')
     .addTo(controller);
 
   const universeScene = new ScrollMagic.Scene({
-    triggerElement: ".universe_content",
-    duration: "678%",
-    triggerHook: 0
+    triggerElement: '.universe_content',
+    duration: '678%',
+    triggerHook: 0,
   })
-    .setPin(".universe_content_infos")
-    .setClassToggle(".universe_content_infos", "fade-in")
+    .setPin('.universe_content_infos')
+    .setClassToggle('.universe_content_infos', 'fade-in')
     .addTo(controller);
 
   const detachShowScene = new ScrollMagic.Scene({
-    triggerElement: ".universe_content-detach",
-    duration: "100%",
-    triggerHook: 0
+    triggerElement: '.universe_content-detach',
+    duration: '100%',
+    triggerHook: 0,
   })
-    .setPin(".universe_content-detach")
-    .setClassToggle(".universe_content-detach", "fade-in")
+    .setPin('.universe_content-detach')
+    .setClassToggle('.universe_content-detach', 'fade-in')
     .addTo(controller);
 
   const brandingShowScene = new ScrollMagic.Scene({
-    triggerElement: ".universe_content-branding",
-    duration: "100%",
-    triggerHook: 0
+    triggerElement: '.universe_content-branding',
+    duration: '100%',
+    triggerHook: 0,
   })
-    .setPin(".universe_content-branding")
-    .setClassToggle(".universe_content-branding", "fade-in")
+    .setPin('.universe_content-branding')
+    .setClassToggle('.universe_content-branding', 'fade-in')
     .addTo(controller);
 
   const designShowScene = new ScrollMagic.Scene({
-    triggerElement: ".universe_content-design",
-    duration: "100%",
-    triggerHook: 0
+    triggerElement: '.universe_content-design',
+    duration: '100%',
+    triggerHook: 0,
   })
-    .setPin(".universe_content-design")
-    .setClassToggle(".universe_content-design", "fade-in")
+    .setPin('.universe_content-design')
+    .setClassToggle('.universe_content-design', 'fade-in')
     .addTo(controller);
 
   const amareloHideScene = new ScrollMagic.Scene({
-    triggerElement: ".universe_content-services",
-    triggerHook: 0.1
+    triggerElement: '.universe_content-services',
+    triggerHook: 0.1,
   })
-    .setClassToggle(".background_detail_amarelo", "hide")
+    .setClassToggle('.background_detail_amarelo', 'hide')
     .addTo(controller);
 
   const fisiologyEffectScene = new ScrollMagic.Scene({
-    triggerElement: ".effect-fisiology",
-    duration: "100%",
-    triggerHook: 0.3
+    triggerElement: '.effect-fisiology',
+    duration: '100%',
+    triggerHook: 0.3,
   })
-    .setPin(".effect-fisiology")
-    .setClassToggle(".effect-fisiology", "fade-in")
+    .setPin('.effect-fisiology')
+    .setClassToggle('.effect-fisiology', 'fade-in')
     .addTo(controller);
 
   const termicEffectScene = new ScrollMagic.Scene({
-    triggerElement: ".effect-termic",
-    duration: "100%",
-    triggerHook: 0.3
+    triggerElement: '.effect-termic',
+    duration: '100%',
+    triggerHook: 0.3,
   })
-    .setPin(".effect-termic")
-    .setClassToggle(".effect-termic", "fade-in")
+    .setPin('.effect-termic')
+    .setClassToggle('.effect-termic', 'fade-in')
     .addTo(controller);
 
   const mecanicEffectScene = new ScrollMagic.Scene({
-    triggerElement: ".effect-mecanic",
-    duration: "100%",
-    triggerHook: 0.3
+    triggerElement: '.effect-mecanic',
+    duration: '100%',
+    triggerHook: 0.3,
   })
-    .setPin(".effect-mecanic")
-    .setClassToggle(".effect-mecanic", "fade-in")
+    .setPin('.effect-mecanic')
+    .setClassToggle('.effect-mecanic', 'fade-in')
     .addTo(controller);
 
   // Carousel Proejcts
-  const carousel = $(".projects_content-carousel").flickity({
-    cellAlign: "left",
+  const carousel = $('.projects_content-carousel').flickity({
+    cellAlign: 'left',
     prevNextButtons: false,
-    pageDots: false
+    pageDots: false,
   });
 
   // Dots
-  $(".projects_content-dots-prev").on("click", () => {
-    carousel.flickity("previous");
+  $('.projects_content-dots-prev').on('click', () => {
+    carousel.flickity('previous');
   });
 
-  $(".projects_content-dots-next").on("click", () => {
-    carousel.flickity("next");
+  $('.projects_content-dots-next').on('click', () => {
+    carousel.flickity('next');
   });
 });
 
 // Studio
-$(window).on("scroll", () => {
+$(window).on('scroll', () => {
   const windowHeight = $(window).height();
 
   // Show video
   if ($(this).scrollTop() >= windowHeight / 1.7) {
-    $(".studio_video").css({ opacity: 0.4 });
+    $('.studio_video').css({ opacity: 0.4 });
   } else {
-    $(".studio_video").css({ opacity: 0 });
+    $('.studio_video').css({ opacity: 0 });
   }
 
   // Change text about with scroll
   if ($(this).scrollTop() > windowHeight * 1.3) {
-    $(".about_content-paragraph").html(
-      "Somos percepção e caminho, criamos conceitos, estratégias, acreditamos que a marca se comunica com o seu propósito, esse é o verdadeiro sentido."
+    $('.about_content-paragraph').html(
+      'Somos percepção e caminho, criamos conceitos, estratégias, acreditamos que a marca se comunica com o seu propósito, esse é o verdadeiro sentido.',
     );
   } else {
-    $(".about_content-paragraph").html(
-      "Nós aumentamos o potencial competitivo e resultados de nossos clientes, gerando ligação emocional entre consumidores e a marca através da ousadia, estratégia, arte e design."
+    $('.about_content-paragraph').html(
+      'Nós aumentamos o potencial competitivo e resultados de nossos clientes, gerando ligação emocional entre consumidores e a marca através da ousadia, estratégia, arte e design.',
     );
   }
 });
