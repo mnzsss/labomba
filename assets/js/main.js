@@ -3,9 +3,7 @@ $(window).load(() => {
   setTimeout(() => {
     $('#loading').css({ opacity: 0 });
 
-    setTimeout(() => {
-      $('#loading').hide();
-    }, 1000);
+    $('#loading').hide();
   }, 500);
 });
 
