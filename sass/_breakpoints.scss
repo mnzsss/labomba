@@ -391,6 +391,7 @@
         font-size: em(40);
       }
       &_footer {
+        top: 65vh;
         &-scroll {
           display: none;
         }
@@ -480,8 +481,9 @@
     }
   }
   .metodology_content {
-    padding: 0 3em;
+    padding: 3em 3em 0;
     text-align: center;
+    margin-bottom: 5em;
   }
   .contact {
     &-content {
