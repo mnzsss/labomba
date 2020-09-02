@@ -1,0 +1,69 @@
+.cases-page {
+  header {
+    margin-bottom: 200px;
+    h1 {
+      padding: 50px 0;
+      font-size: 50px;
+      width: 100%;
+      text-align: center;
+    }
+    .list-cases {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      a {
+        transform: scale(0.9);
+        transition: all ease 0.2s;
+        text-decoration: none;
+        color: #fff;
+        h3 {
+          opacity: 0.6;
+          transition: all ease 0.2s;
+        }
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+        &:hover {
+          transform: scale(1);
+          h3 {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+.case-page {
+  header {
+    margin: 100px auto 180px auto;
+    padding: 0;
+    width: 70%;
+  }
+  h1 {
+    padding: 50px 0;
+    font-size: 50px;
+  }
+  .content {
+    width: 100%;
+    line-height: 0;
+    text-align: center;
+    iframe {
+      max-width: 1500px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  footer {
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      color: #aaa
+    }
+  }
+}

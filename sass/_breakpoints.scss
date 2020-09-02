@@ -249,6 +249,27 @@
       }
     }
   }
+  .cases-page {
+    header {
+      .list-cases {
+        a {
+          h3 {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .case-page {
+    header {
+      margin: 50px auto 90px auto;
+      padding: 0 5em;
+      width: 100%;
+    }
+    h1 {
+      font-size: 25px;
+    }
+  }
 }
 
 @media (max-width: 575.99px) {
@@ -523,6 +544,36 @@
   }
   .metodology header .header_footer {
     width: 100%;
+  }
+  .cases-page {
+    header {
+      margin-bottom: 70px;
+      h1 {
+        padding: 30px 0;
+        font-size: 30px;
+      }
+      .list-cases {
+        flex-wrap: wrap;
+      }
+    }
+  }
+  .case-page {
+    header {
+      margin: 20px 0 80px;
+      width: 100%;
+      padding: 0 3em;
+    }
+    h1 {
+      font-size: 30px;
+    }
+    footer {
+      svg {
+        max-width: 100px;
+      }
+      p {
+        font-size: 12px;
+      }
+    }
   }
 }
 
