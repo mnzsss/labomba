@@ -10,7 +10,7 @@
     "commit": "npx git-cz"
   },
   "devDependencies": {
-    "node-sass": "^4.13.0"
+    "node-sass": "^4.13.1"
   },
   "dependencies": {
     "git-cz": "^3.3.0"
