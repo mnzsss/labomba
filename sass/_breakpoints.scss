@@ -406,6 +406,7 @@
     padding: 0 3em;
   }
   .nav_menu {
+    padding: 0 3em;
     grid-template-columns: 1fr;
     &_article {
       display: none;
@@ -414,7 +415,7 @@
   header {
     .header {
       &_heading {
-        max-width: 325px;
+        max-width: 300px;
         font-size: em(40);
       }
       &_footer {
@@ -540,6 +541,7 @@
     }
   }
   .metodology-header {
+    padding-top: 0;
     h1 {
       font-size: em(30);
     }
