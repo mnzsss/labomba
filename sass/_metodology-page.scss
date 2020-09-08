@@ -4,7 +4,6 @@
       &_footer {
         top: 12vh;
         width: 90%;
-
         &.fixed {
           position: fixed;
           top: 90%;
@@ -12,27 +11,22 @@
       }
     }
   }
-
   .nav_content-logo {
     position: fixed;
   }
-
   &-header {
     max-width: 625px;
     height: 100%;
-    padding-top: 5em;
-
+    padding-top: 12rem;
     h1 {
       font-size: em(50);
       line-height: em(20);
       margin-bottom: 1em;
     }
-
     p {
       margin-top: 1em;
     }
   }
-
   &-video {
     height: 100%;
     width: 100%;
@@ -42,11 +36,9 @@
     opacity: 0.3;
     z-index: -9;
   }
-
   .contact {
     margin-top: 5em;
   }
-
   footer {
     padding: 3em 0;
     margin: 0;
@@ -63,16 +55,13 @@
   opacity: 0;
   transition: opacity ease 0.5s;
   transition-delay: 200ms;
-
   &.fade-in {
     opacity: 1;
   }
-
   &-details {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     p {
       font-size: em(60);
       font-weight: bold;
@@ -81,7 +70,6 @@
       top: 10%;
       left: -20%;
     }
-
     h2 {
       font-size: em(80);
       line-height: em(16);
@@ -92,32 +80,27 @@
       position: absolute;
       left: 21%;
     }
-
     &-image {
       width: 40%;
       height: auto;
     }
   }
-
   &-termic {
     p {
       top: 0%;
       left: -20%;
     }
-
     h2 {
       left: 24%;
       top: 15%;
     }
   }
-
   &-mecanic {
     h2 {
       top: 30%;
       left: 27%;
     }
   }
-
   &-description {
     &-paragraph {
       max-width: 500px;
