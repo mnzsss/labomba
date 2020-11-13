@@ -1,62 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
   <head>
     <!-- Google Tag Manager -->
     <script>
-      (function(w, d, s, l, i) {
+      (function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({
-          'gtm.start': new Date().getTime(),
-          event: 'gtm.js'
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
         });
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
-          dl = l != 'dataLayer' ? '&l=' + l : '';
+          dl = l != "dataLayer" ? "&l=" + l : "";
         j.async = true;
-        j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
-      })(window, document, 'script', 'dataLayer', 'GTM-NZ7QHCH');
+      })(window, document, "script", "dataLayer", "GTM-NZ7QHCH");
     </script>
     <!-- End Google Tag Manager -->
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129826334-1"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-129826334-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
 
       function gtag() {
         dataLayer.push(arguments);
       }
-      gtag('js', new Date());
+      gtag("js", new Date());
 
-      gtag('config', 'UA-129826334-1');
+      gtag("config", "UA-129826334-1");
     </script>
 
     <meta charset="UTF-8" />
     <!-- Viewport for responsive web design -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
     <!-- Chache Control -->
-    <meta http-equiv="Cache-control" content="public">
+    <meta http-equiv="Cache-control" content="public" />
 
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/fav/apple-icon-57x57.png" />
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/fav/apple-icon-60x60.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/fav/apple-icon-72x72.png" />
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/fav/apple-icon-76x76.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/fav/apple-icon-114x114.png" />
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/fav/apple-icon-120x120.png" />
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/fav/apple-icon-144x144.png" />
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/fav/apple-icon-152x152.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/fav/apple-icon-180x180.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="./assets/img/fav/android-icon-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/fav/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/fav/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/fav/favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./assets/img/fav/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./assets/img/fav/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./assets/img/fav/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/fav/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./assets/img/fav/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./assets/img/fav/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./assets/img/fav/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./assets/img/fav/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/img/fav/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/img/fav/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/img/fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./assets/img/fav/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/img/fav/favicon-16x16.png"
+    />
     <link rel="manifest" href="./assets/img/fav/manifest.json" />
-    <meta name="msapplication-TileImage" content="./assets/img/fav/ms-icon-144x144.png" />
+    <meta
+      name="msapplication-TileImage"
+      content="./assets/img/fav/ms-icon-144x144.png"
+    />
 
     <!-- Microsoft Tiles -->
     <meta name="msapplication-config" content="browserconfig.xml" />
@@ -70,27 +133,47 @@
     <meta property="og:url" content="https://www.estudiolabomba.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Branding e Design - Estúdio La.Bomba" />
-    <meta property="og:description" content="O Estúdio La.Bomba é um escritório de design focado em marcas, o estúdio busca trazer resultados para seus clientes através do design estratégico e branding, acrescentando o toque artístico que está presente em sua essência, colaborando para que as marcas atinjam seus objetivos."
+    <meta
+      property="og:description"
+      content="O Estúdio La.Bomba é um escritório de design focado em marcas, o estúdio busca trazer resultados para seus clientes através do design estratégico e branding, acrescentando o toque artístico que está presente em sua essência, colaborando para que as marcas atinjam seus objetivos."
     />
-    <meta property="og:image" content="https://www.behance.net/gallery/91811221/Nova-identidade-visual-Macrilan" />
+    <meta
+      property="og:image"
+      content="https://www.behance.net/gallery/91811221/Nova-identidade-visual-Macrilan"
+    />
 
     <!-- Meta Description -->
-    <meta name="description" content="O Estúdio La.Bomba é um escritório de design focado em marcas, o estúdio busca trazer resultados para seus clientes através do design estratégico e branding, acrescentando o toque artístico que está presente em sua essência, colaborando para que as marcas atinjam seus objetivos."
+    <meta
+      name="description"
+      content="O Estúdio La.Bomba é um escritório de design focado em marcas, o estúdio busca trazer resultados para seus clientes através do design estratégico e branding, acrescentando o toque artístico que está presente em sua essência, colaborando para que as marcas atinjam seus objetivos."
     />
 
     <title>Branding e Design - Estúdio La.Bomba</title>
 
     <link rel="stylesheet" href="./assets/css/labomba.min.css" rel="preload" />
-    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
 
     <!-- AdSense -->
-    <script data-ad-client="ca-pub-8577584183802367" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script
+      data-ad-client="ca-pub-8577584183802367"
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+    ></script>
   </head>
 
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NZ7QHCH"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NZ7QHCH"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden;"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
     <div id="loading">
@@ -105,7 +188,12 @@
           <!-- Logo -->
           <div class="nav_content-logo">
             <a href="/">
-              <svg xmlns="http://www.w3.org/2000/svg" width="189" height="31.82" viewBox="0 0 189 31.82">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="189"
+                height="31.82"
+                viewBox="0 0 189 31.82"
+              >
                 <g transform="translate(-1039 -966.439)">
                   <path
                     class="a"
@@ -154,7 +242,12 @@
 
           <!-- Menu Icon -->
           <div class="nav_content-menu">
-            <a class="nav_content-menu-briefing" href="https://briefing.estudiolabomba.com" target="blank" rel="noopener">
+            <a
+              class="nav_content-menu-briefing"
+              href="https://briefing.estudiolabomba.com"
+              target="blank"
+              rel="noopener"
+            >
               Solicite Orçamento
             </a>
             <div class="nav_icon">
@@ -175,17 +268,25 @@
             <a href="/metodologia.html">Nosso Universo</a>
           </li>
           <li class="nav_menu_items-link">
-            <a href="/cases.html">Portfólio</a
-            >
+            <a href="/cases.html">Portfólio</a>
           </li>
           <li class="nav_menu_items-link">
-            <a href="https://blog.estudiolabomba.com/" target="blank" rel="noopener">Blog</a>
+            <a
+              href="https://blog.estudiolabomba.com/"
+              target="blank"
+              rel="noopener"
+              >Blog</a
+            >
           </li>
           <li class="nav_menu_items-link">
             <a href="/contato.html">Contato</a>
           </li>
           <li class="nav_menu_items-link">
-            <a href="https://briefing.estudiolabomba.com/" target="blank" rel="noopener">Briefing</a
+            <a
+              href="https://briefing.estudiolabomba.com/"
+              target="blank"
+              rel="noopener"
+              >Briefing</a
             >
           </li>
         </ul>
@@ -212,7 +313,11 @@
       <header>
         <!-- Background -->
         <div class="background">
-          <img src="./assets/img/eye_magenta.svg" class="background_eye" alt="Ilustração de um olho" />
+          <img
+            src="./assets/img/eye_magenta.svg"
+            class="background_eye"
+            alt="Ilustração de um olho"
+          />
           <img
             src="./assets/img/detail_magenta.svg"
             class="background_detail_magenta"
@@ -241,28 +346,28 @@
                 >
                   Contato
                 </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="header_footer">
-        <!-- Mouse Scroll -->
-        <div class="header_footer-scroll">
-          <div class="mouse">
-            <div class="mouse-in"></div>
+              </li>
+            </ul>
           </div>
-          <div>
-            <span class="down-arrow-1"></span>
-            <span class="down-arrow-2"></span>
-            <span class="down-arrow-3"></span>
+
+          <div class="header_footer">
+            <!-- Mouse Scroll -->
+            <div class="header_footer-scroll">
+              <div class="mouse">
+                <div class="mouse-in"></div>
+              </div>
+              <div>
+                <span class="down-arrow-1"></span>
+                <span class="down-arrow-2"></span>
+                <span class="down-arrow-3"></span>
+              </div>
+            </div>
+
+            <!-- Adress -->
+            <span class="header_footer-adress">Santo André, São Paulo</span>
           </div>
         </div>
-
-        <!-- Adress -->
-        <span class="header_footer-adress">Santo André, São Paulo</span>
-      </div>
-    </div>
-    </header>
+      </header>
     </div>
 
     <!-- Quem Somos -->
@@ -271,19 +376,28 @@
         <div class="about_content reveal">
           <h2 class="about_content-title">Quem Somos</h2>
           <p class="about_content-paragraph">
-            Somos percepção e caminho, criamos conceitos, estratégias, acreditamos que a marca se comunica com o seu propósito, esse é o verdadeiro sentido.
+            Somos percepção e caminho, criamos conceitos, estratégias,
+            acreditamos que a marca se comunica com o seu propósito, esse é o
+            verdadeiro sentido.
           </p>
         </div>
 
         <!-- Universe -->
         <div class="universe_content container">
           <div class="universe_content_infos">
-            <img src="./assets/img/universe_icon_a_circle.svg" class="universe_content-icon" alt="A rosa circulado de branco" />
+            <img
+              src="./assets/img/universe_icon_a_circle.svg"
+              class="universe_content-icon"
+              alt="A rosa circulado de branco"
+            />
 
             <h2 class="universe_content-title">Nosso Universo</h2>
 
             <p class="universe_content-paragraph">
-              Criamos caminhos estratégicos que fazem as marcas se desenvolverem, utilizando Branding e Design para transformar a Comunicação, criar proximidade com a Marca e gerar impacto positivo ao Negócio.
+              Criamos caminhos estratégicos que fazem as marcas se
+              desenvolverem, utilizando Branding e Design para transformar a
+              Comunicação, criar proximidade com a Marca e gerar impacto
+              positivo ao Negócio.
             </p>
           </div>
         </div>
@@ -297,14 +411,17 @@
         <div class="universe_content-branding">
           <h4>Branding</h4>
           <p>
-            A Marca é um organismo vivo, pulsante que se relaciona e comunica, dessa forma jamais poderia ficar estática, imóvel e parar no tempo.
+            A Marca é um organismo vivo, pulsante que se relaciona e comunica,
+            dessa forma jamais poderia ficar estática, imóvel e parar no tempo.
           </p>
         </div>
 
         <div class="universe_content-design">
           <h4>Design</h4>
           <p>
-            Toda ação é movimento, movimento é vida, nós fazemos com que as Marcas continuem evoluindo e entregando seus propósitos, consequentemente - vivendo!
+            Toda ação é movimento, movimento é vida, nós fazemos com que as
+            Marcas continuem evoluindo e entregando seus propósitos,
+            consequentemente - vivendo!
           </p>
         </div>
 
@@ -331,7 +448,12 @@
         <div class="projects_content">
           <div class="projects_content-dots">
             <div class="projects_content-dots-prev">
-              <svg width="34" height="34" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 35 35"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <g fill="none" fill-rule="evenodd">
                   <path
                     d="M16.887 33.273C7.835 33.273.5 25.937.5 16.886.5 7.836 7.835.5 16.887.5c9.05 0 16.386 7.336 16.386 16.386 0 9.05-7.337 16.387-16.387 16.387z"
@@ -343,7 +465,12 @@
             </div>
 
             <div class="projects_content-dots-next">
-              <svg width="34" height="34" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 35 35"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <g fill-rule="evenodd">
                   <path
                     d="M.5 16.886C.5 7.836 7.836.5 16.887.5c9.049 0 16.384 7.336 16.384 16.386 0 9.05-7.335 16.387-16.384 16.387C7.836 33.273.5 25.937.5 16.886z"
@@ -358,32 +485,43 @@
           <div class="projects_content-carousel">
             <div class="projects_content-carousel-item">
               <a href="./cases/gupy.html">
-                <img src="https://mir-s3-cdn-cf.behance.net/projects/404/42179f92651115.Y3JvcCw0MTksMzI4LDE2NiwzMDE.png" alt="Gupy" />
+                <img
+                  src="https://mir-s3-cdn-cf.behance.net/projects/404/42179f92651115.Y3JvcCw0MTksMzI4LDE2NiwzMDE.png"
+                  alt="Gupy"
+                />
                 <h4>Gupy</h4>
               </a>
             </div>
             <div class="projects_content-carousel-item">
               <a href="./cases/macrilan.html">
-                <img src="https://mir-s3-cdn-cf.behance.net/projects/404/959e1d91811221.Y3JvcCwxNDQzLDExMjksMjE3NSwxMjIx.png" alt="Macrilan" />
+                <img
+                  src="https://mir-s3-cdn-cf.behance.net/projects/404/959e1d91811221.Y3JvcCwxNDQzLDExMjksMjE3NSwxMjIx.png"
+                  alt="Macrilan"
+                />
                 <h4>Macrilan</h4>
               </a>
             </div>
             <div class="projects_content-carousel-item">
               <a href="./cases/baralho-campeoes-coca-cola.html">
-                <img src="https://mir-s3-cdn-cf.behance.net/projects/404/2dccdb91871493.Y3JvcCwxOTIwLDE1MDIsMzEwNCw3Nzk.png" alt="Baralho dos Campeões, Coca Cola e Graal" />
+                <img
+                  src="https://mir-s3-cdn-cf.behance.net/projects/404/2dccdb91871493.Y3JvcCwxOTIwLDE1MDIsMzEwNCw3Nzk.png"
+                  alt="Baralho dos Campeões, Coca Cola e Graal"
+                />
                 <h4>Baralho dos Campeões, Coca Cola e Graal</h4>
               </a>
             </div>
             <div class="projects_content-carousel-item">
               <a href="./cases/atelie-petropolis.html">
-                <img src="https://mir-s3-cdn-cf.behance.net/projects/404/67ef9491739093.Y3JvcCwyMDQxLDE1OTYsMTQ1NSw4Mjg.png" alt="Ateliê Pretópolis" />
+                <img
+                  src="https://mir-s3-cdn-cf.behance.net/projects/404/67ef9491739093.Y3JvcCwyMDQxLDE1OTYsMTQ1NSw4Mjg.png"
+                  alt="Ateliê Pretópolis"
+                />
                 <h4>Ateliê Pretópolis</h4>
               </a>
             </div>
           </div>
           <div></div>
-          <a class="button" href="/cases.html">todos projetos</a
-          >
+          <a class="button" href="/cases.html">todos projetos</a>
         </div>
 
         <img src="./assets/img/lampada.svg" class="studio_lamp" alt="Lampâda" />
@@ -419,35 +557,34 @@
         Design.
       </p>
       <a class="button" href="/metodologia.html">metodologia</a>
-        </div>
+    </div>
 
-        <!-- Footer -->
-        <footer>
-          <!-- Footer Header -->
-          <ul>
-            <li>
-              <a href="https://vimeo.com/user34771087" target="blank">
+    <!-- Footer -->
+    <footer>
+      <!-- Footer Header -->
+      <ul>
+        <li>
+          <a href="https://vimeo.com/user34771087" target="blank">
             Vimeo
           </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/estudio.labomba" target="blank">
+        </li>
+        <li>
+          <a href="https://www.instagram.com/estudio.labomba" target="blank">
             Instagram
           </a>
-            </li>
-            <li>
-              <a href="/cases.html">
+        </li>
+        <li>
+          <a href="/cases.html">
             Portfólio
           </a>
-            </li>
-          </ul>
-        </footer>
+        </li>
+      </ul>
+    </footer>
 
-        <!-- Scripts -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-        <script src="./assets/js/main.min.js"></script>
+    <!-- Scripts -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/js/main.min.js"></script>
   </body>
-
 </html>
