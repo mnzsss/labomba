@@ -9,7 +9,7 @@
     }
     .list-cases {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       a {
         transform: scale(0.9);
         transition: all ease 0.2s;
