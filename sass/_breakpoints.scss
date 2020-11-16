@@ -282,6 +282,7 @@
   nav {
     .nav_content {
       &-menu {
+        display: block;
         &-briefing {
           margin-right: 4em;
         }
@@ -289,6 +290,9 @@
     }
   }
   .nav_menu {
+    &-desktop {
+      display: none;
+    }
     &_article {
       &-title {
         font-size: em(22);
@@ -483,7 +487,7 @@
     grid-template-columns: 1fr 8fr;
     padding-left: 3em;
     &-carousel {
-      >div {
+      > div {
         height: 17em !important;
       }
       &-item {
