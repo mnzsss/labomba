@@ -8,9 +8,8 @@
       text-align: center;
     }
     .list-cases {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       a {
         transform: scale(0.9);
         transition: all ease 0.2s;
@@ -21,8 +20,10 @@
           transition: all ease 0.2s;
         }
         img {
-          max-width: 100%;
-          height: auto;
+          height: 300px;
+          width: 100%;
+          object-fit: cover;
+          object-position: center;
         }
         &:hover {
           transform: scale(1);
@@ -49,8 +50,14 @@
     width: 100%;
     line-height: 0;
     text-align: center;
+    .videos {
+      display: flex;
+      justify-content: space-between;
+    }
     iframe {
       max-width: 1500px;
+      max-height: 380px;
+      height: -webkit-fill-available;
     }
     img {
       max-width: 100%;
@@ -63,7 +70,17 @@
     align-items: center;
     justify-content: space-between;
     p {
-      color: #aaa
+      color: #aaa;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .case-page {
+    .content {
+      .videos {
+        display: block;
+      }
     }
   }
 }
