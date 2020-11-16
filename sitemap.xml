@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
@@ -8,18 +9,43 @@
 
 
 <url>
-  <loc>https://estudiolabomba.com/</loc>
-  <lastmod>2020-08-25T15:29:43+00:00</lastmod>
+  <loc>https://www.estudiolabomba.com/</loc>
+  <lastmod>2020-09-14T17:32:50+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://estudiolabomba.com/metodologia.html</loc>
-  <lastmod>2020-08-25T15:29:43+00:00</lastmod>
+  <loc>https://www.estudiolabomba.com/metodologia.html</loc>
+  <lastmod>2020-09-14T17:32:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://estudiolabomba.com/contato.html</loc>
-  <lastmod>2020-08-25T15:29:43+00:00</lastmod>
+  <loc>https://www.estudiolabomba.com/cases.html</loc>
+  <lastmod>2020-09-14T17:32:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.estudiolabomba.com/contato.html</loc>
+  <lastmod>2020-09-14T17:32:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.estudiolabomba.com/cases/gupy.html</loc>
+  <lastmod>2020-09-14T17:32:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.estudiolabomba.com/cases/macrilan.html</loc>
+  <lastmod>2020-09-14T17:32:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.estudiolabomba.com/cases/baralho-campeoes-coca-cola.html</loc>
+  <lastmod>2020-09-14T17:32:50+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.estudiolabomba.com/cases/atelie-petropolis.html</loc>
+  <lastmod>2020-09-14T17:32:50+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
